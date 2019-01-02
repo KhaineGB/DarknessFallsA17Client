@@ -3775,12 +3775,12 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
 
-	<effect_group name="Action Skills">
+	<!-- <effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
-	</effect_group>
+	</effect_group> -->
 </item>
 
 <item name="ammoArrowIron">
@@ -3801,13 +3801,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
-	</effect_group>
 </item>
 
 <item name="ammoArrowSteelAP">
@@ -3825,13 +3818,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
 	</effect_group>
 </item>
 
@@ -3863,13 +3849,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
 
 		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffBurningFlamingArrow"/>
-	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
 	</effect_group>
 </item>
 
@@ -3909,13 +3888,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="67.5"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
-	</effect_group>
 </item>
 
 <item name="ammoCrossbowBoltIron">
@@ -3952,13 +3924,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="75"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
-	</effect_group>
 </item>
 
 <item name="ammoCrossbowBoltSteelAP">
@@ -3982,13 +3947,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
 	</effect_group>
 </item>
 
@@ -13949,13 +13907,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
-	</effect_group>
 </item>
 
 <item name="DFammoCrossbowBoltTitanium">
@@ -13979,13 +13930,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
 	</effect_group>
 </item>
 
