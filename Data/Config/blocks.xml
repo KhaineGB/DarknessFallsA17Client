@@ -774,6 +774,9 @@ tbnsew:
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Density" value="0.9"/>
 	<property name="FallDamage" value=".9"/>
+	<property name="HeatMapStrength" value="1.5"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="25"/>
 	<drop event="Destroy" count="0" prob="1"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" prob="1" tag="allHarvest"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1,2" prob="1" tag="butcherHarvest"/>
@@ -28490,6 +28493,26 @@ ore block visualisation end -->
 	<property name="CraftingSkillGroup" value="Traps"/>
 </block>
 
+<!-- Quest-related craftable blocks -->
+
+<block name="DFFetchwoodFrameBlock">
+	<property name="Extends" value="woodFrameMaster"/>
+	<property name="CustomIcon" value="woodFrameBlock" />
+	<property name="Class" value="QuestLoot" />
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_frame"/>
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="IndexName" value="FetchContainer"/>
+	<property name="StabilityIgnore" value="true" />
+	<property name="LootList" value="72"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="woodBlock"/> </property>
+</block>
+
 <!-- Blocks that constantly spawn mobs -->
 
 <block name="DFAirDowngrade"> <!-- This is for downgrading -->
@@ -28502,20 +28525,20 @@ ore block visualisation end -->
 </block>
 
 <block name="NestTest">
-		<property name="Class" value="Spawner, Mods" />		
-		<property name="Material" value="Mmetal_hard" />		
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="Entities/Misc/body_bag_yellowPrefab"/>	
-		<property name="TickRate" value="100" />
-			<property name="SpawnRadius" value="25" />
-			<property name="SpawnArea" value="15" />
-			<property name="NumberToSpawn" value="5" />
-			<property name="MaxSpawned" value="25" />
-			<property name="CheckArea" value="100" />
-			<property name="EntityGroup" value="ZombiesDayNoUMA" />
-			<property name="CanPickup" value="false" />
-			<property name="DowngradeBlock" value="Nest2Test" />	
-		<property name="Group" value="Building" />
+	<property name="Class" value="Spawner, Mods" />		
+	<property name="Material" value="Mmetal_hard" />		
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="Entities/Misc/body_bag_yellowPrefab"/>	
+	<property name="TickRate" value="100" />
+	<property name="SpawnRadius" value="25" />
+	<property name="SpawnArea" value="15" />
+	<property name="NumberToSpawn" value="5" />
+	<property name="MaxSpawned" value="25" />
+	<property name="CheckArea" value="100" />
+	<property name="EntityGroup" value="ZombiesDayNoUMA" />
+	<property name="CanPickup" value="false" />
+	<property name="DowngradeBlock" value="Nest2Test" />	
+	<property name="Group" value="Building" />
 </block>
 
 <block name="Nest2Test">	

@@ -167,7 +167,7 @@
 		
 		<statement id="currentjobs" text="Do any of these tasks sound like something you can do?">
 			<quest_entry id="gcquest_dirtybum" type="add" listindex="0" />
-			<quest_entry id="test_fetch" type="add" listindex="1" />
+			<quest_entry id="test_craftitem" type="add" listindex="1" />
 			<quest_entry id="test_fetchsleep" type="add" listindex="2" />
 			<quest_entry id="test_hiddensleep" type="add" listindex="3" />
 			<response_entry id="nevermind" />

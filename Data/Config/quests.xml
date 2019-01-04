@@ -4069,33 +4069,61 @@
 		<property name="completiontype" value="TurnIn" />
 		<property name="completion_key" value="gcquest_dirtybum_completion" />
 		
-		<!-- <objective type="Goto" id="quest" value="10" phase="1" /> -->
-		
-		<objective type="ClosestPOIGoto" id="quest">
-			<property name="distance" value="10" />
-			<property name="phase" value="1" />
+		<objective type="RandomGoto" value="500-800" phase="1">
+			<property name="completion_distance" value="50" />
 		</objective>
-		
-		<objective type="RallyPoint">
-			<property name="phase" value="2" />
-		</objective>
-		
-		<objective type="ZombieKill" id="Crackpot" value="1" phase="3" />
-		
-		<objective type="POIStayWithin">
-			<property name="phase" value="3" />
-			<property name="radius" value="50" />
-		</objective>
-		
+
+		<action type="SpawnEnemy" id="Crackpot" value="1" phase="2" />
+
+		<objective type="ZombieKill" id="Crackpot" value="1" phase="2" />
+
 		<objective type="ReturnToNPC">
-			<property name="phase" value="4" />
+			<property name="phase" value="3" />
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4" />
+			<property name="phase" value="3" />
 		</objective>
 		
 		<reward type="SkillPoints" value="2" />
+	</quest>
+	
+	<quest id="test_craftitem">
+		<property name="name_key" value="test quest" />
+		<property name="subtitle_key" value="Test Fetch" />
+		<property name="description_key" value="This is a fetch test quest for dev purposes" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="difficulty" value="medium" />
+		<property name="offer_key" value="Test the fetch objective." />
+		<property name="statement_key" value="Find the test fetch item in the POI." />
+		<property name="response_key" value="Test - Fetch" />
+
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="WELL I'LL BE DANGED. YOU REALLY MANAGED TO PULL THROUGH IN A PINCH. I NEVER THOUGHT I'D SEE THIS PISTOL AGAIN. GOOD WORK, SON. HERE'S WHAT I OWE YA." />
+
+		<objective type="Fetch" id="woodFrameBlock" value="100" phase="1" />
+		
+		<!-- <objective type="BlockPlace" id="woodFrameBlock" value="100" phase="2" />
+		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" phase="2" /> -->
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="1" />
+		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="1" />
+		<reward type="LootItem" id="questAmmo" ischosen="true" value="1" />
+		<reward type="LootItem" id="questTools" ischosen="true" value="1" />
+		<reward type="LootItem" id="questSchematics" ischosen="true" value="1" />
+		<reward type="LootItem" id="questMods" ischosen="true" value="1" />
 	</quest>
 
 	<!-- <quest id="test_sleepers">

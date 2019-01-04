@@ -1918,12 +1918,27 @@
 			<prefab rule="traderGroup" min_count="2" max_count="4"/>
 			<prefab rule="waterPois" min_count="2" max_count="3" prob="0.9"/>
 			<prefab name="cabin_01" max_count="3"/>
-			<prefab name="cabin_02_sm" max_count="3"/>
-			<prefab name="cabin_03_lg" max_count="3"/>
-			<prefab name="cabin_04_md" max_count="3"/>
-			<prefab name="cabin_05_lg" max_count="3"/>
-			<prefab name="cabin_06_lg" max_count="3"/>
-			<prefab name="cabin_snow_hidden_01" max_count="3"/>
+			<prefab name="cabin_02" max_count="3"/>
+			<prefab name="cabin_03" max_count="3"/>
+			<prefab name="cabin_04" max_count="3"/>
+			<prefab name="cabin_05" max_count="3"/>
+			<prefab name="cabin_06" max_count="3"/>
+			<prefab name="cabin_07" max_count="3"/>
+			<prefab name="cabin_08" max_count="3"/>
+			<prefab name="cabin_09" max_count="3"/>
+			<prefab name="cabin_10" max_count="3"/>
+			<prefab name="cabin_08" max_count="3"/>
+			<prefab name="cabin_12" max_count="3"/>
+			<prefab name="cabin_13" max_count="3"/>
+			<prefab name="cabin_14" max_count="3"/>
+			<prefab name="survivor_site_01" max_count="3"/>
+			<prefab name="survivor_site_02" max_count="3"/>
+			<prefab name="survivor_site_03" max_count="3"/>
+			<prefab name="survivor_site_04" max_count="3"/>
+			<prefab name="survivor_site_05" max_count="3"/>
+			<prefab name="survivor_site_06" max_count="3"/>
+			<prefab name="survivor_site_07" max_count="3"/>
+			<prefab name="survivor_site_08" max_count="3"/>
 			<prefab name="ranger_station1" max_count="1" prob="0.2"/>
 			<prefab name="snowy_ski_lodge" max_count="3"/>
 			<prefab name="campsite_01" max_count="3" prob="0.2"/>
@@ -1984,12 +1999,28 @@
 		<prefab_rule name="wildernessGroupTown">
 			<prefab rule="traderGroup" min_count="1" max_count="4"/>
 			<prefab rule="waterPois" min_count="3" max_count="5" prob="0.9"/>
-			<prefab name="cabin_01" max_count="3" prob="0.5"/>
-			<prefab name="cabin_02_sm" max_count="3" prob="0.5"/>
-			<prefab name="cabin_03_lg" max_count="3" prob="0.5"/>
-			<prefab name="cabin_04_md" max_count="3" prob="0.5"/>
-			<prefab name="cabin_05_lg" max_count="3" prob="0.5"/>
-			<prefab name="cabin_06_lg" max_count="3" prob="0.5"/>
+			<prefab name="cabin_01" max_count="3"/>
+			<prefab name="cabin_02" max_count="3"/>
+			<prefab name="cabin_03" max_count="3"/>
+			<prefab name="cabin_04" max_count="3"/>
+			<prefab name="cabin_05" max_count="3"/>
+			<prefab name="cabin_06" max_count="3"/>
+			<prefab name="cabin_07" max_count="3"/>
+			<prefab name="cabin_08" max_count="3"/>
+			<prefab name="cabin_09" max_count="3"/>
+			<prefab name="cabin_10" max_count="3"/>
+			<prefab name="cabin_08" max_count="3"/>
+			<prefab name="cabin_12" max_count="3"/>
+			<prefab name="cabin_13" max_count="3"/>
+			<prefab name="cabin_14" max_count="3"/>
+			<prefab name="survivor_site_01" max_count="3"/>
+			<prefab name="survivor_site_02" max_count="3"/>
+			<prefab name="survivor_site_03" max_count="3"/>
+			<prefab name="survivor_site_04" max_count="3"/>
+			<prefab name="survivor_site_05" max_count="3"/>
+			<prefab name="survivor_site_06" max_count="3"/>
+			<prefab name="survivor_site_07" max_count="3"/>
+			<prefab name="survivor_site_08" max_count="3"/>
 			<prefab name="cabin_snow_hidden_01" max_count="3" prob="0.5"/>
 			<prefab name="ranger_station1" max_count="2" prob="0.35"/>
 			<prefab name="snowy_ski_lodge" max_count="2"/>
@@ -2059,12 +2090,28 @@
 		<prefab_rule name="wildernessGroupRural">
 			<prefab rule="traderGroup" min_count="1" max_count="4"/>
 			<prefab rule="waterPois" min_count="5" max_count="7" prob="0.9"/>
-			<prefab name="cabin_01" max_count="3" prob="0.5"/>
-			<prefab name="cabin_02_sm" max_count="3" prob="0.5"/>
-			<prefab name="cabin_03_lg" max_count="3" prob="0.5"/>
-			<prefab name="cabin_04_md" max_count="3" prob="0.5"/>
-			<prefab name="cabin_05_lg" max_count="3" prob="0.5"/>
-			<prefab name="cabin_06_lg" max_count="3" prob="0.5"/>
+			<prefab name="cabin_01" max_count="3"/>
+			<prefab name="cabin_02" max_count="3"/>
+			<prefab name="cabin_03" max_count="3"/>
+			<prefab name="cabin_04" max_count="3"/>
+			<prefab name="cabin_05" max_count="3"/>
+			<prefab name="cabin_06" max_count="3"/>
+			<prefab name="cabin_07" max_count="3"/>
+			<prefab name="cabin_08" max_count="3"/>
+			<prefab name="cabin_09" max_count="3"/>
+			<prefab name="cabin_10" max_count="3"/>
+			<prefab name="cabin_08" max_count="3"/>
+			<prefab name="cabin_12" max_count="3"/>
+			<prefab name="cabin_13" max_count="3"/>
+			<prefab name="cabin_14" max_count="3"/>
+			<prefab name="survivor_site_01" max_count="3"/>
+			<prefab name="survivor_site_02" max_count="3"/>
+			<prefab name="survivor_site_03" max_count="3"/>
+			<prefab name="survivor_site_04" max_count="3"/>
+			<prefab name="survivor_site_05" max_count="3"/>
+			<prefab name="survivor_site_06" max_count="3"/>
+			<prefab name="survivor_site_07" max_count="3"/>
+			<prefab name="survivor_site_08" max_count="3"/>
 			<prefab name="cabin_snow_hidden_01" max_count="2" prob="0.5"/>
 			<prefab name="ranger_station1" max_count="3" prob="0.75"/>
 			<prefab name="snowy_ski_lodge" max_count="3" prob="0.5"/>

@@ -31,14 +31,14 @@
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_XP_Mult" operation="set" value="1.015"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_ArmorUse_LvlNextAdd" operation="set" value="150"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_ArmorUse_LvlNextTotal" operation="set" value="150"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Athletics_LvlNextAdd" operation="set" value="150"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Athletics_LvlNextTotal" operation="set" value="150"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Athletics_LvlNextAdd" operation="set" value="75"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Athletics_LvlNextTotal" operation="set" value="75"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextAdd" operation="set" value="200"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextTotal" operation="set" value="200"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_MiningTools_LvlNextAdd" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_MiningTools_LvlNextTotal" operation="set" value="300"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Scavenging_LvlNextAdd" operation="set" value="100"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Scavenging_LvlNextTotal" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Scavenging_LvlNextAdd" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Scavenging_LvlNextTotal" operation="set" value="25"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Blunt_LvlNextAdd" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Blunt_LvlNextTotal" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Bladed_LvlNextAdd" operation="set" value="300"/>
@@ -1560,13 +1560,13 @@
 				<requirement name="ProgressionLevel" progression_name="perkASBlunt" operation="GTE" value="40"/>
 				<requirement name="NotHasBuff" target="self" buff="buffPerkStayDownBonus"/>
 			</triggered_effect>
-
+			<!-- Temporary removal until I do action skill descriptions
 			<effect_description level="1" desc_key="perkStayDownRank1Desc"/>
 			<effect_description level="2" desc_key="perkStayDownRank2Desc"/>
 			<effect_description level="3" desc_key="perkStayDownRank3Desc"/>
 			<effect_description level="4" desc_key="perkStayDownRank4Desc"/>
 			<effect_description level="5" desc_key="perkStayDownRank5Desc"/>
-
+			-->
 			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffStayDownKO">
 				<requirement name="ProgressionLevel" progression_name="perkASBlunt" operation="Equals" value="1"/>
 				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="60"/>

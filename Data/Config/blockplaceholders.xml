@@ -161,21 +161,21 @@
 		<block name="DFcarMuscleBlue" prob="0.15"/>
 		<block name="DFcarMuscleBlackDmg" prob="0.075"/>
 		<block name="DFcarMuscleBlueDmg" prob="0.075"/>
-		<block name="DFcarAmbulance" prob="0.075"/>
+		<block name="DFcarAmbulance" prob="0.025"/>
 		<block name="DFcarAmbulanceDmg" prob="0.025"/>
-		<block name="DFcarFireTruck" prob="0.075"/>
+		<block name="DFcarFireTruck" prob="0.025"/>
 		<block name="DFcarFireTruckDmg" prob="0.025"/>
-		<block name="DFcarSchoolbus" prob="0.075"/>
+		<block name="DFcarSchoolbus" prob="0.025"/>
 		<block name="DFcarSchoolbusDmg" prob="0.025"/>
-		<block name="DFcarMailtruck" prob="0.075"/>
+		<block name="DFcarMailtruck" prob="0.025"/>
 		<block name="DFcarMailtruckDmg" prob="0.025"/>
-		<block name="DFMotorbike" prob="0.3"/>
-		<block name="DFMotorbikeDmg" prob="0.15"/>
-		<block name="DFAPCLocked" prob="0.025"/>
-		<block name="DFScoutLocked" prob="0.025"/>
-		<block name="DFTruckLocked" prob="0.025"/>
-		<block name="DFcarGarbageTruck" prob="0.3"/>
-		<block name="DFcarGarbageTruckDmg" prob="0.15"/>
+		<block name="DFMotorbike" prob="0.15"/>
+		<block name="DFMotorbikeDmg" prob="0.025"/>
+		<block name="DFAPCLocked" prob="0.005"/>
+		<block name="DFScoutLocked" prob="0.005"/>
+		<block name="DFTruckLocked" prob="0.0050"/>
+		<block name="DFcarGarbageTruck" prob="0.15"/>
+		<block name="DFcarGarbageTruckDmg" prob="0.025"/>
 	</placeholder>
 
 	<!-- Replace the lootYard with one of the following -->
@@ -212,28 +212,28 @@
 	</placeholder>
 
 	<placeholder name="cntMicrowaveOvenRandomLootHelper">
-		<block name="cntMicrowaveOvenVer1Open" prob=".65"/>
-		<block name="cntMicrowaveOvenVer1Closed" prob=".35"/>
+		<block name="cntMicrowaveOvenVer1Open" prob=".25"/>
+		<block name="cntMicrowaveOvenVer1Closed" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntCabinetBottomRandomLootHelper">
-		<block name="cntCabinetBottomOpen" prob=".65"/>
-		<block name="cntCabinetBottom" prob=".35"/>
+		<block name="cntCabinetBottomOpen" prob=".25"/>
+		<block name="cntCabinetBottom" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntCabinetOldBottomLootHelper">
-		<block name="cntCabinetOldBottomOpen" prob=".65"/>
-		<block name="cntCabinetOldBottom" prob=".35"/>
+		<block name="cntCabinetOldBottomOpen" prob=".25"/>
+		<block name="cntCabinetOldBottom" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntRetroFridgeRandomLootHelper">
-		<block name="cntRetroFridgeVer2Open" prob=".65"/>
-		<block name="cntRetroFridgeVer1Closed" prob=".35"/>
+		<block name="cntRetroFridgeVer2Open" prob=".25"/>
+		<block name="cntRetroFridgeVer1Closed" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntFridgeStainlessSteelRandomLootHelper">
-		<block name="cntFridgeStainlessSteelVer2Open" prob=".65"/>
-		<block name="cntFridgeStainlessSteel" prob=".35"/>
+		<block name="cntFridgeStainlessSteelVer2Open" prob=".25"/>
+		<block name="cntFridgeStainlessSteel" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntQuestRandomLootHelper">
@@ -379,33 +379,33 @@
 	</placeholder>
 
 	<placeholder name="cntStoveOldRandomLootHelper">
-		<block name="cntStoveOldVer1Closed" prob="0.6"/>
-		<block name="cntStoveOldVer2Open" prob="0.4"/>
+		<block name="cntStoveOldVer1Closed" prob="0.3"/>
+		<block name="cntStoveOldVer2Open" prob="0.7"/>
 	</placeholder>
 
 	<placeholder name="cntLaundryBasketRandomLootHelper">
-		<block name="cntLaundryBasketVer1Empty" prob="0.6"/>
-		<block name="cntLaundryBasketVer2Full" prob="0.4"/>
+		<block name="cntLaundryBasketVer1Empty" prob="0.3"/>
+		<block name="cntLaundryBasketVer2Full" prob="0.7"/>
 	</placeholder>
 
 	<placeholder name="cntCupboardCabinetOldTopLootHelper">
-		<block name="cntCupboardCabinetOldTopOpen" prob=".65"/>
-		<block name="cntCupboardCabinetOldTopClosed" prob=".35"/>
+		<block name="cntCupboardCabinetOldTopOpen" prob=".25"/>
+		<block name="cntCupboardCabinetOldTopClosed" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntCupboardCabinetRedTopLootHelper">
-		<block name="cntCupboardCabinetRedTopOpen" prob=".65"/>
-		<block name="cntCupboardCabinetRedTopClosed" prob=".35"/>
+		<block name="cntCupboardCabinetRedTopOpen" prob=".25"/>
+		<block name="cntCupboardCabinetRedTopClosed" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntWoodDesk01RandomLootHelper">
-		<block name="cntWoodDesk01Open" prob=".65"/>
-		<block name="cntWoodDesk01Closed" prob=".35"/>
+		<block name="cntWoodDesk01Open" prob=".25"/>
+		<block name="cntWoodDesk01Closed" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntMetalDesk02RandomLootHelper">
-		<block name="cntMetalDesk02Open" prob=".65"/>
-		<block name="cntMetalDesk02Closed" prob=".35"/>
+		<block name="cntMetalDesk02Open" prob=".25"/>
+		<block name="cntMetalDesk02Closed" prob=".75"/>
 	</placeholder>
 
 	<placeholder name="cntBagsRandomLootHelper">
@@ -422,13 +422,13 @@
 	</placeholder>
 
 	<placeholder name="cntBookcaseGoodRandomLootHelper">
-		<block name="cntBookcaseFull" prob=".6"/>
-		<block name="cntBookcaseEmpty" prob=".4"/>
+		<block name="cntBookcaseFull" prob=".7"/>
+		<block name="cntBookcaseEmpty" prob=".3"/>
 	</placeholder>
 
 	<placeholder name="cntBookcasePoorRandomLootHelper">
-		<block name="cntBookcaseFull" prob=".3"/>
-		<block name="cntBookcaseEmpty" prob=".7"/>
+		<block name="cntBookcaseFull" prob=".7"/>
+		<block name="cntBookcaseEmpty" prob="37"/>
 	</placeholder>
 
 	<placeholder name="metalCatwalkTrapRandomHelper">
@@ -457,28 +457,28 @@
 	</placeholder>
 
 	<placeholder name="cntLockersShortRandomLootHelper">
-		<block name="cntLockersShortOpen" prob=".66"/>
-		<block name="cntLockersShortClosed" prob=".33"/>
+		<block name="cntLockersShortOpen" prob=".33"/>
+		<block name="cntLockersShortClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntLockersTallRandomLootHelper">
-		<block name="cntLockersTallOpen" prob=".66"/>
-		<block name="cntLockersTallClosed" prob=".33"/>
+		<block name="cntLockersTallOpen" prob=".33"/>
+		<block name="cntLockersTallClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntLockersTallDoubleRandomLootHelper">
-		<block name="cntLockersTallDoubleOpen" prob=".66"/>
-		<block name="cntLockersTallDoubleClosed" prob=".33"/>
+		<block name="cntLockersTallDoubleOpen" prob=".33"/>
+		<block name="cntLockersTallDoubleClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntLockersTallMixRandomLootHelper">
-		<block name="cntLockersTallMixOpen" prob=".66"/>
-		<block name="cntLockersTallMixClosed" prob=".33"/>
+		<block name="cntLockersTallMixOpen" prob=".33"/>
+		<block name="cntLockersTallMixClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntLockersTallMixLinkRandomLootHelper">
-		<block name="cntLockersTallMixLinkOpen" prob=".66"/>
-		<block name="cntLockersTallMixLinkClosed" prob=".33"/>
+		<block name="cntLockersTallMixLinkOpen" prob=".33"/>
+		<block name="cntLockersTallMixLinkClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntGasGrillRandomLootHelper">
@@ -492,8 +492,8 @@
 	</placeholder>
 
 	<placeholder name="cntNightstandRandomLootHelper">
-		<block name="cntNightstandOpen" prob=".66"/>
-		<block name="cntNightstandClosed" prob=".33"/>
+		<block name="cntNightstandOpen" prob=".33"/>
+		<block name="cntNightstandClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntFileCabinetShortRandomLootHelper">
@@ -502,53 +502,53 @@
 	</placeholder>
 
 	<placeholder name="cntFileCabinetTallRandomLootHelper">
-		<block name="cntFileCabinetTallOpen" prob=".66"/>
-		<block name="cntFileCabinetTallClosed" prob=".33"/>
+		<block name="cntFileCabinetTallOpen" prob=".33"/>
+		<block name="cntFileCabinetTallClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntCoolerRandomLootHelper">
-		<block name="cntCoolerOpen" prob=".66"/>
-		<block name="cntCoolerClosed" prob=".33"/>
+		<block name="cntCoolerOpen" prob=".33"/>
+		<block name="cntCoolerClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntVendingMachine2RandomLootHelper">
-		<block name="cntVendingMachine2Broken" prob=".66"/>
-		<block name="cntVendingMachine2" prob=".33"/>
+		<block name="cntVendingMachine2Broken" prob=".6"/>
+		<block name="cntVendingMachine2" prob=".4"/>
 	</placeholder>
 
 	<placeholder name="cntPillCaseRandomLootHelper">
-		<block name="cntPillCaseEmpty" prob=".66"/>
-		<block name="cntPillCaseClosed" prob=".33"/>
+		<block name="cntPillCaseEmpty" prob=".6"/>
+		<block name="cntPillCaseClosed" prob=".4"/>
 	</placeholder>
 
 	<placeholder name="cntMedicineCabinetFaucetRandomLootHelper">
-		<block name="cntMedicineCabinetFaucetOpen" prob=".66"/>
-		<block name="cntMedicineCabinetFaucetClosed" prob=".33"/>
+		<block name="cntMedicineCabinetFaucetOpen" prob=".6"/>
+		<block name="cntMedicineCabinetFaucetClosed" prob=".4"/>
 	</placeholder>
 
 	<placeholder name="cntMedicineCabinetClosedRandomLootHelper">
-		<block name="cntMedicineCabinetOpen" prob=".66"/>
-		<block name="cntMedicineCabinetClosed" prob=".33"/>
+		<block name="cntMedicineCabinetOpen" prob=".6"/>
+		<block name="cntMedicineCabinetClosed" prob=".4"/>
 	</placeholder>
 
 	<placeholder name="cntLuggageMediumRandomLootHelper">
-		<block name="cntLuggageMediumOpen" prob=".66"/>
-		<block name="cntLuggageMediumClosed" prob=".33"/>
+		<block name="cntLuggageMediumOpen" prob=".33"/>
+		<block name="cntLuggageMediumClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntLuggageBigRandomLootHelper">
-		<block name="cntLuggageBigOpen" prob=".66"/>
-		<block name="cntLuggageBigClosed" prob=".33"/>
+		<block name="cntLuggageBigOpen" prob=".33"/>
+		<block name="cntLuggageBigClosed" prob=".67"/>
 	</placeholder>
 
 	<placeholder name="cntLuggagePileARandomLootHelper">
-		<block name="cntLuggagePileAOpen" prob=".66"/>
-		<block name="cntLuggagePileAClosed" prob=".33"/>
+		<block name="cntLuggagePileAOpen" prob=".6"/>
+		<block name="cntLuggagePileAClosed" prob=".4"/>
 	</placeholder>
 
 	<placeholder name="cntLuggagePileBRandomLootHelper">
-		<block name="cntLuggagePileBOpen" prob=".66"/>
-		<block name="cntLuggagePileBClosed" prob=".33"/>
+		<block name="cntLuggagePileBOpen" prob=".6"/>
+		<block name="cntLuggagePileBClosed" prob=".4"/>
 	</placeholder>
 
 	<placeholder name="treeSmallRandomHelper">

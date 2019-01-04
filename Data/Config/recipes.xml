@@ -5807,16 +5807,195 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceSpring" count="10"/>
 </recipe>
 
-<!-- Craftable Class Books and maybe other stuff? 
+<!-- Craftable Class and Skill Books -->
 
-<recipe name="ClassPaper" count="1">
-	<ingredient name="scrapSkill" count="120"/>
-	<ingredient name="paper" count="60"/>
-	<ingredient name="ink" count="8"/>
-	<ingredient name="quill" count="1"/>
-</recipe> -->
+<recipe name="DFClassPaper" count="1">
+	<ingredient name="DFscrapSkill" count="240"/>
+	<ingredient name="resourcePaper" count="60"/>
+	<ingredient name="DFink" count="8"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe> 
 
+<recipe name="DFskillArmorBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
 
+<recipe name="DFskillAthleticsBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillConstructionBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillMiningBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillScavengingBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillArcheryBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillAutomaticsBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillBluntBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillBladesBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillPistolBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillShotgunBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillRiflesBook" count="1">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFClassPaper" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="120"/>
+	<ingredient name="resourcePaper" count="30"/>
+	<ingredient name="DFink" count="4"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe> 
+
+<recipe name="DFskillArmorBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillAthleticsBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillConstructionBook" count="1" craft_area="writingDesk"> 
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillMiningBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillScavengingBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillArcheryBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillAutomaticsBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillBluntBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillBladesBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillPistolBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillShotgunBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<recipe name="DFskillRiflesBook" count="1" craft_area="writingDesk">
+	<ingredient name="DFscrapSkill" count="60"/>
+	<ingredient name="resourcePaper" count="15"/>
+	<ingredient name="DFink" count="2"/>
+	<ingredient name="DFquill" count="1"/>
+</recipe>
+
+<!-- Craftable items for quests -->
+
+<recipe name="DFFetchwoodFrameBlock" count="1">
+	<ingredient name="resourceWood" count="2"/>
+</recipe>
 
 </recipes>
 <!-- To do (maybe / later)

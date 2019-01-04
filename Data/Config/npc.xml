@@ -80,7 +80,7 @@
 		portrait=""
 		greeting_type="nearby"
 		stance="Like" voice_set="trader"
-		trader_id="1" dialog_id="guardcaptain" />	
+		trader_id="4" dialog_id="guardcaptain" />	
 		
 	<factions>
 		<faction name="none">

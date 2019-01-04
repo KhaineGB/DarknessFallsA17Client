@@ -12,7 +12,7 @@
     <property name="AllowTopSoilDecorations" value="False" />
     <property name="DifficultyTier" value="1" />
     <property name="TraderArea" value="False" />
-    <property name="QuestTags" value="quest" />
+    <property name="QuestTags" value="clear" />
     <property name="AllowedTownships" value="city,town,rural,wilderness" />
     <property name="EditorGroups" value="settlements" />
     <property name="SleeperIsBossVolume" value="False" />

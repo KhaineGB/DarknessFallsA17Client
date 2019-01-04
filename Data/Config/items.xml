@@ -12804,8 +12804,8 @@ So no clothing dyes until that can be resolved. -->
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="13"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="15"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="15"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="30"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
@@ -12865,8 +12865,8 @@ So no clothing dyes until that can be resolved. -->
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="13"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="16"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="30"/>
 		<passive_effect name="HarvestCount" operation="base_set" value=".35" tags="butcherHarvest"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
@@ -12904,8 +12904,8 @@ So no clothing dyes until that can be resolved. -->
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="4"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="13"/> 
-		<passive_effect name="BlockDamage" operation="base_set" value="15"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="12"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="40"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
@@ -17382,7 +17382,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17398,7 +17398,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17414,7 +17414,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17430,7 +17430,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17447,7 +17447,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17463,7 +17463,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17480,7 +17480,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17496,7 +17496,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17512,7 +17512,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17528,7 +17528,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17545,7 +17545,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17561,7 +17561,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17577,7 +17577,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17594,7 +17594,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17610,7 +17610,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17626,7 +17626,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17643,7 +17643,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17660,7 +17660,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17676,7 +17676,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17692,7 +17692,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17708,7 +17708,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17724,7 +17724,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -17741,7 +17741,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="25"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
@@ -18359,7 +18359,7 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>
 </item>
 
-<!-- DF Book Testing Stuff 
+<!-- DF Testing Stuff 
 
 <item name="PerkBookTest">
 	<property name="Extends" value="unlockBookMaster"/>
@@ -18426,6 +18426,25 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="Weight" value="2"/>
 	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFvehicleFighterJetPlaceable">
+	<property name="Tags" value="vehicle"/>
+	<property name="DescriptionKey" value="vehiclePlaceableGroupDesc"/>
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#ShipTest.unity3d?MilitaryShip.prefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="6000"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="vehicleJokeblimp"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
 </item>
 
 <!-- <item name="AttributeBookTest">

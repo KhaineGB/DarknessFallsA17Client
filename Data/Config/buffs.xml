@@ -4265,6 +4265,21 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 	
+	<buff name="buffBomber" hidden="true">
+		<damage_type value="Heat"/>
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="1"/>
+
+		<effect_group> <!-- run particles -->
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_signal_flareprefab"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_signal_flareprefab"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_signal_flareprefab"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_signal_flareprefab" />
+		</effect_group>
+	</buff>	
+	
 	<!-- <buff name="DFbuffasphalt" name_key="DFbuffasphaltName" description_key="DFbuffasphaltDesc" icon="ui_game_symbol_run">
 		<stack_type value="replace"/>
 		<duration value="5"/>
