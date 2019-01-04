@@ -554,8 +554,7 @@
 		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqPlayerLevel90"/></level_requirements>
 		
         <effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="DFresourceLockpick"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="DFtoolLockpickSet"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="DFresourceLockpick,DFtoolLockpickSet"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="DFtoolLockpickIronSet"/>
         </effect_group>
 			
