@@ -6572,7 +6572,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Overlay0Tint" value="87,87,87"/>-->
 
 <item name="backpackMedium">
-	<property name="CreativeMode" value="None"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -12791,6 +12791,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFmeleeToolPickaxeScrap">
 	<property name="Extends" value="meleeToolPickaxeIron"/>
 	<property name="CustomIcon" value="pickaxeScrap" />
+	<property name="DescriptionKey" value="pickaxeScrapDesc"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="4"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?ScrapPickaxe.prefab"/>
@@ -12834,6 +12835,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFmeleeToolFireaxeScrap">
 	<property name="CustomIcon" value="fireaxeScrap" />
+	<property name="DescriptionKey" value="fireaxeScrapDesc"/>
 	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="17"/>
@@ -12893,6 +12895,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFmeleeToolShovelScrap">
 	<property name="CustomIcon" value="shovelScrap" />
+	<property name="DescriptionKey" value="shovelScrapDesc"/>
 	<property name="Tags" value="melee,medium,tool,perkMotherLode"/>
 	<property name="Extends" value="meleeToolShovelStone"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?ScrapShovel.prefab"/>
@@ -12929,6 +12932,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFmeleeToolMacheteScrap">
 	<property name="CustomIcon" value="scrapMachete" />
+	<property name="DescriptionKey" value="scrapMacheteDesc"/>
 	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="47"/>
@@ -12998,6 +13002,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFmeleeToolHoeScrap">
 	<property name="CustomIcon" value="hoeScrap" />
+	<property name="DescriptionKey" value="hoeScrapDesc"/>
 	<property name="Tags" value="melee,medium,tool,perkLivingOffTheLandCrops"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="50"/>
@@ -13059,6 +13064,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFmeleeToolSteelWrench">
 	<property name="CustomIcon" value="steelWrench" />
+	<property name="DescriptionKey" value="steelWrenchDesc"/>
 	<property name="Tags" value="blunt,melee,light,tool,perkStayDown,perkSalvageOperations"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="29"/>
@@ -13118,6 +13124,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFmeleeToolPickaxeTitanium">
 	<property name="CustomIcon" value="meleeToolPickaxeIron" />
 	<property name="CustomIconTint" value="0033FF"/>
+	<property name="DescriptionKey" value="pickaxeTitaniumDesc"/>
 	<property name="Extends" value="meleeToolPickaxeIron"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="12"/>
@@ -13162,6 +13169,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFmeleeToolFireaxeTitanium">
 	<property name="CustomIcon" value="meleeToolFireaxeIron" />
 	<property name="CustomIconTint" value="0033FF"/>
+	<property name="DescriptionKey" value="fireaxeTitaniumDesc"/>
 	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="17"/>
@@ -13229,6 +13237,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFmeleeToolShovelTitanium">
 	<property name="CustomIcon" value="meleeToolShovelIron" />
 	<property name="CustomIconTint" value="0033FF"/>
+	<property name="DescriptionKey" value="shovelTitaniumDesc"/>
 	<property name="Tags" value="melee,medium,tool,perkMotherLode"/>
 	<property name="Extends" value="meleeToolShovelStone"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?TitaniumShovel.prefab"/>
@@ -13267,8 +13276,9 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFmeleeToolMacheteTitanium">
-	<property name="CustomIcon" value="machete" />
+	<property name="CustomIcon" value="meleeToolMachete" />
 	<property name="CustomIconTint" value="0033FF"/>
+	<property name="DescriptionKey" value="titaniumMacheteDesc"/>
 	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="47"/>
@@ -13337,7 +13347,7 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFmeleeToolChainsawTitanium">
-	<property name="CustomIcon" value="chainsaw" />
+	<property name="CustomIcon" value="meleeToolChainsaw" />
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="chainsawTitaniumDesc"/>
 	<property name="Tags" value="melee,heavy,tool,perkMotherLode,perkDeepCuts,chainsaw"/>
@@ -13410,7 +13420,7 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFmeleeToolAugerTitanium">
-	<property name="CustomIcon" value="auger" />
+	<property name="CustomIcon" value="meleeToolAuger" />
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="augerTitaniumDesc"/>
 	<property name="Tags" value="melee,heavy,tool,perkMotherLode"/>
@@ -13875,7 +13885,7 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFresourceArrowHeadTitanium">
-	<property name="CustomIcon" value="steelArrowHead" />
+	<property name="CustomIcon" value="resourceArrowHeadSteelAP" />
 	<property name="CustomIconTint" value="3399ff"/>
 	<property name="DescriptionKey" value="titaniumArrowHeadDesc"/>
 	<property name="HoldType" value="45"/>
@@ -13911,6 +13921,8 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFammoCrossbowBoltTitanium">
 	<property name="Extends" value="ammoCrossbowBoltIron"/>
+	<property name="CustomIcon" value="titaniumCrossbowBolt" />
+	<property name="DescriptionKey" value="titaniumCrossbowBoltDesc"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
 	<property name="IsSticky" value="true"/>
 	<property name="StickyOffset" value="0.05"/>
@@ -13935,7 +13947,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFmeleeSpearIron">
 	<property name="CustomIcon" value="stoneSpear"/>
-	<property name="DescriptionKey" value="stoneSpearDesc"/>
+	<property name="DescriptionKey" value="ironSpearDesc"/>
 	<property name="Tags" value="melee,medium,tool,perkDeepCuts"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="18"/>
@@ -14111,6 +14123,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFmeleeTooltitaniumCombatAxe">
 	<property name="CustomIcon" value="combatAxe"/>
 	<property name="CustomIconTint" value="0080ff"/>
+	<property name="DescriptionKey" value="titaniumCombatAxeDesc"/>
 	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="17"/>
@@ -14170,7 +14183,7 @@ So no clothing dyes until that can be resolved. -->
 <!-- DF Guns -->
 
 <item name="DFgunPipePistol">
-	<property name="CustomIcon" value="gunP225" />
+	<property name="CustomIcon" value="gunPipePistol" />
 	<property name="DescriptionKey" value="gunPipePistol"/>
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,magazine,firingMode,selfLoading,perkGunslinger"/>
 	<property name="DisplayType" value="rangedGun"/>
@@ -14256,7 +14269,7 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFgunPipeRifle">
-	<property name="CustomIcon" value="gunAR15" />
+	<property name="CustomIcon" value="gunPipeRifle" />
 	<property name="DescriptionKey" value="gunPipeRifleDesc"/>
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
 	<property name="DisplayType" value="rangedGun"/>
@@ -14657,7 +14670,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/>
 
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="400"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
 
 		<passive_effect name="MagazineSize" operation="base_set" value="30"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5"/> <!-- 3.8s -->
@@ -14692,8 +14705,8 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFgunM4A1">
-	<property name="CustomIcon" value="gunAR15" />
-	<property name="DescriptionKey" value="gunAR15Desc"/>
+	<property name="CustomIcon" value="gunM4A1" />
+	<property name="DescriptionKey" value="gunM4A1Desc"/>
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
@@ -14860,6 +14873,267 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>
 </item>
 
+<item name="DFgunCoilpistol">
+	<property name="CustomIcon" value="gunCoilpistol" />
+	<property name="DescriptionKey" value="gunCoilpistolDesc"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,magazine,firingMode,selfLoading,perkGunslinger"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="1"/>
+	<property name="Meshfile" value="#Weapons.unity3d?Coilpistol.prefab"/>
+	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="20"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="meleeToolFlashlight02"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property name="Sound_Sight_In" value="pistol_sight_in"/>
+	<property name="Sound_Sight_Out" value="pistol_sight_out"/>
+	<property name="LightSource" value="lightSource"/> 
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Pistols"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+	<property name="EconomicValue" value="1650"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Magazine_items" value="ammo9mmBullet,ammo9mmBulletSteel"/>
+		<property name="Sound_start" value="a14_pistol_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="a14_pistol_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="55"/>
+		<property name="Zoom_max_in" value="55"/>
+		<property name="ScopeCameraOffset" value="0,.0008,0"/> 
+	</property>
+
+	<effect_group name="Base Effects"> <!-- Pistol -->
+		<passive_effect name="MaxRange" operation="base_set" value="50"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="18,25" tier="1,6"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="0.25"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0.25"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+
+		<passive_effect name="MagazineSize" operation="base_set" value="15"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2s -->
+		<passive_effect name="ModSlots" operation="base_set" value="0" /> 
+		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.5"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.5"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".4"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
+
+		<passive_effect name="KickDegreesVertical" operation="base_set" value="0.8"/> <!-- KickDegrees can have 2 values, the range for kicking up AND down -->
+		<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-.25,.25"/>
+		<display_value name="dRecoil" value="8" />
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/> <!-- crosshair reset speed -->
+
+		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
+	</effect_group>
+	<effect_group name="Action Skills">
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="6">
+			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="24"/>
+	</effect_group>
+</item>
+
+<item name="DFgunCoilrifle">
+	<property name="CustomIcon" value="gunCoilRifle" />
+	<property name="DescriptionKey" value="gunCoilRifleDesc"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="48"/>
+	<property name="Meshfile" value="#Weapons.unity3d?Coilrifle.prefab"/>
+	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
+
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
+
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+
+	<property name="EconomicValue" value="6000"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.150"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Magazine_items" value="ammo762mmBulletFMJ,ammo762mmBulletFMJSteel"/>
+		<property name="Sound_start" value="a14_ak47_fire_start"/>
+		<property name="Sound_repeat" value="#A14GunSounds?a14_ak47_fire_lp"/>
+		<property name="Sound_end" value="#A14GunSounds?a14_ak47_fire_end"/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="ak47_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="55"/>
+		<property name="Zoom_max_in" value="55"/>
+		<property name="ScopeCameraOffset" value="-0.00062,0,0.055"/>
+	</property>
+
+	<effect_group name="Base Effects"> <!-- AK47 -->
+		<passive_effect name="EconomicValue" operation="base_set" value="6000"/>
+		<passive_effect name="MaxRange" operation="base_set" value="90"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50,60" tier="1,6"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="0.25"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0.25"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/>
+
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="400"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+
+		<passive_effect name="MagazineSize" operation="base_set" value="30"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5"/> <!-- 3.8s -->
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.8"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.8"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
+
+		<passive_effect name="KickDegreesVertical" operation="base_set" value="-0.5,1"/>
+		<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-1,1"/>
+		<display_value name="dRecoil" value="5" />
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.55"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/> <!-- ak47 -->
+
+		<passive_effect name="DegradationMax" operation="base_set" value="7000,14000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="16"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<effect_group name="Action Skills">
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="8">
+			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="32"/>
+	</effect_group>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
+<item name="DFgunCoilSniper">
+	<property name="CustomIcon" value="gunCoilRifle" />
+	<property name="DescriptionKey" value="gunCoilSniperDesc"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkDeadEye"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="48"/>
+	<property name="Meshfile" value="#Weapons.unity3d?CoilSniper.prefab"/>
+	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="67"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="meleeToolFlashlight02"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+	<property name="EconomicValue" value="900"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.5"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Magazine_items" value="ammo762mmBulletFMJ,ammo762mmBulletFMJSteel"/>
+		<property name="Reload_time" value="2.5"/>
+		<property name="Sound_start" value="sniperrifle_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="sniperrifle_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+	</property>
+
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="55"/>
+		<property name="Zoom_max_in" value="55"/>
+		<property name="ScopeCameraOffset" value="-0.00062,0,0.055"/>
+	</property>
+
+	<effect_group name="Base Effects"> <!-- Rifle, Sniper -->
+		<passive_effect name="MaxRange" operation="base_set" value="150"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="70,90" tier="1,6"/>
+
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="150"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+
+		<passive_effect name="MagazineSize" operation="base_set" value="5"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2.7s -->
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1,0.2" tier="2,6" tags="EntityDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="6"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.04"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0.8"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>
+
+		<passive_effect name="KickDegreesVertical" operation="base_set" value="1.5,3.0"/>
+		<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.2,0.2"/>
+		<display_value name="dRecoil" value="22" />
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.2"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>
+
+		<passive_effect name="DegradationMax" operation="base_set" value="4400,8800" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="21"/>
+
+		<!--
+		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+		-->
+	</effect_group>
+	<effect_group name="Action Skills">
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="10">
+			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="40"/>
+	</effect_group>
+</item>
+
 <!-- DF Various Items -->
 
 <item name="DFturd"> <!-- because I can -->
@@ -14891,6 +15165,8 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFtoolLockpickSet">
+	<property name="CustomIcon" value="lockpickset" />
+	<property name="DescriptionKey" value="toolLockpickSetDesc"/>
 	<property name="Tags" value="knife,melee,light,tool,lockpick"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="36"/>
@@ -14943,6 +15219,9 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFtoolLockpickIronSet">
+	<property name="CustomIcon" value="lockpickset" />
+	<property name="CustomIconTint" value="FF0000"/>
+	<property name="DescriptionKey" value="toolLockpickIronSetDesc"/>
 	<property name="Tags" value="knife,melee,light,tool,lockpick"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="36"/>
@@ -14995,6 +15274,8 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFresourceLockpick">
+	<property name="CustomIcon" value="Lockpick" />
+	<property name="DescriptionKey" value="resourceLockpickDesc"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -15011,6 +15292,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFemptyBowl">
 	<property name="CustomIcon" value="bowl" />
+	<property name="DescriptionKey" value="emptyBowlDesc"/>
 	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
 	<property name="Material" value="MresourceClayLump"/>
 	<property name="HoldType" value="3"/>
@@ -15075,6 +15357,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFstick">
 	<property name="CustomIcon" value="stick" />
+	<property name="DescriptionKey" value="stickDesc"/>
     <property name="Meshfile" value="Items/Weapons/Melee/Stick/stick" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mwood"/>
@@ -15093,6 +15376,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFsharpRock">
 	<property name="CustomIcon" value="sharpStone" />
+	<property name="DescriptionKey" value="sharpRockDesc"/>
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
 	<property name="Material" value="Mstone"/>
 	<property name="HoldType" value="40"/>
@@ -15199,7 +15483,7 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFtitaniumClawHammer">
-	<property name="CustomIcon" value="clawHammer"/>
+	<property name="CustomIcon" value="meleeToolClawHammer"/>
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="titaniumclawHammerDesc"/>
 	<property name="Tags" value="blunt,melee,hammer,light,tool,perkStayDown"/>
@@ -15335,7 +15619,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFresourceBioFuel">
 	<property name="CustomIcon" value="bioFuel" />
-	<property name="DescriptionKey" value="bioFuelDesc" />
+	<property name="DescriptionKey" value="resourceBioFuelDesc" />
 	<property name="HoldType" value="3"/>
 	<property name="Meshfile" value="Items/Food/honeyPrefab"/>
 	<property name="Material" value="Mglass"/>
@@ -15349,6 +15633,9 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFparamadicKit">
 	<property name="Extends" value="medicalBandage" param1="DescriptionKey"/>
+    <property name="CustomIcon" value="medicalFirstAidKit"/>
+    <property name="CustomIconTint" value="009933"/>
+	<property name="DescriptionKey" value="paramedicKitDesc"/>
 	<property name="Group" value="Science"/>
 	<property name="EconomicValue" value="200"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -15395,6 +15682,9 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFcodeinePills">
 	<property name="DisplayType" value="medicalPainkillers"/>
+    <property name="CustomIcon" value="drugPainkillers"/>
+    <property name="CustomIconTint" value="ffff00"/>
+	<property name="DescriptionKey" value="codeinePillsDesc"/>
 	<property name="HoldType" value="16"/>
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -15651,7 +15941,7 @@ So no clothing dyes until that can be resolved. -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="1"/>
 		<display_value name="staminaAmount" value=".25" />
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,DFbuffTreeSap"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="DFbuffTreeSickness">
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="25,100" operation="LTE" value="10"/>
 		</triggered_effect>
 		<display_value name="FoodPoisoningRisk" value=".25" />
@@ -15688,7 +15978,7 @@ So no clothing dyes until that can be resolved. -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="1"/>
 		<display_value name="staminaAmount" value=".25" />
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,DFbuffTreeSap"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="DFbuffTreeSickness">
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="25,100" operation="LTE" value="10"/>
 		</triggered_effect>
 		<display_value name="FoodPoisoningRisk" value=".25" />
@@ -15704,6 +15994,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFBanana">
 	<property name="CustomIcon" value="Banana" />
+	<property name="DescriptionKey" value="BananaDesc"/>
 	<property name="Meshfile" value="#Plants.unity3d?Banana.prefab" />
 	<property name="HoldType" value="3" />
 	<property name="DisplayType" value="food"/>
@@ -15729,6 +16020,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFCoconut">
 	<property name="CustomIcon" value="Coconut" />
+	<property name="DescriptionKey" value="CoconutDesc"/>
 	<property name="Meshfile" value="#Plants.unity3d?Coconut.prefab" />
 	<property name="HoldType" value="21" />
 	<property name="DisplayType" value="food"/>
@@ -15755,6 +16047,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFApple">
 	<property name="CustomIcon" value="apple" />
+	<property name="DescriptionKey" value="AppleDesc"/>
 	<property name="Meshfile" value="#Plants.unity3d?Apple.prefab" />
 	<property name="HoldType" value="21" />
 	<property name="DisplayType" value="food"/>
@@ -15780,6 +16073,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFOrange">
 	<property name="CustomIcon" value="Orange" />
+	<property name="DescriptionKey" value="OrangeDesc"/>
 	<property name="Meshfile" value="#Plants.unity3d?Orange.prefab" />
 	<property name="HoldType" value="21" />
 	<property name="DisplayType" value="food"/>
@@ -15806,6 +16100,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFCarrot">
 	<property name="CustomIcon" value="carrot" />
+	<property name="DescriptionKey" value="carrotDesc"/>
 	<property name="Meshfile" value="#Plants.unity3d?Carrot.prefab" />
 	<property name="HoldType" value="3" />
 	<property name="DisplayType" value="food"/>
@@ -15831,6 +16126,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFTomato">
 	<property name="CustomIcon" value="Tomato" />
+	<property name="DescriptionKey" value="TomatoDesc"/>
 	<property name="Meshfile" value="#Plants.unity3d?Tomato.prefab" />
 	<property name="HoldType" value="21" />
 	<property name="DisplayType" value="food"/>
@@ -15855,7 +16151,8 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFLime">
-	<!-- <property name="CustomIcon" value="Orange" /> -->
+	<!-- <property name="CustomIcon" value="Orange" /> 
+	<property name="DescriptionKey" value="bottleSapDesc"/> -->
 	<property name="Meshfile" value="#Plants.unity3d?Lime.prefab" />
 	<property name="HoldType" value="21" />
 	<property name="DisplayType" value="food"/>
@@ -15882,6 +16179,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFWheat">
 	<property name="CustomIcon" value="Wheat" />
+	<property name="DescriptionKey" value="WheatDesc"/>
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="15" />
@@ -15893,6 +16191,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFFlour">
 	<property name="CustomIcon" value="flour" />
+	<property name="DescriptionKey" value="FlourDesc"/>
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="15" />
@@ -15904,6 +16203,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFYeast">
 	<property name="CustomIcon" value="yeast" />
+	<property name="DescriptionKey" value="YeastDesc"/>
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="15" />
@@ -15915,6 +16215,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFtomatoJuice">
 	<property name="CustomIcon" value="tomatoJuice" />
+	<property name="DescriptionKey" value="tomatoJuiceDesc"/>
 	<property name="Meshfile" value="Items/Food/redTeaPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -15948,6 +16249,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFappleJuice">
 	<property name="CustomIcon" value="appleJuice" />
+	<property name="DescriptionKey" value="appleJuiceDesc"/>
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -15981,6 +16283,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DForangeJuice">
 	<property name="CustomIcon" value="orangeJuice" />
+	<property name="DescriptionKey" value="orangeJuiceDesc"/>
 	<property name="Meshfile" value="Items/Food/honeyPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -16014,6 +16317,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFcoconutWater">
 	<property name="CustomIcon" value="coconutWater" />
+	<property name="DescriptionKey" value="coconutWaterDesc"/>
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -16091,6 +16395,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFfruitSalad">
 	<property name="CustomIcon" value="fruitSalad" />
+	<property name="DescriptionKey" value="fruitSaladDesc"/>
 	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="23"/>
@@ -16114,11 +16419,11 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>	
 	
 	<property name="Group" value="Food/Cooking"/>
-	<property name="DescriptionKey" value="fruitSaladDesc"/>
 </item>
 
 <item name="DFgrilledYucca">
 	<property name="CustomIcon" value="grilledYuccaFruit" />
+	<property name="DescriptionKey" value="grilledYuccaDesc"/>
 	<property name="Meshfile" value="Items/Food/fruit_yucca"/>
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="14"/>
@@ -16140,11 +16445,11 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>		
 	
 	<property name="Group" value="Food/Cooking"/>
-	<property name="DescriptionKey" value="grilledYuccaDesc"/>
 </item>
 
 <item name="DFbakedApple">
 	<property name="CustomIcon" value="bakedApple" />
+	<property name="DescriptionKey" value="bakedAppleDesc"/>	
 	<property name="Meshfile" value="#Plants.unity3d?Apple.prefab" />
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="14"/>
@@ -16166,11 +16471,11 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>		
 	
 	<property name="Group" value="Food/Cooking"/>
-	<property name="DescriptionKey" value="bakedAppleDesc"/>
 </item>
 
 <item name="DFstickyApple">
 	<property name="CustomIcon" value="stickyApple" />
+	<property name="DescriptionKey" value="stickyAppleDesc"/>
 	<property name="Meshfile" value="#Plants.unity3d?Apple.prefab" />
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="14"/>
@@ -16196,7 +16501,6 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>		
 	
 	<property name="Group" value="Food/Cooking"/>
-	<property name="DescriptionKey" value="stickyAppleDesc"/>
 </item>
 
 <item name="DFbananaBread">
@@ -16380,6 +16684,32 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Food/Cooking"/>
 </item> 
 
+<item name="DFdough">
+	<property name="CustomIcon" value="dough" />
+	<property name="DescriptionKey" value="DoughDesc"/>
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="50"/> 
+	<property name="EconomicValue" value="32"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="subtract" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>	
+	
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
 <item name="DFbread">
 	<property name="CustomIcon" value="Bread" />
 	<property name="DescriptionKey" value="BreadDesc"/>
@@ -16451,32 +16781,6 @@ So no clothing dyes until that can be resolved. -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>	
 	</effect_group>		
-	
-	<property name="Group" value="Food/Cooking"/>
-</item>
-
-<item name="DFdough">
-	<property name="CustomIcon" value="dough" />
-	<property name="DescriptionKey" value="DoughDesc"/>
-	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
-	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="HoldType" value="31"/>
-	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="50"/> 
-	<property name="EconomicValue" value="32"/>
-	<property class="Action1">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_eating"/>
-	</property>
-	
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="subtract" value="10"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
-	</effect_group>	
 	
 	<property name="Group" value="Food/Cooking"/>
 </item>
@@ -16633,6 +16937,8 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <item name="DFtorchSurvival">
+	<property name="CustomIcon" value="meleeToolTorch"/>
+	<property name="DescriptionKey" value="torchSurvivalDesc"/>
 	<property name="Tags" value="blunt,melee,light,tool"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="Class" value="ItemClassTorch"/>
@@ -16732,7 +17038,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFtoolCalipers">
 	<property name="CustomIcon" value="calipers"/>
-	<property name="DescriptionKey" value="calipersDesc"/>
+	<property name="DescriptionKey" value="toolCalipersDesc"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -16761,23 +17067,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Resources" />
 </item>
 
-<item name="DFforgedTitanium">
-	<property name="CustomIcon" value="ingotTitanium" />
-	<property name="DescriptionKey" value="forgedTitaniumDesc"/>
-	<property name="Meshfile" value="Items/Crafting/ingotIron" />
-	<property name="HoldType" value="21" />
-	<property name="Material" value="DFtitanium" />
-	<property name="Stacknumber" value="1000" />
-	<property name="EconomicValue" value="64" />
-	<property name="Group" value="Resources" />
-	<property name="Weight" value="40" />
-	<property name="CraftingIngredientExp" value="15" />
-	<property name="CraftingIngredientTime" value="15" />
-	<property name="RepairTime" value="1" />
-	<property name="RepairAmount" value="400" />
-	<property name="CraftingSkillGroup" value="Construction" />
-</item>
-
 <item name="DFscrapTitanium">
 	<property name="CustomIcon" value="scrapTitanium" />
 	<property name="DescriptionKey" value="scrapTitaniumDesc"/>
@@ -16795,6 +17084,23 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CraftingIngredientTime" value="0.3" />
 </item>
 
+<item name="DFforgedTitanium">
+	<property name="CustomIcon" value="ingotTitanium" />
+	<property name="DescriptionKey" value="forgedTitaniumDesc"/>
+	<property name="Meshfile" value="Items/Crafting/ingotIron" />
+	<property name="HoldType" value="21" />
+	<property name="Material" value="DFtitanium" />
+	<property name="Stacknumber" value="1000" />
+	<property name="EconomicValue" value="64" />
+	<property name="Group" value="Resources" />
+	<property name="Weight" value="40" />
+	<property name="CraftingIngredientExp" value="15" />
+	<property name="CraftingIngredientTime" value="15" />
+	<property name="RepairTime" value="1" />
+	<property name="RepairAmount" value="400" />
+	<property name="CraftingSkillGroup" value="Construction" />
+</item>
+
 <item name="unit_titanium"> <!-- not prefixing with DF to prevent fucking things up -->
 	<property name="Extends" value="unit_iron"/>
 	<property name="CustomIcon" value="scrapTitanium"/>
@@ -16810,7 +17116,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Material" value="DFclassPaper" />
 	<property name="EconomicValue" value="250" />
 	<property name="EconomicBundleSize" value="1" />
-	<!-- <property name="PickupJournalEntry" value="modinfo01_Tip,modinfo2Tip,modinfo3Tip" /> -->
+	<property name="DescriptionKey" value="ClassPaperDesc" />
 </item>
 
 <item name="DFClassPaperMaster">
@@ -16825,7 +17131,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Books" />
 	<property name="EconomicValue" value="250" />
 	<property name="EconomicBundleSize" value="1" />
-	<property name="DescriptionKey" value="ClassPaperItemDesc" />
+	<property name="DescriptionKey" value="ClassPaperDesc" />
 </item>
 
 <item name="DFscrapSkill">
@@ -16860,20 +17166,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Special Items"/>
 </item>
 
-<item name="DFCivilianStartBook">
-	<property name="Extends" value="unlockBookMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="civilianBook" />
-	<property name="CustomIconTint" value="851b7b"/>
-	<property name="DescriptionKey" value="CompleteBookDesc"/>
-    <property class="Action0">
-		<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="attClassCivilian"/>
-		</property>
-	<property name="Stacknumber" value="1"/>
-	<property name="EconomicValue" value="500"/>
-</item>
-
 <item name="DFFarmerClassBook">
 	<property name="CreativeMode" value="Player"/>
 	<property name="HoldType" value="21"/>
@@ -16881,7 +17173,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="DFclassPaper"/>
 	<property name="CustomIcon" value="farmerBook" />
-	<property name="DescriptionKey" value="ClassPaperCivilianDesc" />
+	<property name="DescriptionKey" value="ClassPaperFarmerDesc" />
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="false"/>
@@ -16893,20 +17185,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="Weight" value="2"/>
 	<property name="Group" value="Special Items"/>
-</item>
-
-<item name="DFFarmerStartBook">
-	<property name="Extends" value="unlockBookMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="farmerBook" />
-	<property name="CustomIconTint" value="851b7b"/>
-	<property name="DescriptionKey" value="CompleteBookDesc"/>
-    <property class="Action0">
-		<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="attClassFarmer"/>
-		</property>
-	<property name="Stacknumber" value="1"/>
-	<property name="EconomicValue" value="500"/>
 </item>
 
 <item name="DFFarmerMasteryBook">
@@ -16930,7 +17208,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="DFclassPaper"/>
 	<property name="CustomIcon" value="hunterBook" />
-	<property name="DescriptionKey" value="ClassPaperCivilianDesc" />
+	<property name="DescriptionKey" value="ClassPaperHunterDesc" />
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="false"/>
@@ -16942,20 +17220,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="Weight" value="2"/>
 	<property name="Group" value="Special Items"/>
-</item>
-
-<item name="DFHunterStartBook">
-	<property name="Extends" value="unlockBookMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="hunterBook" />
-	<property name="CustomIconTint" value="851b7b"/>
-	<property name="DescriptionKey" value="CompleteBookDesc"/>
-    <property class="Action0">
-		<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="attClassHunter"/>
-		</property>
-	<property name="Stacknumber" value="1"/>
-	<property name="EconomicValue" value="500"/>
 </item>
 
 <item name="DFHunterMasteryBook">
@@ -16979,7 +17243,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="DFclassPaper"/>
 	<property name="CustomIcon" value="constructionBook" />
-	<property name="DescriptionKey" value="ClassPaperCivilianDesc" />
+	<property name="DescriptionKey" value="ClassPaperLaborerDesc" />
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="false"/>
@@ -16991,20 +17255,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="Weight" value="2"/>
 	<property name="Group" value="Special Items"/>
-</item>
-
-<item name="DFLaborerStartBook">
-	<property name="Extends" value="unlockBookMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="constructionBook" />
-	<property name="CustomIconTint" value="851b7b"/>
-	<property name="DescriptionKey" value="CompleteBookDesc"/>
-    <property class="Action0">
-		<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="attClassLaborer"/>
-		</property>
-	<property name="Stacknumber" value="1"/>
-	<property name="EconomicValue" value="500"/>
 </item>
 
 <item name="DFLaborerMasteryBook">
@@ -17028,7 +17278,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="DFclassPaper"/>
 	<property name="CustomIcon" value="mechanicBook" />
-	<property name="DescriptionKey" value="ClassPaperCivilianDesc" />
+	<property name="DescriptionKey" value="ClassPaperMechanicDesc" />
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="false"/>
@@ -17040,20 +17290,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="Weight" value="2"/>
 	<property name="Group" value="Special Items"/>
-</item>
-
-<item name="DFMechanicStartBook">
-	<property name="Extends" value="unlockBookMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="mechanicBook" />
-	<property name="CustomIconTint" value="851b7b"/>
-	<property name="DescriptionKey" value="CompleteBookDesc"/>
-    <property class="Action0">
-		<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="attClassMechanic"/>
-		</property>
-	<property name="Stacknumber" value="1"/>
-	<property name="EconomicValue" value="500"/>
 </item>
 
 <item name="DFMechanicMasteryBook">
@@ -17077,7 +17313,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="DFclassPaper"/>
 	<property name="CustomIcon" value="scientistBook" />
-	<property name="DescriptionKey" value="ClassPaperCivilianDesc" />
+	<property name="DescriptionKey" value="ClassPaperScientistDesc" />
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="false"/>
@@ -17089,20 +17325,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="Weight" value="2"/>
 	<property name="Group" value="Special Items"/>
-</item>
-
-<item name="DFScientistStartBook">
-	<property name="Extends" value="unlockBookMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="scientistBook" />
-	<property name="CustomIconTint" value="851b7b"/>
-	<property name="DescriptionKey" value="CompleteBookDesc"/>
-    <property class="Action0">
-		<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="attClassScientist"/>
-		</property>
-	<property name="Stacknumber" value="1"/>
-	<property name="EconomicValue" value="500"/>
 </item>
 
 <item name="DFScientistMasteryBook">
@@ -17126,7 +17348,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="DFclassPaper"/>
 	<property name="CustomIcon" value="securityBook" />
-	<property name="DescriptionKey" value="ClassPaperCivilianDesc" />
+	<property name="DescriptionKey" value="ClassPaperSecurityDesc" />
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="false"/>
@@ -17138,20 +17360,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="Weight" value="2"/>
 	<property name="Group" value="Special Items"/>
-</item>
-
-<item name="DFSecurityStartBook">
-	<property name="Extends" value="unlockBookMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="securityBook" />
-	<property name="CustomIconTint" value="851b7b"/>
-	<property name="DescriptionKey" value="CompleteBookDesc"/>
-    <property class="Action0">
-		<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="attClassSecurity"/>
-		</property>
-	<property name="Stacknumber" value="1"/>
-	<property name="EconomicValue" value="500"/>
 </item>
 
 <item name="DFSecuritytMasteryBook">
@@ -17175,7 +17383,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="DFclassPaper"/>
 	<property name="CustomIcon" value="survivalistBook" />
-	<property name="DescriptionKey" value="ClassPaperCivilianDesc" />
+	<property name="DescriptionKey" value="ClassPaperSurvivalistDesc" />
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="false"/>
@@ -17187,20 +17395,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="Weight" value="2"/>
 	<property name="Group" value="Special Items"/>
-</item>
-
-<item name="DFSurvivalistStartBook">
-	<property name="Extends" value="unlockBookMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="survivalistBook" />
-	<property name="CustomIconTint" value="851b7b"/>
-	<property name="DescriptionKey" value="CompleteBookDesc"/>
-    <property class="Action0">
-		<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="attClassSurvivalist"/>
-		</property>
-	<property name="Stacknumber" value="1"/>
-	<property name="EconomicValue" value="500"/>
 </item>
 
 <item name="DFSurvivalistMasteryBook">
@@ -17232,6 +17426,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillArmorBook">
 	<property name="CustomIcon" value="skillCloth-Armor" />
+	<property name="DescriptionKey" value="skillCloth-ArmorBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17244,6 +17439,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillAthleticsBook">
 	<property name="CustomIcon" value="skillAthletics" />
+	<property name="DescriptionKey" value="skillAthleticsBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17256,6 +17452,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillConstructionBook">
 	<property name="CustomIcon" value="skillConstruction" />
+	<property name="DescriptionKey" value="skillConstructionBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17268,6 +17465,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillMiningBook">
 	<property name="CustomIcon" value="skillMining" />
+	<property name="DescriptionKey" value="skillMiningBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17280,6 +17478,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillScavengingBook">
 	<property name="CustomIcon" value="skillScavenging" />
+	<property name="DescriptionKey" value="skillScavengingBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17292,6 +17491,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillArcheryBook">
 	<property name="CustomIcon" value="skillArchery" />
+	<property name="DescriptionKey" value="skillArcheryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17304,6 +17504,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillAutomaticsBook">
 	<property name="CustomIcon" value="skillRifle" />
+	<property name="DescriptionKey" value="skillAutomaticsBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17316,6 +17517,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillBluntBook">
 	<property name="CustomIcon" value="skillBlunt" />
+	<property name="DescriptionKey" value="skillBluntBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17328,6 +17530,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillBladesBook">
 	<property name="CustomIcon" value="skillBlades" />
+	<property name="DescriptionKey" value="skillBladesBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17340,6 +17543,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillPistolBook">
 	<property name="CustomIcon" value="skillPistol" />
+	<property name="DescriptionKey" value="skillPistolBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17352,6 +17556,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillShotgunBook">
 	<property name="CustomIcon" value="skillShotgun" />
+	<property name="DescriptionKey" value="skillShotgunBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -17364,6 +17569,7 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFskillRiflesBook">
 	<property name="CustomIcon" value="skillRifle" />
+	<property name="DescriptionKey" value="skillRifleBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
@@ -18029,6 +18235,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="meleeToolAugerSchematic">
 	<property name="Extends" value="unlockBookMaster"/>
 	<property name="CustomIcon" value="augerSchematic" />
+	<property name="DescriptionKey" value="meleeToolAugerSchematicDesc"/>	
 	<property name="CreativeMode" value="Player"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action0">
@@ -18043,6 +18250,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="meleeToolChainsawSchematic">
 	<property name="Extends" value="unlockBookMaster"/>
 	<property name="CustomIcon" value="chainsawSchematic" />
+	<property name="DescriptionKey" value="meleeToolChainsawSchematicDesc"/>	
 	<property name="CreativeMode" value="Player"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action0">
@@ -18057,6 +18265,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="batterybankSchematic">
 	<property name="Extends" value="unlockBookMaster"/>
 	<property name="CustomIcon" value="batterybankSchematic" />
+	<property name="DescriptionKey" value="batterybankSchematicDesc"/>	
 	<property name="CreativeMode" value="Player"/>
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action0">
@@ -18070,6 +18279,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="beerSchematic">
 	<property name="Extends" value="unlockBookMaster"/>
 	<property name="CustomIcon" value="beerBook" />
+	<property name="DescriptionKey" value="beerSchematicDesc"/>	
 	<property name="CreativeMode" value="Player"/>
 	<property class="Action0">
 		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
@@ -18082,6 +18292,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="drugHerbalAntibioticsRecipeSchematic">
 	<property name="Extends" value="unlockBookMaster"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="drugHerbalAntibioticsRecipeSchematicDesc"/>	
 	<property name="EconomicValue" value="500"/>
 	<property name="CustomIcon" value="schematicMaster"/>
 	<property class="Action0">
@@ -18095,6 +18306,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="meleeToolSledgehammerSchematic">
 	<property name="Extends" value="unlockBookMaster"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="meleeToolSledgehammerSchematicDesc"/>	
 	<property name="EconomicValue" value="500"/>
 	<property name="CustomIcon" value="schematicMaster"/>
 	<property class="Action0">
@@ -18103,6 +18315,22 @@ So no clothing dyes until that can be resolved. -->
 	<effect_group tiered="false">
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSledgehammer" operation="set" value="1"/>
 	</effect_group>
+</item>
+
+<item name="DFWatch">
+	<property name="CustomIcon" value="watch"/>
+	<property name="DescriptionKey" value="WatchDesc"/> 
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="ItemClassWatch, Mods"/>	
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="#Watch.unity3d?Watch.prefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="Weight" value="5"/>
+	<property name="FuelValue" value="5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="Group" value="Books"/>
 </item>
 
 <!-- DF Zombie & NPC Weapons -->
@@ -18386,7 +18614,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Class" value="GainSkill"/>
 			<property name="Skills_to_gain" value="attClassCivilian"/>
 		</property>
-</item> -->
+</item> 
 
 <item name="QuestBookTest">
 	<property name="CreativeMode" value="Player"/>
@@ -18445,7 +18673,7 @@ So no clothing dyes until that can be resolved. -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
 	</effect_group>
-</item>
+</item> -->
 
 <!-- <item name="AttributeBookTest">
 	<property name="Extends" value="unlockBookMaster"/>

@@ -3623,7 +3623,7 @@
 	<property name="AITask-4" value=""/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC,EntityPlayer,EntityZombie,EntityZombieCop,EntityVulture"/>
 	<property name="AITarget-2" value="BlockingTargetTask"/>
-	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityNPC,0,EntityZombie,0,EntityZombieCop,0,EntityVulture,0"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityZombie,0,EntityZombieCop,0,EntityVulture,0"/>
 	
 	<property name="MaxHealth" value="150"/>
 	<property name="MaxViewAngle" value="180"/>

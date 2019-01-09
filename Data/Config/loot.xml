@@ -1526,13 +1526,11 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="meleeToolPickaxeSteel"/>
 	<item name="meleeToolFireaxeSteel"/>
 	<item name="meleeToolShovelSteel"/>
-	<!-- <item name="toolCalipers" prob="0.09"/> -->
 	<item name="toolAndDieSet" prob="0.09"/>
 	<item name="gunToolNailgun" loot_prob_template="probTemplate1.0"/>
 </lootgroup>
 
 <lootgroup name="tools" count="1">
-	<item name="meleeToolStoneAxe" prob="0.5"/>
 	<item name="meleeToolPickaxeIron"/>
 	<item name="meleeToolShovelIron"/>
 	<item name="meleeToolFireaxeIron"/>
@@ -1546,6 +1544,10 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="resourceForgedSteel" count="1,4" prob="0.22"/>
 	<item name="meleeToolPaintTool" prob="0.3"/>
 	<item name="meleeToolWireTool"/>
+	<item name="DFtoolsewingKit" prob="0.15"/>	
+	<item name="DFtooltanningRack" prob="0.15"/>	
+	<item name="DFtoolweldingTorch" prob="0.15"/>	
+	<item name="DFtoolCalipers" prob="0.15"/>		
 </lootgroup>
 
 <lootgroup name="workingStiffs" count="1">
@@ -1564,7 +1566,6 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="ironDoor1_v1"/>
 	<item name="meleeToolSledgehammer"/>
 	<item name="gunToolNailgun" loot_prob_template="probTemplate1.0"/>
-	<!-- <item name="toolCalipers" prob="0.67"/> -->
 	<item name="toolAndDieSet" loot_prob_template="probTemplate0.75"/>
 	<item group="rareTools"/>
 	<item group="automotive" prob="2"/>
@@ -1577,7 +1578,10 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item group="dyes" prob="0.2"/>
 	<item name="meleeToolPaintTool" prob="0.4"/>
 	<item name="meleeToolWireTool"/>
-	<!-- <item name="paintMagazineMasonry" prob="0.4"/> -->
+	<item name="DFtoolsewingKit" prob="0.35"/>	
+	<item name="DFtooltanningRack" prob="0.35"/>	
+	<item name="DFtoolweldingTorch" prob="0.35"/>	
+	<item name="DFtoolCalipers" prob="0.35"/>	
 </lootgroup>
 
 <lootgroup name="rareMedicine" count="1">
@@ -2094,7 +2098,7 @@ questAmmo
 the loot group AND loot entry allow usage
 if the loot entry for mods is empty then it will use the lootgroup mods and mod_chance -->
 
-
+	
 <!-- empty, storage containers the player crafts-->
 <lootcontainer id="1" count="0" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 	<item name="cobweb" count="1,2"/>
@@ -2136,6 +2140,12 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="weaponsPistol+ammo" prob="1.5"/>
 	<item name="meleeToolFlashlight02"/>
 	<item name="cigar" prob=".6"/>
+	<item name="DFresourceLockpick" prob="0.5"/>
+	<item name="DFtoolLockpickSet" prob="0.15"/>
+	<item name="DFtoolLockpickIronSet" prob="0.05"/>		
+	<item name="DFink" prob="0.15"/>	
+	<item name="DFquill" prob="0.15"/>	
+	<item name="DFWatch" prob="0.05"/>		
 </lootcontainer>
 
 <!-- medicine cabinets -->
@@ -2155,6 +2165,9 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="resourceAcid" count="1,2" />
 	<item name="resourcePotassiumNitratePowder" count="2,6" />
 	<item group="ammo"/>
+	<item name="DFresourceLockpick" prob="0.5"/>
+	<item name="DFtoolLockpickSet" prob="0.15"/>
+	<item name="DFtoolLockpickIronSet" prob="0.05"/>		
 </lootcontainer>
 
 <!-- backpack, place where people stash things, -->
@@ -2259,6 +2272,9 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<!-- <item name="paintMagazineMetal" prob="0.03"/> -->
 	<item group="electricalDevices" prob="0.01"/>
 	<item group="ammo"/>
+	<item name="DFresourceLockpick" prob="0.5"/>
+	<item name="DFtoolLockpickSet" prob="0.15"/>
+	<item name="DFtoolLockpickIronSet" prob="0.05"/>		
 </lootcontainer>
 
 <!-- 23 see below !!! -->
@@ -2275,7 +2291,11 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="weaponsPistol+ammo" prob="1.5"/>
 	<item name="meleeToolFlashlight02"/>
 	<item name="cigar" prob=".3"/>
-
+	<item name="DFink" prob="0.15"/>	
+	<item name="DFquill" prob="0.15"/>
+	<item name="DFresourceLockpick" prob="0.5"/>
+	<item name="DFtoolLockpickSet" prob="0.15"/>
+	<item name="DFtoolLockpickIronSet" prob="0.05"/>		
 </lootcontainer>
 
 <!-- birds nest-->
@@ -2331,6 +2351,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="weaponsAdvancedGuns+ammo" prob="0.015"/>
 	<item group="weaponsMelee" prob="0.03"/>
 	<item group="ammo"/>
+	<item name="DFWatch" prob="0.05"/>		
 </lootcontainer>
 
 <!-- Bath tub filled with... don't ask. -->
@@ -2410,6 +2431,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="medicine" prob="0.05"/>
 	<item group="trophyGroup"/>
 	<item name="resourceGunPowder" count="1,5"/>
+	<item name="DFWatch" prob="0.05"/>		
 </lootcontainer>
 
 <!-- file cabinet -->
@@ -2421,6 +2443,8 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="oldCash" count="1,6" prob="0.3"/>
 	<item name="drugPainkillers" prob="0.05"/>
 	<item group="trophyGroup"/>
+	<item name="DFink" prob="0.15"/>	
+	<item name="DFquill" prob="0.15"/>	
 </lootcontainer>
 
 <!-- cooler loot -->
@@ -2771,6 +2795,10 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="meleeToolSledgehammer" prob="0.4"/>
 	<item name="gunToolNailgun" prob="0.4"/>
 	<item group="electricalDevices" prob="2"/>
+	<item name="DFtoolsewingKit" prob="0.15"/>	
+	<item name="DFtooltanningRack" prob="0.15"/>	
+	<item name="DFtoolweldingTorch" prob="0.15"/>	
+	<item name="DFtoolCalipers" prob="0.15"/>		
 </lootcontainer>
 
 <!-- bookstore shipping crate -->
@@ -2802,6 +2830,10 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<!-- <item name="toolCalipers" prob="0.1"/> -->
 	<item name="toolAndDieSet" prob="0.1"/>
 	<item group="minibikeParts" prob="6"/>
+	<item name="DFtoolsewingKit" prob="0.15"/>	
+	<item name="DFtooltanningRack" prob="0.15"/>	
+	<item name="DFtoolweldingTorch" prob="0.15"/>	
+	<item name="DFtoolCalipers" prob="0.15"/>		
 </lootcontainer>
 
 <!-- cntCollapsedForge -->

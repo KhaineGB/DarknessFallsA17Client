@@ -881,7 +881,7 @@
 		</objective>
 
 		<reward type="Exp" value="1000" />
-		<reward type="Item" id="casinoCoin" value="200-500" />
+		<reward type="Item" id="casinoCoin" value="500-750" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="1" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="1" />
@@ -935,7 +935,7 @@
 		</objective>
 
 		<reward type="Exp" value="1500" />
-		<reward type="Item" id="casinoCoin" value="500-750" />
+		<reward type="Item" id="casinoCoin" value="750-1000" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="2" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="2" />
@@ -988,7 +988,7 @@
 		</objective>
 
 		<reward type="Exp" value="2000" />
-		<reward type="Item" id="casinoCoin" value="750-1000" />
+		<reward type="Item" id="casinoCoin" value="1000-1250" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="3" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="3" />
@@ -1041,7 +1041,7 @@
 		</objective>
 
 		<reward type="Exp" value="2500" />
-		<reward type="Item" id="casinoCoin" value="1000-1250" />
+		<reward type="Item" id="casinoCoin" value="1250-1500" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="4" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="4" />
@@ -1094,7 +1094,7 @@
 		</objective>
 
 		<reward type="Exp" value="3000" />
-		<reward type="Item" id="casinoCoin" value="1250-1500" />
+		<reward type="Item" id="casinoCoin" value="1500-1750" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="5" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="5" />
@@ -1147,7 +1147,7 @@
 		</objective>
 
 		<reward type="Exp" value="3500" />
-		<reward type="Item" id="casinoCoin" value="1500-1750" />
+		<reward type="Item" id="casinoCoin" value="1750-2000" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="6" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="6" />
@@ -1203,7 +1203,7 @@
 		</objective>
 
 		<reward type="Exp" value="1000" />
-		<reward type="Item" id="casinoCoin" value="250-500" />
+		<reward type="Item" id="casinoCoin" value="500-750" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="1" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="1" />
@@ -1259,7 +1259,7 @@
 		</objective>
 
 		<reward type="Exp" value="1500" />
-		<reward type="Item" id="casinoCoin" value="500-750" />
+		<reward type="Item" id="casinoCoin" value="750-1000" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="2" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="2" />
@@ -1316,7 +1316,7 @@
 		</objective>
 
 		<reward type="Exp" value="2000" />
-		<reward type="Item" id="casinoCoin" value="750-1000" />
+		<reward type="Item" id="casinoCoin" value="1000-1250" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="3" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="3" />
@@ -1373,7 +1373,7 @@
 		</objective>
 
 		<reward type="Exp" value="2500" />
-		<reward type="Item" id="casinoCoin" value="1000-1250" />
+		<reward type="Item" id="casinoCoin" value="1250-1500" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="4" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="4" />
@@ -1429,7 +1429,7 @@
 		</objective>
 
 		<reward type="Exp" value="3000" />
-		<reward type="Item" id="casinoCoin" value="1250-1500" />
+		<reward type="Item" id="casinoCoin" value="1500-1750" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="5" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="5" />
@@ -1485,7 +1485,7 @@
 		</objective>
 
 		<reward type="Exp" value="3500" />
-		<reward type="Item" id="casinoCoin" value="1500-1750" />
+		<reward type="Item" id="casinoCoin" value="1750-2000" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="6" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="6" />
@@ -1542,7 +1542,7 @@
 		</objective>
 
 		<reward type="Exp" value="2000" />
-		<reward type="Item" id="casinoCoin" value="750-1000" />
+		<reward type="Item" id="casinoCoin" value="1000-1250" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="2" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="2" />
@@ -1599,7 +1599,7 @@
 		</objective>
 
 		<reward type="Exp" value="2500" />
-		<reward type="Item" id="casinoCoin" value="1000-1250" />
+		<reward type="Item" id="casinoCoin" value="1250-1500" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="3" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="3" />
@@ -1656,7 +1656,7 @@
 		</objective>
 
 		<reward type="Exp" value="3000" />
-		<reward type="Item" id="casinoCoin" value="1250-1500" />
+		<reward type="Item" id="casinoCoin" value="1500-1750" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="4" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="4" />
@@ -1713,7 +1713,7 @@
 		</objective>
 
 		<reward type="Exp" value="3500" />
-		<reward type="Item" id="casinoCoin" value="1500-1750" />
+		<reward type="Item" id="casinoCoin" value="1750-2000" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="5" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="5" />
@@ -1770,7 +1770,7 @@
 		</objective>
 
 		<reward type="Exp" value="4000" />
-		<reward type="Item" id="casinoCoin" value="1750-2000" />
+		<reward type="Item" id="casinoCoin" value="2000-2250" />
 
 		<reward type="LootItem" id="questTools" ischosen="true" isfixed="true" value="6" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="6" />
@@ -1830,7 +1830,7 @@
 		</objective>
 
 		<reward type="Exp" value="2000" />
-		<reward type="Item" id="casinoCoin" value="750-1000" />
+		<reward type="Item" id="casinoCoin" value="1000-1500" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="2" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="2" />
@@ -1891,7 +1891,7 @@
 		</objective>
 
 		<reward type="Exp" value="2500" />
-		<reward type="Item" id="casinoCoin" value="1000-1250" />
+		<reward type="Item" id="casinoCoin" value="1500-2000" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="3" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="3" />
@@ -1952,7 +1952,7 @@
 		</objective>
 
 		<reward type="Exp" value="3000" />
-		<reward type="Item" id="casinoCoin" value="1250-1500" />
+		<reward type="Item" id="casinoCoin" value="2000-2500" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="4" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="4" />
@@ -2013,7 +2013,7 @@
 		</objective>
 
 		<reward type="Exp" value="3500" />
-		<reward type="Item" id="casinoCoin" value="1500-1750" />
+		<reward type="Item" id="casinoCoin" value="2500-3000" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="5" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="5" />
@@ -2073,7 +2073,7 @@
 		</objective>
 
 		<reward type="Exp" value="4000" />
-		<reward type="Item" id="casinoCoin" value="1750-2000" />
+		<reward type="Item" id="casinoCoin" value="3000-3500" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="6" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="6" />
@@ -2134,7 +2134,7 @@
 		</objective>
 
 		<reward type="Exp" value="3000" />
-		<reward type="Item" id="casinoCoin" value="1250-1500" />
+		<reward type="Item" id="casinoCoin" value="1500-2000" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="3" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="3" />
@@ -2196,7 +2196,7 @@
 		</objective>
 
 		<reward type="Exp" value="3500" />
-		<reward type="Item" id="casinoCoin" value="1500-1750" />
+		<reward type="Item" id="casinoCoin" value="1500-2000" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="4" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="4" />
@@ -2258,7 +2258,7 @@
 		</objective>
 
 		<reward type="Exp" value="4000" />
-		<reward type="Item" id="casinoCoin" value="1750-2000" />
+		<reward type="Item" id="casinoCoin" value="2000-2500" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="5" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="5" />
@@ -2319,7 +2319,7 @@
 		</objective>
 
 		<reward type="Exp" value="4500" />
-		<reward type="Item" id="casinoCoin" value="2000-2250" />
+		<reward type="Item" id="casinoCoin" value="2500-3000" />
 
 		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="6" />
 		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="6" />
@@ -2368,7 +2368,7 @@
 		</objective>
 
 		<reward type="Exp" value="1000" />
-		<reward type="Item" id="casinoCoin" value="1500-1750" />
+		<reward type="Item" id="casinoCoin" value="1750-2000" />
 
 		<reward type="LootItem" id="questMedical" ischosen="true" isfixed="true" value="1" />
 		<reward type="LootItem" id="questMelee,questRanged,questArmor" ischosen="true" isfixed="true" value="1" />
@@ -4047,6 +4047,7 @@
 		<objective type="Craft" id="DFmeleeToolPickaxeScrap" value="1" />
 	
 		<reward type="Skill" id="attClassSurvivalist" value="1" />
+		<reward type="Recipe" id="DFWatch" />
 		<reward type="Exp" value="100" />
     </quest> 
 	

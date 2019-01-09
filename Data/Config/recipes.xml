@@ -3434,17 +3434,17 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceLeather" count="5"/>
 </recipe>
 
-<recipe name="DFclubTitanium" count="1" tags="learnable">
+<recipe name="DFclubTitanium" count="1" craft_area="workbench" craft_tool="meleeToolClawHammer" tags="learnable">
 	<ingredient name="DFforgedTitanium" count="15"/>
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
 
-<recipe name="DFtitaniumSledgehammer" count="1" craft_area="workbench" craft_tool="meleeToolWrench">
+<recipe name="DFtitaniumSledgehammer" count="1" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
 	<ingredient name="DFforgedTitanium" count="30"/>
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
 
-<recipe name="DFtitaniumHuntingKnife" count="1" tags="learnable">
+<recipe name="DFtitaniumHuntingKnife" count="1" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
 	<ingredient name="DFforgedTitanium" count="8"/>
 	<ingredient name="resourceWood" count="4"/>
 	<ingredient name="resourceLeather" count="2"/>
@@ -4083,7 +4083,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <!-- Security Mastery -->
 
-<recipe name="DFclubTitaniumSpiked" count="1" tags="learnable">
+<recipe name="DFclubTitaniumSpiked" count="1" craft_area="workbench" craft_tool="meleeToolClawHammer" tags="learnable">
 	<ingredient name="DFforgedTitanium" count="10"/>
 	<ingredient name="resourceWood" count="10"/>
 	<ingredient name="resourceNail" count="5"/>
@@ -4138,6 +4138,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceAnimalFat" count="1"/>
 	<ingredient name="resourceCloth" count="1"/>
 	<ingredient name="resourceWood" count="1"/>
+</recipe>
+
+<recipe name="DFWatch" count="1" craft_area="workstationMetal" craft_tool="DFtoolCalipers" tags="learnable">
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceSpring" count="5"/>
 </recipe>
 
 <!-- Advanced Forge Recipies -->
@@ -5991,10 +5997,25 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="DFquill" count="1"/>
 </recipe>
 
-<!-- Craftable items for quests -->
+<!-- Battery and Engine Crafting -->
 
-<recipe name="DFFetchwoodFrameBlock" count="1">
-	<ingredient name="resourceWood" count="2"/>
+<recipe name="resourceAcid" count="1" craft_area="chemistryStation" tags="learnable">
+	<ingredient name="resourceCoal" count="5"/>
+	<ingredient name="drinkJarBoiledWater" count="1" />
+</recipe>
+
+<recipe name="smallEngine" count="1" craft_area="workstationMetal" tags="learnable">
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="20"/>
+	<ingredient name="resourceElectricParts" count="20"/>
+	<ingredient name="resourceSilverNugget" count="5"/>
+</recipe>
+
+<recipe name="carBattery" count="1" craft_area="workstationMetal" tags="learnable">
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="resourceScrapLead" count="10"/>
+	<ingredient name="resourceScrapBrass" count="10"/>	
+	<ingredient name="resourceAcid" count="1" />
 </recipe>
 
 </recipes>

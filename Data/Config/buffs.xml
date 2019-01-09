@@ -4221,9 +4221,29 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>			
 	</buff>
 
-	<buff name="DFbuffOrangeTea" name_key="DFbuffOrangeTeaName" description_key="DFbuffOrangeTeaDesc" icon="ui_game_symbol_coffee" tags="drug">
+	<buff name="DFbuffOrangeTea" name_key="DFbuffOrangeTeaName" description_key="DFbuffOrangeTeaDesc" tooltip_key="DFbuffOrangeTeaTooltip" icon="ui_game_symbol_coffee" tags="drug">
 		<stack_type value="duration"/>
-		<duration value="60"/>
+		<duration value="120"/>
+		
+		<effect_group name="Cure Food Poisoning 0">
+			<requirement name="HasBuff" buff="buffIllFoodPoisoning0"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllFoodPoisoning0"/>
+		</effect_group>
+
+		<effect_group name="Cure Food Poisoning 1">
+			<requirement name="HasBuff" buff="buffIllFoodPoisoning1"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllFoodPoisoning1"/>
+		</effect_group>
+
+		<effect_group name="Cure Food Poisoning 2">
+			<requirement name="HasBuff" buff="buffIllFoodPoisoning2"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllInfection2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffIllFoodPoisoning2"/>
+		</effect_group>
+		
 		<effect_group>
 		<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25">
 			<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
@@ -4236,7 +4256,7 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 	
-	<buff name="DFbuffTreeSap" name_key="DFbuffTreeSapName" description_key="DFbuffTreeSapDesc" icon="ui_game_symbol_coffee" tags="drug">
+	<buff name="DFbuffTreeSap" name_key="DFbuffTreeSapName" description_key="DFbuffTreeSapDesc" tooltip_key="DFbuffTreeSapTooltip" icon="ui_game_symbol_coffee" tags="drug">
 		<stack_type value="replace"/>
 		<duration value="60"/>
 		<effect_group>
@@ -4248,6 +4268,24 @@ icon="ui_game_symbol_pack_mule"
 		</passive_effect>
 		</effect_group>
 	</buff>
+	
+	<buff name="DFbuffTreeSickness" name_key="DFbuffTreeSicknessName" description_key="DFbuffTreeSicknessDesc" tooltip_key="DFbuffTreeSicknessTooltip" icon="ui_game_symbol_food_poisoning" icon_color="255,128,0">
+		<damage_type value="Disease"/>
+		<stack_type value="ignore"/>
+		<duration value="300"/>
+		<effect_group>
+			<passive_effect name="PerkLevel" operation="base_subtract" value="2" tags="perkFortitude,perkStrength" />
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+
+			<passive_effect name="StaminaChangeOT" operation="base_subtract" value="1.5" />
+			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="0.1" />
+			<passive_effect name="StaminaMaxModifierOT" operation="base_subtract" value="0.1" />
+
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffIllnessIndicatorTrigger"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffIllnessIndicatorTrigger"/>
+		</effect_group>
+	</buff>	
 	
 	<buff name="buffAthleticsSkillXPTick" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>

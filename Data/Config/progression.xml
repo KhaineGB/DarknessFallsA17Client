@@ -1044,7 +1044,7 @@
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="2" desc_key="reqClassQuestComplete"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,vehicleMotorcyclePlaceable,vehicle4x4TruckChassis,vehicle4x4TruckAccessories,vehicle4x4TruckPlaceable,DFoilPump,DFmeleeToolSteelWrench"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,vehicleMotorcyclePlaceable,vehicle4x4TruckChassis,vehicle4x4TruckAccessories,vehicle4x4TruckPlaceable,DFoilPump,DFmeleeToolSteelWrench,smallEngine,carBattery"/>
 			<effect_description level="1" desc_key="perkMasterMechanicRank1Desc"/>
 		</effect_group>
 	</perk>
@@ -1140,7 +1140,7 @@
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassScientist" operation="GTE" value="2" desc_key="reqClassQuestComplete"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drugAntibiotics,DFparamadicKit,DFcodeinePills,DFresourceBioFuel"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drugAntibiotics,DFparamadicKit,DFcodeinePills,DFresourceBioFuel,resourceAcid"/>
 			<effect_description level="1" desc_key="perkMasterScientistRank1Desc"/>
 		</effect_group>
 	</perk>
