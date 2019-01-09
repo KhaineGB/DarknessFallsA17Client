@@ -28544,61 +28544,6 @@ ore block visualisation end -->
 	<property name="CraftingSkillGroup" value="Traps"/>
 </block>
 
-<!-- Blocks that constantly spawn mobs -->
-
-<block name="DFAirDowngrade"> <!-- This is for downgrading -->
-	<property name="Material" value="Mair"/>
-	<property name="Shape" value="Invisible"/>
-	<property name="Texture" value="250"/>
-	<property name="FilterTags" value="fterrain"/>
-	<property name="SortOrder1" value="d0j0"/>
-	<property name="SortOrder2" value="0050"/>
-</block>
-
-<block name="NestTest">
-	<property name="Class" value="Spawner, Mods" />		
-	<property name="Material" value="Mmetal_hard" />		
-	<property name="Shape" value="ModelEntity" />
-	<property name="Model" value="Entities/Misc/body_bag_yellowPrefab"/>	
-	<property name="TickRate" value="100" />
-	<property name="SpawnRadius" value="25" />
-	<property name="SpawnArea" value="15" />
-	<property name="NumberToSpawn" value="5" />
-	<property name="MaxSpawned" value="25" />
-	<property name="CheckArea" value="100" />
-	<property name="EntityGroup" value="ZombiesDayNoUMA" />
-	<property name="CanPickup" value="false" />
-	<property name="DowngradeBlock" value="Nest2Test" />	
-	<property name="Group" value="Building" />
-</block>
-
-<block name="Nest2Test">	
-		<property name="Class" value="Loot" />
-		<property name="LootList" value="92" />	
-		<property name="Material" value="Mmetal_hard" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="Entities/Misc/body_bagPrefab"/>			
-			<property name="CanPickup" value="false" />			
-		<property name="Group" value="Building" />
-</block>
-
-<block name="GuardTest">
-	<property name="Class" value="Spawner, Mods" />		
-	<property name="Material" value="Mmetal_hard" />		
-	<property name="Shape" value="ModelEntity" />
-	<property name="Model" value="Entities/LootContainers/weapon_bags_largePrefab"/>
-	<property name="TickRate" value="100" />
-	<property name="SpawnRadius" value="1" />
-	<property name="SpawnArea" value="1" />
-	<property name="NumberToSpawn" value="1" />
-	<property name="MaxSpawned" value="1" />
-	<property name="CheckArea" value="25" />
-	<property name="EntityGroup" value="GuardsMale" />
-	<property name="CanPickup" value="false" />
-	<property name="UpgradeRated.ToBlock" value="DFAirDowngrade"/>
-	<property name="UpgradeRated.Rate" value="3"/> <!-- The coder told me that "63 or maybe more" is max for this timer. -->
-	<property name="Group" value="Building" />
-</block>
 
 <!--
 Block replacements
