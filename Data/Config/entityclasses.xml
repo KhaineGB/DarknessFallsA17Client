@@ -3062,7 +3062,7 @@
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_minibike"/>
 </entity_class>
--->
+
 
 <entity_class name="vehicleJokeblimp">
 	<property name="Tags" value="vehicle"/>
@@ -3080,7 +3080,7 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_minibike"/>
-</entity_class>
+</entity_class> -->
 
 <entity_class name="supplyPlane">
 	<property name="Tags" value="vehicle"/>
