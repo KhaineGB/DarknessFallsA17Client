@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False"/>
+    <property name="AllowTopSoilDecorations" value="False"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="ExcludePOICulling" value="False"/>
+    <property name="DifficultyTier" value="1"/>
+    <property name="Zoning" value="Commercial,Residential"/>
+    <property name="YOffset" value="-10"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="StaticSpawner.Size" value="131, 25, 131"/>
+    <property name="AllowedBiomes" value="wasteland"/>
+    <property name="AllowedTownships" value="wilderness,city"/>
+    <property name="EditorGroups" value="commercial, downtown, industrial, Wilderness, rural"/>
+    <property name="SleeperVolumeStart" value="95, 27, 59#95, 27, 59#0, 9, 43#0, 9, 0#0, 9, 13#0, 9, 25#2, 9, 0#43, 9, 25#27, 9, 44#35, 9, 0#54, 9, 26#46, 9, 22#54, 9, 0#67, 9, 9#86, 9, 0#95, 27, 59"/>
+    <property name="SleeperVolumeSize" value="-93, -25, -57#-93, -25, -57#17, 21, 18#15, 21, 19#21, 21, 36#46, 21, 36#47, 21, 34#11, 9, 20#40, 21, 17#38, 21, 36#11, 9, 19#42, 21, 39#39, 21, 25#30, 21, 50#11, 21, 14#-93, -25, -57"/>
+    <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,1,2,S_Zom_Utility_Worker,1,2,S_-Group_Generic_Zombie,1,2,S_Zom_Utility_Worker,1,2,S_Zom_Utility_Worker,1,2,S_-Group_Generic_Zombie,1,2,S_Zom_Businessman,1,2,S_-Group_Generic_Zombie,1,2,S_Zom_Utility_Worker,1,2,S_Zom_Businessman,1,2,S_Zom_Businessman,1,2,S_Zom_Businessman,1,2,S_Zom_Utility_Worker,1,2,S_Zom_Utility_Worker,1,2,S_Zom_Utility_Worker,1,2,S_Zom_Utility_Worker,1,2"/>
+    <property name="SleeperVolumeGameStageAdjust" value="medium,200,medium,medium,100,250,250,200,medium,250,250,medium,250,medium,medium,easy"/>
+    <property name="SleeperIsLootVolume" value="False,False,True,False,False,False,False,True,False,False,False,False,False,False,False,False"/>
+    <property name="SleeperIsBossVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False"/>
+</prefab>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="Zoning" value="ResidentialNew" />
+    <property name="RotationToFaceNorth" value="3" />
+    <property name="YOffset" value="-5" />
+    <property name="DistantPOIYOffset" value="0" />
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland" />
+    <property name="AllowedTownships" value="city,town" />
+    <property name="SleeperVolumeStart" value="2, 5, 2#1, 9, 1" />
+    <property name="SleeperVolumeSize" value="20, 3, 33#15, 3, 33" />
+    <property name="SleeperVolumeGroup" value="S_-_Group_Hospital,2,3,S_-_Group_Hospital,3,4" />
+    <property name="SleeperVolumeGameStageAdjust" value="," />
+    <property name="SleeperIsLootVolume" value="False,False" />
+    <property name="EditorGroups" value="Wilderness" />
+    <property name="SleeperIsBossVolume" value="False,False" />
+    <property name="DifficultyTier" value="1" />
+    <property name="QuestTags" value="clear,fetch,hidden_cache" />
+    <property name="ExcludePOICulling" value="False" />
+</prefab>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="False"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="True"/>
+    <property name="Zoning" value="Commercial,Downtown,Industrial,ResidentialNew,ResidentialOld"/>
+    <property name="RotationToFaceNorth" value="0"/>
+    <property name="YOffset" value="-29"/>
+    <property name="DistantPOIYOffset" value="-11"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,rural,town,wilderness"/>
+    <property name="SleeperVolumeStart" value="29,21,65#32,29,46#14,29,17#16,29,17#31,29,35#52,15,26#46,15,36#49,29,44#51,30,18#52,30,15#28,21,76#18,29,37#43,22,20#63,22,16#30,22,33#55,22,36#26,22,50#43,22,8#33,22,9#20,22,11#26,22,4#37,22,38#45,30,20#43,21,62#13,12,14#9,12,2#5,12,17#11,7,50#15,7,58#15,7,65#3,7,55#3,7,30#17,7,47#3,7,21#3,7,12#15,7,22#50,6,26#63,7,13#55,7,43#63,7,36#39,7,10#39,7,36#31,6,77#30,4,59#37,53,35#55,19,39#59,15,37#47,15,22#53,18,20#39,29,38#43,29,49"/>
+    <property name="SleeperVolumeSize" value="9,3,11#11,3,12#4,3,19#13,7,14#4,3,3#10,9,8#8,3,5#10,3,22#12,3,15#4,3,3#25,3,5#3,3,19#6,3,4#3,3,12#10,3,3#6,3,3#11,3,6#5,3,7#5,3,6#6,3,7#5,3,6#6,3,3#6,3,5#11,3,7#8,3,15#7,3,6#3,3,7#3,3,22#6,3,5#6,3,5#7,3,7#7,3,6#4,3,9#7,3,6#7,3,6#6,3,5#15,6,8#4,3,3#4,3,5#10,3,11#6,3,15#7,3,8#7,3,3#7,3,11#10,3,7#6,3,6#6,3,3#4,3,11#6,3,5#8,3,8#3,3,6"/>
+    <property name="SleeperVolumeGroup" value="S_LootRoom_Med,S_LootRoom_Med,S_ZombieDogs_Med,S_LootRoom_Med,S_Badass_Med,S_Badass_S,S_GhostTown_Med,S_ZomUtilityWorker_Med,S_BusinessMan_S,S_Badass_Med,S_GhostTown_S,S_BikerBar_Med,S_Default_Med,S_GhostTown_S,S_ZomUtilityWorker_Med,S_ZomSoldier_L,S_ZomUtilityWorker_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Badass_S,S_ZombieDogs_S,S_LootRoom_Med,S_Default_Med,S_Badass_Med,S_ZombieDogs_S,S_AbandonedHouse_1,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_ZomSoldier_Med,S_AbandonedHouse_1,S_BikerBar_Med,S_FootballStadium_Med,S_ZomUtilityWorker_Med,S_Badass_Med,S_FootballStadium_Med,S_LootRoom_Med,S_LootRoom_Med,S_LootRoom_Med,S_ZomSoldier_Med,S_Default_Med,S_GhostTown_S,S_ZomSoldier_Med,S_LootRoom_L,S_BikerBar_Med,S_BusinessMan_Med,S_AbandonedHouse_1,S_Badass_S"/>
+    <property name="SleeperVolumeGameStageAdjust" value="100,100,100,100,100,50,100,50,100,easy,100,100,easy,100,100,200,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,easy,100,100,50,100,100,100,,50,100,100,100,100,100,easy,100,50,100,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False"/>
+    <property name="EditorGroups" value="Wilderness" />
+    <property name="SleeperIsBossVolume" value="False" />
+    <property name="DifficultyTier" value="1" />
+    <property name="ExcludePOICulling" value="False" />
+</prefab>

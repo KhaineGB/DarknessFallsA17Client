@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="ExcludePOICulling" value="False"/>
+    <property name="QuestTags" value="clear,fetch,hidden_cache"/>
+    <property name="DifficultyTier" value="1"/>
+    <property name="Zoning" value="Commercial,Downtown,Industrial,ResidentialNew,ResidentialOld"/>
+    <property name="RotationToFaceNorth" value="0"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="StaticSpawner.Size" value="32, 2, 32"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,rural,town,wilderness"/>
+    <property name="EditorGroups" value="Wilderness"/>
+    <property name="SleeperVolumeStart" value="0, 1, 0#8, 6, 8#8, 10, 8#8, 14, 8"/>
+    <property name="SleeperVolumeSize" value="41, 3, 41#29, 3, 24#29, 3, 24#29, 3, 24"/>
+    <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,3,4,S_-_Group_Abandoned_House,3,4,S_-Group_Generic_Zombie,4,5,S_-_Group_Football_Stadium,2,3"/>
+    <property name="SleeperVolumeGameStageAdjust" value=",,,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False"/>
+    <property name="SleeperIsBossVolume" value="False,False,False,False"/>
+</prefab>

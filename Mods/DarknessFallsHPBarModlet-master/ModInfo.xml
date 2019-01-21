@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Darkness Falls HP Bar Modlet" />
+        <Description value="This modlet adds the HP bar for enemies back to the UI. Works on Darkness Falls ONLY." />
+        <Author value="KhaineGB" />
+        <Version value="1.0.0" />
+    </ModInfo>
+</xml>

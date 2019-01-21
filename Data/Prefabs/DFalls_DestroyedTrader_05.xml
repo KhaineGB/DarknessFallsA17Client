@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="SleeperVolumeSize" value="41, 19, 43" />
+    <property name="SleeperVolumeStart" value="2, 0, 3" />
+    <property name="SleeperVolumeGroup" value="DestroyedTrader,10,20" />
+    <property name="SleeperVolumeGameStageAdjust" value="" />
+    <property name="SleeperIsLootVolume" value="False" />
+    <property name="ExcludePOICulling" value="False" />
+    <property name="DistantPOIYOffset" value="0" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="DifficultyTier" value="1" />
+    <property name="TraderArea" value="False" />
+    <property name="QuestTags" value="clear" />
+    <property name="AllowedTownships" value="city,town,rural,wilderness" />
+    <property name="AllowedBiomes" value="snow" />
+    <property name="EditorGroups" value="settlements" />
+    <property name="SleeperIsBossVolume" value="False" />
+</prefab>

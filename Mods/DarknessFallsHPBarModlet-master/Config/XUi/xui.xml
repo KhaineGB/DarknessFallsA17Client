@@ -1,0 +1,6 @@
+<configs>
+	<!-- Read the xui.xml, add the new window -->
+	<append xpath="/xui/ruleset/window_group[@name='compass']">
+		<window name="windowTargetBar" anchor="CenterTop" />
+	</append>
+</configs>

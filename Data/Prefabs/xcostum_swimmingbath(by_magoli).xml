@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="False"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="ExcludePOICulling" value="False"/>
+    <property name="DifficultyTier" value="1"/>
+    <property name="Zoning" value="any"/>
+    <property name="RotationToFaceNorth" value="0"/>
+    <property name="YOffset" value="-4"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="StaticSpawner.Size" value="64, 2, 64"/>
+    <property name="AllowedBiomes" value="plains,pine_forest,forest"/>
+    <property name="AllowedTownships" value="city,rural,town,wilderness"/>
+    <property name="EditorGroups" value="Wilderness"/>
+    <property name="SleeperVolumeStart" value="0, 1, 0"/>
+    <property name="SleeperVolumeSize" value="37, 10, 32"/>
+    <property name="SleeperVolumeGroup" value="S_-_Group_Biker_Bar,9,10"/>
+    <property name="SleeperVolumeGameStageAdjust" value=""/>
+    <property name="SleeperIsLootVolume" value="False"/>
+    <property name="SleeperIsBossVolume" value="False"/>
+</prefab>

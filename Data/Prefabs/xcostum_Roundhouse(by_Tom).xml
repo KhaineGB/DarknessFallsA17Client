@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="Zoning" value="Commercial,Downtown,Industrial,ResidentialNew,ResidentialOld" />
+    <property name="RotationToFaceNorth" value="1" />
+    <property name="YOffset" value="-1" />
+    <property name="DistantPOIYOffset" value="0" />
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland" />
+    <property name="AllowedTownships" value="city,town" />
+    <property name="SleeperVolumeStart" value="31, 1, 25#30, 1, 5#9, 0, 5#44, 5, 27#30, 5, 5#8, 0, 28#9, 10, 5#9, 10, 28#9, 5, 5#9, 5, 28#31, 10, 25#30, 10, 5#24, 4, 39" />
+    <property name="SleeperVolumeSize" value="19, 4, 21#20, 4, 20#21, 5, 23#4, 5, 6#20, 5, 20#23, 5, 18#21, 6, 23#22, 6, 18#21, 5, 23#22, 5, 18#19, 6, 21#20, 6, 20#6, 5, 5" />
+    <property name="SleeperVolumeGroup" value="S_-_Group_Abandoned_House,5,6,S_-_Group_Ghost_Town,5,6,S_-_Group_Hospital,8,9,S_-_Group_Zom_Soldier,1,2,S_-_Group_Lab_Worker,4,5,S_-Group_Generic_Zombie,4,5,S_-Group_Generic_Zombie,3,4,S_-Group_Generic_Zombie,5,6,S_Zom_Businessman,3,4,S_-_Group_Football_Stadium,3,4,S_-_Group_Zom_Badass_Only,1,2,S_-Group_Generic_Zombie,5,6,S_-_Group_Zom_Badass_Only,2,2" />
+    <property name="SleeperVolumeGameStageAdjust" value="medium,250,350,250,250,medium,200,medium,250,250,medium,250,350,250,medium,350" />
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False,True,False,False,False,False,False,False,True" />
+    <property name="SleeperIsBossVolume" value="False,False,False,True,False,False,False,False,False,False,False,False,True" />
+    <property name="EditorGroups" value="Wilderness" />
+    <property name="DifficultyTier" value="4" />
+    <property name="ExcludePOICulling" value="False" />
+</prefab>
