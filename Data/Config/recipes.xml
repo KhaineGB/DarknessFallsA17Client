@@ -4719,7 +4719,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_clay" count="30"/>
 </recipe>
 
-<recipe name="plantedSnowberry1" count="1" craft_time="1" tags="learnable">
+<recipe name="plantedSnowberry1" count="1" craft_time="1" >
 	<ingredient name="resourceCropSnowberryPlant" count="4"/>
 </recipe>
 
@@ -4764,7 +4764,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="foodCropYuccaFruit" count="2"/>
 </recipe>
 
-<recipe name="plantedSnowberry1" count="1" craft_time="1" craft_area="PandM" tags="learnable">
+<recipe name="plantedSnowberry1" count="1" craft_time="1" craft_area="PandM" >
 	<ingredient name="resourceCropSnowberryPlant" count="2"/>
 </recipe>
 
