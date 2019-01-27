@@ -4393,6 +4393,8 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>	
 	
+	<!-- Darkness Falls Action Skill Buffs -->
+	
 	<buff name="buffAthleticsSkillXPTick" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
 		<duration value="5"/><!--This is your delay duration-->
@@ -4403,10 +4405,163 @@ icon="ui_game_symbol_pack_mule"
 	
 	<buff name="buffScavengingSkillXPTick" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
-		<duration value="30"/>
+		<duration value="2"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="AS_Scavenging_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" target="self" cvar="AS_Scavenging_XP" operation="add" value="2"/>
 		</effect_group>
+	</buff>
+	
+	<buff name="buffScavengingDisassembleSkillXPTick" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" target="self" cvar="AS_Scavenging_XP" operation="add" value="2"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffArcherySkillXPInjure" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffArcherySkillXPKill" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="32"/>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffAutomaticSkillXPInjure" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="8">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffAutomaticSkillXPKill" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="32"/>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffBluntSkillXPInjure" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
+					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffBluntSkillXPKill" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffBladedSkillXPInjure" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
+					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffBladedSkillXPKill" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffConstructionSkillXP" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<requirement name="HoldingItemHasTags" tags="construction"/>
+			<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
+			<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffMiningSkillXP" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<requirement name="HoldingItemHasTags" tags="perkMotherLode"/>
+			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffPistolSkillXPInjure" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="8">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffPistolSkillXPKill" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="32"/>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffShotgunSkillXPInjure" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="8">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffShotgunSkillXPKill" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="32"/>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffRifleSkillXPInjure" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="8">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+		</effect_group>	
+	</buff>
+	
+	<buff name="buffRifleSkillXPKill" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="32"/>
+		</effect_group>	
 	</buff>
 	
 	<buff name="buffBomber" hidden="true">

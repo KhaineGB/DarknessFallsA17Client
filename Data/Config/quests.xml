@@ -74,6 +74,20 @@
 		<reward type="Skill" id="attFortitude" value="1" />
 		<reward type="Skill" id="perkAgility" value="1" />
 		<reward type="Skill" id="perkIntellect" value="1" />
+		
+		<!-- <reward type="Skill" id="perkASArmorUse" value="1" />
+		<reward type="Skill" id="perkASAthletics" value="1" />
+		<reward type="Skill" id="perkASConstructionTools" value="1" />
+		<reward type="Skill" id="perkASMiningTools" value="1" />
+		<reward type="Skill" id="perkASScavenging" value="1" />
+		<reward type="Skill" id="perkASBlunt" value="1" />
+		<reward type="Skill" id="perkASBladed" value="1" />
+		<reward type="Skill" id="perkASArchery" value="1" />
+		<reward type="Skill" id="perkASPistols" value="1" />
+		<reward type="Skill" id="perkASShotguns" value="1" />
+		<reward type="Skill" id="perkASRifles" value="1" />
+		<reward type="Skill" id="perkASAutomatics" value="1" />	-->	
+		
 		<reward type="Quest" id="quest_BasicSurvival2" />
     </quest>
 	
@@ -2989,9 +3003,13 @@
 			<property name="count" value="1" />
 		</objective>
 		
-		<reward type="Item" id="suitPants" />
-		<reward type="Item" id="suitJacket" />
-		<reward type="Item" id="dressShoes" />
+		<reward type="LootItem" id="DFallsCivilianQ1a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsCivilianQ1b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsCivilianQ1c" ischosen="false" isfixed="true" value="16" />
+		<!--
+		<reward type="LootItem" id="DFallsCivilianQ1a" ischosen="false" isfixed="true" value="1" />
+		<reward type="LootItem" id="DFallsCivilianQ1b" ischosen="false" isfixed="true" value="1" />
+		<reward type="LootItem" id="DFallsCivilianQ1c" ischosen="false" isfixed="true" value="1" /> -->
 		<reward type="Skill" id="attClassCivilian" value="1" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="100" />
@@ -3143,10 +3161,11 @@
 			<property name="count" value="2" />
 		</objective>
 		
-		<reward type="Item" id="cowboyHat" value="1" />
-		<reward type="Item" id="tshirt" value="1" />
-		<reward type="Item" id="denimPants" value="1" />
-		<reward type="Item" id="cowboyBoots" value="1" /> 
+		<reward type="LootItem" id="DFallsFarmerQ1a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ1b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ1c" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ1d" ischosen="false" isfixed="true" value="16" />
+
 		<reward type="Skill" id="attClassFarmer" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingfarmer2" />
@@ -3287,10 +3306,11 @@
 			<property name="count" value="1" />
 		</objective>
 		
-		<reward type="Item" id="cowboyHat" value="1" />
-		<reward type="Item" id="tshirt" value="1" />
-		<reward type="Item" id="denimPants" value="1" />
-		<reward type="Item" id="wornBoots" value="1" /> 
+		<reward type="LootItem" id="DFallsHunterQ1a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ1b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ1c" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ1d" ischosen="false" isfixed="true" value="16" />
+		
 		<reward type="Skill" id="attClassHunter" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininghunter2" />
@@ -3310,9 +3330,10 @@
 		<objective type="ZombieKill" value="5" />
 			<requirement type="Holding" id="meleeClubIron" />
 			
-		<reward type="Item" id="drinkCanBoiledWater" value="2" />
-		<reward type="Item" id="foodCanChicken" value="2" />
-		<reward type="Skill" id="perkTheHuntsman" value="1" />
+		<reward type="LootItem" id="DFallsHunterQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ2b" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="perkTheHuntsman" value="1" /> 
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininghunter3" />
     </quest>
@@ -3329,10 +3350,10 @@
 		<property name="offer_key" value="quest_classtraininghunter_offer" />
 		<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="resourceFemur" value="1" phase="1"/>
-		<objective type="Craft" id="meleeBoneShiv" value="1" phase="2"/>
+		<objective type="FetchKeep" id="resourceFemur" value="1" />
+		<objective type="FetchKeep" id="meleeBoneShiv" value="1" />
 
-		<reward type="Item" id="medicalFirstAidBandage" value="2" />
+		<reward type="LootItem" id="DFallsHunterQ3" ischosen="false" isfixed="true" value="16" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininghunter4" />
     </quest>
@@ -3427,10 +3448,11 @@
 		<objective type="FetchKeep" id="resourceRockSmall" value="400" />
 		<objective type="FetchKeep" id="resourceClayLump" value="400" />
 		
-		<reward type="Item" id="armorMiningHelmet" value="1" />
-		<reward type="Item" id="tshirt" value="1" />
-		<reward type="Item" id="denimPants" value="1" />
-		<reward type="Item" id="wornBoots" value="1" /> 
+		<reward type="LootItem" id="DFallsLaborerQ1a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsLaborerQ1b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsLaborerQ1c" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsLaborerQ1d" ischosen="false" isfixed="true" value="16" />
+		
 		<reward type="Skill" id="attClassLaborer" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininglaborer2" />
@@ -3592,10 +3614,11 @@
 			<property name="count" value="1" />
 		</objective>
 		
-		<reward type="Item" id="tshirtZUWhite" value="1" />
-		<reward type="Item" id="overalls" value="1" />
-		<reward type="Item" id="wornBoots" value="1" />
-		<reward type="Item" id="ballCap" value="1" />
+		<reward type="LootItem" id="DFallsMechanicQ1a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsMechanicQ1b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsMechanicQ1c" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsMechanicQ1d" ischosen="false" isfixed="true" value="16" />
+
 		<reward type="Skill" id="attClassMechanic" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingmechanic2" />
@@ -3732,10 +3755,11 @@
 		<objective type="FetchKeep" id="resourceYuccaFibers" value="4" phase="1"/>
 		<objective type="Craft" id="medicalSplint" value="1" phase="2"/>
 		
-		<reward type="Item" id="jacketWhite" value="1" />
-		<reward type="Item" id="tshirt" value="1" />
-		<reward type="Item" id="suitPants" value="1" />		
-		<reward type="Item" id="dressShoes" value="1" />
+		<reward type="LootItem" id="DFallsScientistQ1a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsScientistQ1b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsScientistQ1c" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsScientistQ1d" ischosen="false" isfixed="true" value="16" />
+
 		<reward type="Skill" id="attClassScientist" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingscientist2" />
@@ -3871,11 +3895,12 @@
 		
 		<objective type="FetchKeep" id="resourceWood" value="6" phase="1" />
 		<objective type="Craft" id="meleeClubWood" value="1" phase="2" />
-	
-		<reward type="Item" id="armyPants" value="1" />
-		<reward type="Item" id="armyShirt" value="1" />
-		<reward type="Item" id="wornBoots" value="1" />
-		<reward type="Item" id="ballCap" value="1" />
+		
+		<reward type="LootItem" id="DFallsSecurityQ1a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsSecurityQ1b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsSecurityQ1c" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsSecurityQ1d" ischosen="false" isfixed="true" value="16" />
+
 		<reward type="Skill" id="attClassSecurity" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsecurity2" />
@@ -4029,11 +4054,12 @@
 		<objective type="Craft" id="meleeClubWood" value="1" phase="2" />
 		<objective type="Craft" id="gunWoodenBow" value="1" phase="2" />
 		<objective type="Craft" id="ammoArrowStone" value="2" phase="2" />
-	
-		<reward type="Item" id="cowboyHat" value="1" />
-		<reward type="Item" id="tshirt" value="1" />
-		<reward type="Item" id="armyPants" value="1" />
-		<reward type="Item" id="cowboyBoots" value="1" /> 
+		
+		<reward type="LootItem" id="DFallsSurvivalistQ1a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsSurvivalistQ1b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsSurvivalistQ1c" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsSurvivalistQ1d" ischosen="false" isfixed="true" value="16" />
+
 		<reward type="Skill" id="attClassSurvivalist" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsurvivalist2" />
@@ -4051,11 +4077,13 @@
 		<property name="offer_key" value="quest_classtrainingsurvivalist_offer" />
 		<property name="shareable" value="false" />
 		
-		<objective type="FetchKeep" id="resourceFemur" value="1" phase="1"/>
-		<objective type="Craft" id="meleeBoneShiv" value="1" phase="2"/>
+		<objective type="FetchKeep" id="resourceFemur" value="1" />
+		<objective type="FetchKeep" id="meleeBoneShiv" value="1" />
 
-		<reward type="Item" id="drinkCanRiverWater" value="2" />
-		<reward type="Item" id="foodCanBeef" value="2" />
+		<reward type="LootItem" id="DFallsCivilianQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsCivilianQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ2b" ischosen="false" isfixed="true" value="16" />
+
 		<reward type="Recipe" id="armorLeatherBoots"/>
 		<reward type="Recipe" id="armorLeatherGloves"/>
 		<reward type="Recipe" id="armorLeatherHood"/>
@@ -4155,7 +4183,7 @@
 		<reward type="Skill" id="attClassSurvivalist" value="1" />
 		<reward type="Recipe" id="DFWatch" />
 		<reward type="Exp" value="100" />
-    </quest> 
+    </quest>
 	
 <!-- Trader Guard Captain Quests -->
 

@@ -165,6 +165,7 @@
 		<item_display_info display_type="clothing" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" title_key="statHyperthermalResist"/>
+			<display_entry name="dCarryCapacity" title_key="statCarryCapacity"/>
 		</item_display_info>
 		<item_display_info display_type="clothingHazMat" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" title_key="statHypothermalResist"/>

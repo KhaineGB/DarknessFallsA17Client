@@ -152,7 +152,7 @@
 		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffStatusCheck"/>
 		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck,buffPerkAbilityUpdate,buffNearDeathTraumaTrigger"/>
 	</effect_group>
-	
+
 	<effect_group name="Action Skills">
 		<passive_effect name="PerkLevel" operation="base_add" value="@AS_ArmorUse_Lvl" tags="perkASArmorUse" />
 		<passive_effect name="PerkLevel" operation="base_add" value="@AS_Athletics_Lvl" tags="perkASAthletics" />
@@ -166,7 +166,7 @@
 		<passive_effect name="PerkLevel" operation="base_add" value="@AS_Shotguns_Lvl" tags="perkASShotguns"/>
 		<passive_effect name="PerkLevel" operation="base_add" value="@AS_Rifles_Lvl" tags="perkASRifles"/>
 		<passive_effect name="PerkLevel" operation="base_add" value="@AS_Automatics_Lvl" tags="perkASAutomatics"/>
-	</effect_group>	
+	</effect_group>
 </entity_class>
 
 <entity_class name="playerFemale" extends="playerMale"> <!-- ignore="<excluded defs>" to not extend unwanted properties -->
@@ -320,7 +320,7 @@
 	<!-- <property name="LootListOnDeath" value="45"/> -->
 	<property name="LootDropEntityClass" value="EntityLootContainerGenericRegular"/>
 
-	<property name="TimeStayAfterDeath" value="5"/>
+	<property name="TimeStayAfterDeath" value="120"/>
 	<property name="DeadBodyHitPoints" value="1000"/> 
 	
 	<property name="CorpseBlock" value="terrGore"/>
@@ -3672,7 +3672,7 @@
 	<property name="MoveSpeedPanic" value="1.35"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="ExperienceGain" value="173"/>
-	<property name="TimeStayAfterDeath" value="30"/>
+	<property name="TimeStayAfterDeath" value="120"/>
 	<property name="DeadBodyHitPoints" value="251"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
@@ -4655,7 +4655,7 @@
 	<property name="LootDropProb" value="0.02"/> <!-- Whether it drops a loot bag on death or not. -->
 	<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
 
-	<property name="TimeStayAfterDeath" value="10"/>
+	<property name="TimeStayAfterDeath" value="120"/>
 	<property name="DeadBodyHitPoints" value="1000"/> 
 	
 	<property name="CorpseBlock" value="terrGore"/>
@@ -6107,7 +6107,7 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerGenericRegular"/>
 	
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="541"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
@@ -6650,7 +6650,7 @@
 	<property name="MaxHealth" value="2000"/>
 	<property name="ExperienceGain" value="3000"/>
 	<property name="LootListOnDeath" value="15"/>
-    <property name="TimeStayAfterDeath" value="5"/>
+    <property name="TimeStayAfterDeath" value="120"/>
     <property name="DeadBodyHitPoints" value="20"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2000"/>
@@ -6751,7 +6751,7 @@
 <!-- Zombie Behemoth Male -->
 
 <entity_class name="DFzombieBehemoth" extends="zombieTemplateMale">
-	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Tags" value="entity,zombie,walker,feral,behemoth,sdxentity"/>
 	<property name="AvatarController" value="MecanimSDX, Mods" />
 	<property name="RootMotion" value="false" />
     <property name="Mesh" value="#Entities.unity3d?zombieBehemoth.prefab" />
@@ -6873,7 +6873,7 @@
 </entity_class>
 
 <entity_class name="DFzombieBehemothRadiated" extends="zombieTemplateMale">
-	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+	<property name="Tags" value="entity,zombie,walker,feral,radiated,sdxentity"/>
 	<property name="AvatarController" value="MecanimSDX, Mods" />
 	<property name="RootMotion" value="false" />
     <property name="Mesh" value="#Entities.unity3d?BehemothRadiated.prefab" />
@@ -7003,7 +7003,7 @@
 
 <entity_class name="Succubus" >
     <property name="Mesh" value="#Entities.unity3d?DemonFemale.prefab" />
-	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Tags" value="entity,zombie,walker,feral,sdxentity"/>
 	<property name="AvatarController" value="MecanimSDX, Mods" />
 	<property name="Class" value="EntityVulture" /> 
 	<property name="Prefab" value="NPC"/>
@@ -7077,7 +7077,7 @@
 	<property name="WalkIndexes" value="2" />
 	<property name="IdleIndexes" value="0" />
 	<property name="JumpIndexes" value="0" />
-	<property name="TimeStayAfterDeath" value="4" />
+	<property name="TimeStayAfterDeath" value="30" />
 	<property name="MaxHealth" value="5000"/>
 	<property name="ExperienceGain" value="25000"/>
 	<property name="DeadBodyHitPoints" value="350"/>
@@ -7127,7 +7127,7 @@
 <!-- Hornet -->
 <entity_class name="Hornet" >
     <property name="Mesh" value="#Entities.unity3d?Hornet.prefab" />
-	<property name="Tags" value="entity"/>
+	<property name="Tags" value="entity,sdxentity"/>
 	<property name="AvatarController" value="MecanimSDX, Mods" />
 	<property name="Class" value="EntityVulture" /> 
 	<property name="Prefab" value="NPC"/>
@@ -7144,7 +7144,7 @@
 	<property name="MoveSpeedPanic" value="0.8"/>
 	<property name="AttackTimeoutDay" value="2.0"/> 
 	<property name="AttackTimeoutNight" value="1.5"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="CanClimbVertical" value="false"/>
 	<property name="AITask-1" value="BreakBlock"/>
 	<property name="AITask-2" value="DestroyArea"/>
@@ -7185,20 +7185,20 @@
 	<property name="SpawnOnGround" value="false" />
 	<property name="AttackAnimations" value="Attack0, Attack1" />
 	<property name="AttackIndexes" value="2" />
-	<property name="SpecialAttackIndexes" value="0" />
+	<!-- <property name="SpecialAttackIndexes" value="0" />
 	<property name="SpecialSecondAttackIndexes" value="0" />
 	<property name="RagingIndexes" value="0" />
 	<property name="ElectrocutionIndexes" value="0" />
 	<property name="CrouchIndexes" value="0" />
 	<property name="StunIndexes" value="0" />
 	<property name="SleeperIndexes" value="0" />
-	<property name="HarvestIndexes" value="0" />
+	<property name="HarvestIndexes" value="0" /> -->
 	<property name="PainIndexes" value="0" />
 	<property name="DeathIndexes" value="0" />
 	<property name="RunIndexes" value="2" />
 	<property name="WalkIndexes" value="2" />
 	<property name="IdleIndexes" value="0" />
-	<property name="JumpIndexes" value="0" />
+	<!-- <property name="JumpIndexes" value="0" /> -->
 	<property name="TimeStayAfterDeath" value="30" />
 	<property name="MaxHealth" value="100"/>
 	<property name="ExperienceGain" value="250"/>

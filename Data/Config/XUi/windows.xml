@@ -107,14 +107,15 @@
 	<window name="HUDLeftStatBars">
 		<rect name="leftposition" pos="[hudleft]">
 			<rect name="offset" pos="50,0">
-				<grid name="hud" pos="512,17" rows="1" cols="4" width="212" cell_width="40" cell_height="90" repeat_content="false" controller="InGameHUD" > 		
-					<rect width="30" height="80" controller="HUDStatBar" stat_type="Health" visible="{StatVisible}">
-						<sprite depth="3" name="BarContent" sprite="healthA12" atlas="ItemIconAtlas" height="40" width="85" type="filled" fill="0" rotation="90" globalopacity="false" foregroundlayer="true"/>
-						<sprite depth="4" name="Icon" pos="-4,26" atlas="ItemIconAtlas" sprite="healthiconA12" size="43,30" foregroundlayer="true" />
+				<grid name="hud" pos="512,17" rows="1" cols="4" width="212" cell_width="40" cell_height="90" repeat_content="false" controller="HUDStatBar" > 		
+					<rect width="30" height="80" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+						<filledsprite depth="3" name="background" color="110,110,110,128" width="169" type="filled" fill="{statmodifiedmax}" />
+						<filledsprite depth="4" name="BarContent" sprite="healthA12" atlas="ItemIconAtlas" height="40" width="85" type="filled" fill="0" rotation="90" globalopacity="false" foregroundlayer="true"/>
+						<sprite depth="5" name="Icon" pos="-4,26" atlas="ItemIconAtlas" sprite="healthiconA12" size="43,30" foregroundlayer="true" />
 						<label depth="6" name="TextContent" pos="3,55" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" height="36" foregroundlayer="true"/>
 					</rect>	
 
-					<rect width="30" height="80" controller="HUDStatBar" stat_type="Stamina" visible="{StatVisible}">
+					<rect width="30" height="80" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 						<sprite depth="3" name="BarContent" sprite="staminaA12" atlas="ItemIconAtlas" height="40" width="85" type="filled" fill="0" rotation="90" globalopacity="false" foregroundlayer="true"/>
 						<sprite depth="4" name="Icon" pos="-4,26" atlas="ItemIconAtlas" sprite="staminaiconA12" size="43,30" foregroundlayer="true" />
 						<label depth="6" name="TextContent" pos="3,55" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" height="36" foregroundlayer="true" overflow="ClampContent"/>
@@ -1378,8 +1379,8 @@
 
 				<rect name="content" depth="3" pos="0,-565" height="239" controller="MapStats">
 
-					<sprite depth="2" name="dayTimeIcon" width="24" height="24" pos="10,-16" sprite="ui_game_symbol_clock" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="dayTimeLabel" pos="40,-18" width="172" height="28" upper_case="true" text="{mapdaytimetitle}: [DECEA3]{mapdaytime}[-]" font_size="26"/>
+					<!-- <sprite depth="2" name="dayTimeIcon" width="24" height="24" pos="10,-16" sprite="ui_game_symbol_clock" color="[iconColor]" foregroundlayer="true"/>
+					<label depth="2" name="dayTimeLabel" pos="40,-18" width="172" height="28" upper_case="true" text="{mapdaytimetitle}: [DECEA3]{mapdaytime}[-]" font_size="26"/> -->
 
 					<sprite depth="2" name="tempIcon" width="24" height="24" pos="10,-48" sprite="ui_game_symbol_temperature" color="[iconColor]" foregroundlayer="true"/>
 					<label depth="2" name="tempLabel" pos="40,-50" width="172" height="28" text="{playercoretemptitle}: [DECEA3]{playercoretemp}[-]" font_size="26"/>
@@ -4019,7 +4020,7 @@
 	<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 		<texture name="DFalls" depth="0" size="888,666" texture="@file:Mods\DarknessFalls\UI\MainMenu\darknessfallsLogo.png" material="Materials/Transparent Colored" pos="-299,255" />
 		<!-- <label name="DFalls" pos="0, -80" depth="0" size="250,33" text="Darkness Falls" font_size="64" effect="outline" color="[red]" justify="center" /> -->
-		<label name="DFallsVersion" pos="0, -240" depth="0" size="250,33" text="V2" font_size="42" effect="outline" color="[white]" justify="center" />
+		<label name="DFallsVersion" pos="0, -240" depth="0" size="250,33" text="V2.01" font_size="42" effect="outline" color="[white]" justify="center" />
 		<grid name="buttons" pos="0, -275" cols="1" width="250" cell_width="250" cell_height="48" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnInvite" depth="3" width="250" height="38" caption_key="xuiMenuInvite" font_size="32" />
 			<simplebutton name="btnOptions" depth="3" width="250" height="38" caption_key="xuiMenuOptions" font_size="32" />

@@ -799,6 +799,9 @@ tbnsew:
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="290,2,2,2,2,2"/>
+	<property name="Class" value="UpgradeRated"/>
+	<property name="UpgradeRated.ToBlock" value="DFAirDowngrade"/>
+	<property name="UpgradeRated.Rate" value="10"/>
 	<property name="Tag" value="Gore"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Density" value="0.9"/>
@@ -14872,7 +14875,6 @@ NOT the TextureNumber.
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="300"/>
 	<property name="FilterTags" value="floot,ffurniture"/>
-
 </block>
 
 <block name="cntDeskSafeInsecure">
@@ -25555,8 +25557,8 @@ ore block visualisation end -->
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="advforge"/>
-		<property name="Modules" value="tools,output,fuel,material_input"/>
-		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+		<property name="Modules" value="tools,output,material_input"/>
+		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay,titanium"/>
 	</property>
 	<property name="WorkstationIcon" value="ui_game_symbol_forge" />
 	<property name="OpenSound" value="forge_open" />
@@ -26374,7 +26376,7 @@ ore block visualisation end -->
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<drop event="Harvest" name="DFWheat" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="DFWheat" count="1" tag="cropHarvest"/>
 	<property name="PickupJournalEntry" value="farmingTip"/>
 	<property name="FilterTags" value="foutdoor,fcrops"/>
 	<property name="DowngradeBlock" value="DFseedWheat"/>
@@ -26438,7 +26440,7 @@ ore block visualisation end -->
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<drop event="Harvest" name="DFTomato" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="DFTomato" count="1" tag="cropHarvest"/>
 	<property name="PickupJournalEntry" value="farmingTip"/>
 	<property name="FilterTags" value="foutdoor,fcrops"/>
 	<property name="DowngradeBlock" value="DFseedTomato"/>
@@ -26502,7 +26504,7 @@ ore block visualisation end -->
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<drop event="Harvest" name="DFCarrot" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="DFCarrot" count="1" tag="cropHarvest"/>
 	<property name="PickupJournalEntry" value="farmingTip"/>
 	<property name="FilterTags" value="foutdoor,fcrops"/>
 	<property name="DowngradeBlock" value="DFseedCarrot"/>
@@ -27313,7 +27315,7 @@ ore block visualisation end -->
 	<property name="Model" value="Entities/LootContainers/birdnestPrefab" />
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true" />
-	<property name="LootList" value="100" />
+	<property name="LootList" value="166" />
 	<drop event="Destroy" count="0" prob="1" />
 </block>
 
@@ -27355,7 +27357,7 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="animalSnare" />
 	<property name="LightOpacity" value="0"/>
 	<property name="Class" value="Loot" />
-	<property name="LootList" value="101" />
+	<property name="LootList" value="167" />
 	<property name="Material" value="Mwood" />
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="0"/>
@@ -29230,6 +29232,11 @@ ore block visualisation end -->
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#Flags.unity3d?FlagLooted_X" />
 	<property name="CustomIcon" value="FlagLooted" />
+</block>
+
+<block name="DFwaterBarrel">
+	<property name="Extends" value="wineBarrel"/>
+	<property name="Model" value="Entities/Decor/BarrelPrefab"/>
 </block>
 
 <!-- Blocks that constantly spawn mobs -->

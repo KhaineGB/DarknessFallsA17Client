@@ -1086,7 +1086,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 
 	<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
 
-	<item_modifier name="modMeleeTemperedBlade" installable_tags="knife,axe,shovel,hoe,spiked,barbed" modifier_tags="damage" type="attachment" rarity="0.5">
+	<item_modifier name="modMeleeTemperedBlade" installable_tags="knife,axe,shovel,hoe,spiked,barbed,spear" modifier_tags="damage" type="attachment" rarity="0.5">
 		<property name="Stacknumber" value="1"/>
 		<!-- reduce DR of armor by x, blade weapons -->
 		<effect_group tiered="false">
@@ -1096,7 +1096,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>
 	</item_modifier>
 
-	<item_modifier name="modMeleeSerratedBlade" installable_tags="knife,axe,shovel,hoe,spiked,barbed" modifier_tags="damage" type="attachment" rarity="0.5">
+	<item_modifier name="modMeleeSerratedBlade" installable_tags="knife,axe,shovel,hoe,spiked,barbed,spear" modifier_tags="damage" type="attachment" rarity="0.5">
 		<property name="Stacknumber" value="1"/>
 		<!-- Increases bleeding damage, blade weapons -->
 		<effect_group tiered="false">

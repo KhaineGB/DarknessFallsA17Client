@@ -129,12 +129,6 @@ We _want_ players to specialise so we also have to make it feasible.
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Blade Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
@@ -273,12 +267,6 @@ We _want_ players to specialise so we also have to make it feasible.
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Blade Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
@@ -328,7 +316,7 @@ We _want_ players to specialise so we also have to make it feasible.
 </item>
 
 <item name="meleeToolClawHammer">
-	<property name="Tags" value="blunt,melee,hammer,light,tool,perkStayDown"/>
+	<property name="Tags" value="blunt,melee,hammer,light,tool,perkStayDown,construction"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="32"/>
 	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
@@ -374,22 +362,13 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-	</effect_group>	
 </item>
 
 <!-- * * * * * * * * * * Medium One-Hand Melee Tools * * * * * * * * * * -->
 <!-- Base DPS Values: Club = 12.5 / Stone Axe = 9.5 / Torch = 14.16 / Machete = 15.01 / Pick = 12.5 / Wrench = 13.06 -->
 
 <item name="meleeToolStoneAxe">
-	<property name="Tags" value="knife,melee,light,tool,perkMotherLode,perkDeepCuts,perkTheHuntsman"/>
+	<property name="Tags" value="knife,melee,light,tool,perkMotherLode,perkTheHuntsman"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="32"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab"/>
@@ -409,14 +388,14 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="ToolCategory.Butcher" value="0" param1="4"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 	</property>
-	<property class="Action1"> <!-- UseAction -->
-		<property name="Class" value="Repair"/>
-		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
-		<property name="Repair_amount" value="100"/>
-		<property name="Upgrade_hit_offset" value="0"/>
-		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
-		<property name="UsePowerAttackAnimation" value="false"/>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
@@ -438,9 +417,21 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
 	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="24" tags="secondary"/>
 	</effect_group>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
+	
 	<property name="Group" value="Tools/Traps,Basics"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
@@ -449,7 +440,7 @@ We _want_ players to specialise so we also have to make it feasible.
 
 <item name="meleeToolStoneAxeTazas">
 	<property name="Extends" value="meleeToolStoneAxe"/>
-	<property name="Tags" value="knife,melee,light,tool,tazas,perkMotherLode,perkDeepCuts,perkTheHuntsman"/>
+	<property name="Tags" value="knife,melee,light,tool,tazas,perkMotherLode,perkTheHuntsman"/>
 	<property name="EconomicValue" value="200"/>
 	<property name="CustomIcon" value="meleeToolStoneAxe"/> <property name="CustomIconTint" value="ffb0b0"/>
 	<property class="Action0">
@@ -473,10 +464,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
 	</effect_group>
 </item>
 
@@ -545,15 +532,6 @@ We _want_ players to specialise so we also have to make it feasible.
 
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-	</effect_group>	
 </item>
 
 <item name="meleeClubIron">
@@ -620,15 +598,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		</triggered_effect>
 
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-	</effect_group>	
 </item>
 
 <item name="meleeCandyCaneClub">
@@ -753,14 +722,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
 	</effect_group>
 	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-	</effect_group>	
 </item>
 
 <item name="meleeToolMachete">
@@ -832,16 +793,10 @@ We _want_ players to specialise so we also have to make it feasible.
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
 </item>
 
 <item name="meleeToolPickaxeIron">
-	<property name="Tags" value="melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="Tags" value="melee,medium,tool,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="12"/>
 	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
@@ -897,9 +852,6 @@ We _want_ players to specialise so we also have to make it feasible.
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
-	</effect_group>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
@@ -907,7 +859,7 @@ We _want_ players to specialise so we also have to make it feasible.
 </item>
 
 <item name="meleeToolWrench">
-	<property name="Tags" value="blunt,melee,light,tool,perkStayDown,perkSalvageOperations"/>
+	<property name="Tags" value="blunt,melee,light,tool,construction,perkSalvageOperations,scavenging"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="29"/>
 	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
@@ -950,9 +902,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_Scavenging_XP" operation="add" value="8"/>
-	</effect_group>
+
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
@@ -963,7 +913,7 @@ We _want_ players to specialise so we also have to make it feasible.
 <!-- Base DPS Values: Stone Shovel = 9.4 / Iron Shovel = 11.75 / Steel Shovel = 13.31 -->
 
 <item name="meleeToolShovelStone">
-	<property name="Tags" value="melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
+	<property name="Tags" value="melee,medium,tool,shovel,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="18"/>
 	<property name="Meshfile" value="Items/Tools/stone_shovelPrefab"/>
@@ -999,7 +949,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="19" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="17" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
@@ -1009,10 +959,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-		<passive_effect name="StaminaLoss" operation="base_add" value="39" tags="secondary"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="34" tags="secondary"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps,Basics"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
@@ -1022,7 +969,7 @@ We _want_ players to specialise so we also have to make it feasible.
 </item>
 
 <item name="meleeToolShovelIron">
-	<property name="Tags" value="melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
+	<property name="Tags" value="melee,medium,tool,shovel,perkMotherLode"/>
 	<property name="Extends" value="meleeToolShovelStone"/>
 	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
 	<property name="Material" value="Mmetal"/>
@@ -1054,14 +1001,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="39" tags="secondary"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
-	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 </item>
 
 <item name="meleeToolShovelSteel">
-	<property name="Tags" value="melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
+	<property name="Tags" value="melee,medium,tool,shovel,perkMotherLode"/>
 	<property name="Extends" value="meleeToolShovelIron"/>
 	<property name="Meshfile" value="Items/Tools/shovel_steelPrefab"/>
 	<property name="CustomIcon" value="meleeToolShovelIron"/>
@@ -1091,9 +1035,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="30" tags="secondary"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
 	</effect_group>
 </item>
 
@@ -1161,16 +1102,10 @@ We _want_ players to specialise so we also have to make it feasible.
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="10">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="30"/>
-	</effect_group>
 </item>
 
 <item name="meleeToolFireaxeIron">
-	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="Tags" value="knife,melee,medium,tool,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="17"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
@@ -1230,13 +1165,6 @@ We _want_ players to specialise so we also have to make it feasible.
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="10"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="36"/>
-	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
@@ -1274,17 +1202,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="30" tags="secondary"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="10"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="36"/>
-	</effect_group>
-		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
-			<requirement name="IsMale" target="self" invert="true"/>
-		</triggered_effect>
 </item>
 
 <item name="meleeToolPickaxeSteel">
@@ -1329,10 +1246,6 @@ We _want_ players to specialise so we also have to make it feasible.
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
-	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
 	</effect_group>
 </item>
 
@@ -1706,12 +1619,7 @@ We _want_ players to specialise so we also have to make it feasible.
 
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="6">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="24"/>
-	</effect_group>
+
 </item>
 
 <item name="gun44Magnum">
@@ -1795,12 +1703,7 @@ We _want_ players to specialise so we also have to make it feasible.
 
 		<!-- <triggered_effect trigger="onSelfEquipStart" action="CVarLogValue" target="self" cvar="onSelfEquipStartMagnum"/> -->
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="6">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="24"/>
-	</effect_group>
+
 </item>
 
 <item name="gunSMG5">
@@ -1884,12 +1787,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DegradationMax" operation="base_set" value="7000,14000" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="18"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="6">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="24"/>
-	</effect_group>
+
 </item>
 
 <!-- * * * * * * * * * * Shotguns * * * * * * * * * * -->
@@ -1900,7 +1798,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="39"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="RepairTools" value="resourceScrapIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
@@ -1973,12 +1871,6 @@ We _want_ players to specialise so we also have to make it feasible.
 
 		<passive_effect name="DegradationMax" operation="base_set" value="1600,3200" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="10"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="1">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="40"/>
 	</effect_group>
 </item>
 
@@ -2055,12 +1947,6 @@ We _want_ players to specialise so we also have to make it feasible.
 
 		<passive_effect name="DegradationMax" operation="base_set" value="2500,4500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="9"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="1">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="40"/>
 	</effect_group>
 </item>
 
@@ -2144,12 +2030,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DegradationMax" operation="base_set" value="3100,6200" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="15"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="10">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="40"/>
-	</effect_group>
 </item>
 
 <item name="gunMR10">
@@ -2230,12 +2110,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 		-->
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="10">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="40"/>
-	</effect_group>
 </item>
 
 <item name="gunAK47">
@@ -2311,12 +2185,13 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1,0.2" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
+	<!-- disable for testing 
 	<effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="6">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="24"/>
-	</effect_group>
+	</effect_group> -->
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
@@ -2489,13 +2364,13 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
-	
+	<!-- disabled for testing
 	<effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
-	</effect_group>
+	</effect_group>	-->
 </item>
 
 <item name="gunCompoundBow">
@@ -2569,13 +2444,13 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
-	
+	<!-- disabled for testing
 	<effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
-	</effect_group>
+	</effect_group> -->
 </item>
 
 <item name="gunCrossbow">
@@ -2647,19 +2522,19 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
-
+	<!-- disabled for testing
 	<effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="24"/>
-	</effect_group>
+	</effect_group> -->
 </item>
 
 <!-- * * * * * * * * * * Ranged Tools (Nailgun) * * * * * * * * * * -->
 
 <item name="gunToolNailgun">
-	<property name="Tags" value="tool,nailgun,sideAttachments,selfLoading"/>
+	<property name="Tags" value="tool,nailgun,sideAttachments,selfLoading,construction"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="37"/>
 	<property name="Meshfile" value="Items/Tools/nailgunPrefab"/>
@@ -2723,11 +2598,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
 	</effect_group>
 </item>
 
@@ -3661,7 +3531,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="EconomicValue" value="5"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<effect_group name="Base Effects" tiered="false">
-		<passive_effect name="EntityDamage" operation="base_set" value="11"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="25"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="1.6"/>
 		<passive_effect name="RoundRayCount" operation="base_set" value="8"/>
 		<passive_effect name="DismemberChance" operation="perc_subtract" value="0.875" tags="head"/>
@@ -3773,6 +3643,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 
 	<!-- <effect_group name="Action Skills">
@@ -3800,6 +3672,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3818,6 +3692,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3847,7 +3723,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
-
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffBurningFlamingArrow"/>
 	</effect_group>
 </item>
@@ -3887,6 +3764,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="67.5"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3923,6 +3802,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="75"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3947,6 +3828,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3985,7 +3868,8 @@ We _want_ players to specialise so we also have to make it feasible.
 			<!-- do we have damage modifiers for explosions? -->
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
-
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 		<display_value name="ExRadius" value="4" />
 	</effect_group>
 </item>
@@ -5632,6 +5516,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="lowerbody,legs,radiation,toxic" match_all_tags="true"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+		<display_value name="dCarryCapacity" value="3"/>
 	</effect_group>
 </item>
 
@@ -5653,6 +5538,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="upperbody,chest,radiation,toxic" match_all_tags="true"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+		<display_value name="dCarryCapacity" value="3"/>
 	</effect_group>
 </item>
 
@@ -6174,6 +6060,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="6"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6207,6 +6094,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="8"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="8"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6243,6 +6131,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="3"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="9"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="1"/>
+		<display_value name="dCarryCapacity" value="1"/>
 	</effect_group>
 </item>
 
@@ -6372,6 +6261,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="6"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6414,6 +6304,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="8"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="8"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6478,6 +6369,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="16"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="21"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+		<display_value name="dCarryCapacity" value="3"/>
 	</effect_group>
 </item>
 
@@ -6495,6 +6387,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="16"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="21"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+		<display_value name="dCarryCapacity" value="3"/>
 	</effect_group>
 </item>
 
@@ -6529,6 +6422,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+		<display_value name="dCarryCapacity" value="3"/>
 	</effect_group>
 </item>
 
@@ -6602,6 +6496,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="9"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6663,6 +6558,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="3"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="9"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6708,6 +6604,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="9"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6768,6 +6665,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="14"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6790,6 +6688,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="14"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6807,6 +6706,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="3"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="9"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6828,6 +6728,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="3"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="9"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -6889,6 +6790,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="14"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -7013,6 +6915,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="8"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="8"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+		<display_value name="dCarryCapacity" value="3"/>
 	</effect_group>
 </item>
 
@@ -7029,6 +6932,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="6"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+		<display_value name="dCarryCapacity" value="3"/>
 	</effect_group>
 </item>
 
@@ -7047,6 +6951,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="6"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -7065,6 +6970,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="6"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -7129,6 +7035,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="6"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -7151,6 +7058,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="HypothermalResist" operation="base_add" value="14"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dCarryCapacity" value="2"/>
 	</effect_group>
 </item>
 
@@ -8748,6 +8656,8 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="terrWaterPOI"/>
+		<property name="Focused_blockname_6" value="DFworkingGraniteSink"/>
+		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -8882,6 +8792,8 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="terrWaterPOI"/>
+		<property name="Focused_blockname_6" value="DFworkingGraniteSink"/>
+		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -12670,18 +12582,12 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
 </item>
 
 <item name="DFmeleeToolstoneHammer">
 	<property name="CustomIcon" value="stoneHammer"/>
 	<property name="DescriptionKey" value="stoneHammerDesc"/>
-	<property name="Tags" value="blunt,melee,light,tool,perkStayDown"/>
+	<property name="Tags" value="blunt,melee,light,tool,perkStayDown,construction"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="32"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?StoneHammer.prefab"/>
@@ -12719,7 +12625,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
 		<passive_effect name="StaminaLoss" operation="base_set" value="12.7" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -12728,15 +12634,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-	</effect_group>	
 </item>
 
 <item name="DFmeleeToolPickaxeScrap">
@@ -12748,7 +12645,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Meshfile" value="#MeleeTools.unity3d?ScrapPickaxe.prefab"/>
 	<property name="Material" value="Miron_scrap"/>
 	<property name="RepairTools" value="resourceScrapIron"/>
-	<property name="EconomicValue" value="912"/>
+	<property name="EconomicValue" value="240"/>
 	<property class="Action1">
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
@@ -12762,7 +12659,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="100,400" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -12781,9 +12678,6 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
 	</effect_group>
 </item>
 
@@ -12829,7 +12723,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="100,400" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -12840,9 +12734,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="27" tags="secondary"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
@@ -12872,8 +12763,8 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="19" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
-		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="100,400" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		<passive_effect name="HarvestCount" operation="perc_add" value="0,0.05" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Scrap Tool Harvest Bonus -->
@@ -12883,9 +12774,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="39" tags="secondary"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 </item>
@@ -12951,12 +12839,6 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
 	</effect_group>
 </item>
 
@@ -13025,7 +12907,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFmeleeToolSteelWrench">
 	<property name="CustomIcon" value="steelWrench" />
 	<property name="DescriptionKey" value="steelWrenchDesc"/>
-	<property name="Tags" value="blunt,melee,light,tool,perkStayDown,perkSalvageOperations"/>
+	<property name="Tags" value="blunt,melee,light,tool,perkSalvageOperations,construction,scavenging"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="29"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?SteelWrench.prefab"/>
@@ -13066,14 +12948,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
@@ -13125,9 +12999,6 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
 	</effect_group>
 </item>
 
@@ -13186,13 +13057,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="10"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="36"/>
-	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
@@ -13233,9 +13097,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="10"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 </item>
@@ -13303,12 +13164,7 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
+	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
 <item name="DFmeleeToolChainsawTitanium">
@@ -13519,12 +13375,7 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
+	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
 <item name="DFclubTitanium">
@@ -13591,16 +13442,7 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-	</effect_group>
-	
+	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
 <item name="DFclubTitaniumSpiked">
@@ -13673,22 +13515,13 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-	</effect_group>
-	
+	<property name="Group" value="Ammo/Weapons"/>	
 </item>
 
 <item name="DFtitaniumSledgehammer">
 	<property name="CustomIcon" value="titaniumSledgehammer" />
 	<property name="DescriptionKey" value="titaniumSledgehammerDesc"/>
-	<property name="Tags" value="blunt,melee,heavy,titaniumsledge,weapon,meleeWeapon,perkHeavyMetal,perkMotherLode"/>
+	<property name="Tags" value="blunt,melee,heavy,titaniumsledge,weapon,meleeWeapon,perkHeavyMetal"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="33"/>
 	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab"/>
@@ -13756,16 +13589,7 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-	</effect_group>
-	
+	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
 <item name="DFtitaniumHuntingKnife">
@@ -13836,13 +13660,6 @@ So no clothing dyes until that can be resolved. -->
 		</triggered_effect>
 	</effect_group>
 	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
-	
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Blade Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
@@ -13881,6 +13698,8 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -13907,17 +13726,19 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
 <item name="DFmeleeSpearIron">
 	<property name="CustomIcon" value="stoneSpear"/>
 	<property name="DescriptionKey" value="ironSpearDesc"/>
-	<property name="Tags" value="melee,medium,tool,perkDeepCuts"/>
+	<property name="Tags" value="melee,medium,tool,perkDeepCuts,spear"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="18"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?StoneSpear.prefab"/>
-	<property name="Material" value="Mstone"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceRockSmall"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -13966,22 +13787,17 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
+	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
 <item name="DFmeleeSpearTitanium">
 	<property name="CustomIcon" value="titaniumSpear"/>
 	<property name="DescriptionKey" value="titaniumSpearDesc"/>
-	<property name="Tags" value="melee,medium,tool,perkDeepCuts"/>
+	<property name="Tags" value="melee,medium,tool,perkDeepCuts,spear"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="18"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?StoneSpear.prefab"/>
-	<property name="Material" value="Mstone"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceRockSmall"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -14030,18 +13846,13 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
+	<property name="Group" value="Ammo/Weapons"/>
 </item> 
 
 <item name="DFmeleeToolcombatAxe">
 	<property name="CustomIcon" value="combatAxe"/>
 	<property name="DescriptionKey" value="combatAxeDesc"/>
-	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="17"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?TitaniumFireaxe.prefab"/>
@@ -14091,13 +13902,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="18,13" tier="1,6" tags="secondary"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
-	<property name="Group" value="Tools/Traps"/>
+	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -14107,7 +13912,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="combatAxe"/>
 	<property name="CustomIconTint" value="0080ff"/>
 	<property name="DescriptionKey" value="titaniumCombatAxeDesc"/>
-	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="17"/>
 	<property name="Meshfile" value="#MeleeTools.unity3d?TitaniumFireaxe.prefab"/>
@@ -14157,13 +13962,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="10,5" tier="1,6" tags="secondary"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
-	</effect_group>
-	<property name="Group" value="Tools/Traps"/>
+	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -14249,18 +14048,12 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DegradationMax" operation="base_set" value="800,1600" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="15"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="6">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="24"/>
-	</effect_group>
 </item>
 
 <item name="DFgunPipeRifle">
 	<property name="CustomIcon" value="gunPipeRifle" />
 	<property name="DescriptionKey" value="gunPipeRifleDesc"/>
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkDeadEye"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
 	<property name="Meshfile" value="#Weapons.unity3d?PipeRifle.prefab"/>
@@ -14335,12 +14128,6 @@ So no clothing dyes until that can be resolved. -->
 
 		<passive_effect name="DegradationMax" operation="base_set" value="800,1600" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="15"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="10">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="40"/>
 	</effect_group>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
@@ -14423,12 +14210,6 @@ So no clothing dyes until that can be resolved. -->
 
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="6">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="24"/>
-	</effect_group>
 </item>
 
 <item name="DFgunWinchesterRifle">
@@ -14508,12 +14289,6 @@ So no clothing dyes until that can be resolved. -->
 
 		<passive_effect name="DegradationMax" operation="base_set" value="3100,6200" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="15"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="10">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="40"/>
 	</effect_group>
 </item>
 
@@ -14595,12 +14370,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DegradationMax" operation="base_set" value="2500,4500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="9"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="1">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="45"/>
-	</effect_group>
 </item>
 
 <item name="DFgunAR15">
@@ -14681,12 +14450,15 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
+	
+	<!-- disable for testing 
+	
 	<effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="8">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="32"/>
-	</effect_group>
+	</effect_group> -->
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
@@ -14769,12 +14541,13 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
+	<!-- disable for testing 
 	<effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="8">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="32"/>
-	</effect_group>
+	</effect_group> -->
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
@@ -14850,12 +14623,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="36"/>
 	</effect_group>
 </item>
 
@@ -14936,12 +14703,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/> <!-- crosshair reset speed -->
 
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="6">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="24"/>
 	</effect_group>
 </item>
 
@@ -15025,12 +14786,13 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
+	<!-- disable for testing 
 	<effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="8">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="32"/>
-	</effect_group>
+	</effect_group> -->
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
@@ -15114,12 +14876,6 @@ So no clothing dyes until that can be resolved. -->
 		<!--
 		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 		-->
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="10">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="40"/>
 	</effect_group>
 </item>
 
@@ -15475,7 +15231,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="meleeToolClawHammer"/>
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="titaniumclawHammerDesc"/>
-	<property name="Tags" value="blunt,melee,hammer,light,tool,perkStayDown"/>
+	<property name="Tags" value="blunt,melee,hammer,light,tool,perkStayDown,construction"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="32"/>
 	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
@@ -15514,14 +15270,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-		<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-		<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
@@ -15840,6 +15588,8 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFbowlRiverWater">
 	<property name="CustomIcon" value="bowlMurkyWater" />
+	<property name="DescriptionKey" value="bowlRiverWaterDesc"/>
+	<property name="DisplayType" value="water"/>
 	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
 	<property name="Material" value="MresourceClayLump"/>
 	<property name="HoldType" value="3"/>
@@ -15877,6 +15627,8 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="DFbowlWater">
 	<property name="CustomIcon" value="bowlWater" />
+	<property name="DescriptionKey" value="bowlWaterDesc"/>
+	<property name="DisplayType" value="water"/>
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="MresourceClayLump"/>
 	<property name="HoldType" value="3"/>
@@ -15910,6 +15662,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFbowlSap">
 	<property name="CustomIcon" value="bowlSoup" />
 	<property name="DescriptionKey" value="bowlSapDesc"/>
+	<property name="DisplayType" value="waterCoffee"/>
 	<property name="Meshfile" value="Items/Food/honeyPrefab"/>
 	<property name="Material" value="MresourceClayLump"/>
 	<property name="HoldType" value="3"/>
@@ -15947,6 +15700,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFbottleSap">
 	<property name="CustomIcon" value="bottleSap" />
 	<property name="DescriptionKey" value="bottleSapDesc"/>
+	<property name="DisplayType" value="waterCoffee"/>
 	<property name="Meshfile" value="Items/Food/honeyPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -15984,9 +15738,9 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFBanana">
 	<property name="CustomIcon" value="Banana" />
 	<property name="DescriptionKey" value="BananaDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="#Plants.unity3d?Banana.prefab" />
 	<property name="HoldType" value="3" />
-	<property name="DisplayType" value="food"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -16010,9 +15764,9 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFCoconut">
 	<property name="CustomIcon" value="Coconut" />
 	<property name="DescriptionKey" value="CoconutDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="#Plants.unity3d?Coconut.prefab" />
 	<property name="HoldType" value="21" />
-	<property name="DisplayType" value="food"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -16037,9 +15791,9 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFApple">
 	<property name="CustomIcon" value="apple" />
 	<property name="DescriptionKey" value="AppleDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="#Plants.unity3d?Apple.prefab" />
 	<property name="HoldType" value="21" />
-	<property name="DisplayType" value="food"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -16063,9 +15817,9 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFOrange">
 	<property name="CustomIcon" value="Orange" />
 	<property name="DescriptionKey" value="OrangeDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="#Plants.unity3d?Orange.prefab" />
 	<property name="HoldType" value="21" />
-	<property name="DisplayType" value="food"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -16090,9 +15844,9 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFCarrot">
 	<property name="CustomIcon" value="carrot" />
 	<property name="DescriptionKey" value="carrotDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="#Plants.unity3d?Carrot.prefab" />
 	<property name="HoldType" value="3" />
-	<property name="DisplayType" value="food"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -16144,7 +15898,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DescriptionKey" value="bottleSapDesc"/> -->
 	<property name="Meshfile" value="#Plants.unity3d?Lime.prefab" />
 	<property name="HoldType" value="21" />
-	<property name="DisplayType" value="food"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -16205,6 +15959,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFtomatoJuice">
 	<property name="CustomIcon" value="tomatoJuice" />
 	<property name="DescriptionKey" value="tomatoJuiceDesc"/>
+	<property name="DisplayType" value="water"/>
 	<property name="Meshfile" value="Items/Food/redTeaPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -16233,12 +15988,12 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>
 
 	<property name="Group" value="Food/Cooking"/>
-	<property name="DescriptionKey" value="tomatoJuiceDesc"/>
 </item>
 
 <item name="DFappleJuice">
 	<property name="CustomIcon" value="appleJuice" />
 	<property name="DescriptionKey" value="appleJuiceDesc"/>
+	<property name="DisplayType" value="water"/>
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -16267,12 +16022,12 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>
 	
 	<property name="Group" value="Food/Cooking"/>
-	<property name="DescriptionKey" value="appleJuiceDesc"/>
 </item>
 
 <item name="DForangeJuice">
 	<property name="CustomIcon" value="orangeJuice" />
 	<property name="DescriptionKey" value="orangeJuiceDesc"/>
+	<property name="DisplayType" value="water"/>
 	<property name="Meshfile" value="Items/Food/honeyPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -16301,12 +16056,12 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>
 	
 	<property name="Group" value="Food/Cooking"/>
-	<property name="DescriptionKey" value="orangeJuiceDesc"/>
 </item>
 
 <item name="DFcoconutWater">
 	<property name="CustomIcon" value="coconutWater" />
 	<property name="DescriptionKey" value="coconutWaterDesc"/>
+	<property name="DisplayType" value="water"/>
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -16335,12 +16090,12 @@ So no clothing dyes until that can be resolved. -->
 	</effect_group>
 	
 	<property name="Group" value="Food/Cooking"/>
-	<property name="DescriptionKey" value="coconutWaterDesc"/>
 </item>
 
 <item name="DForangeTea">
 	<property name="CustomIcon" value="orangeTea"/>
 	<property name="DescriptionKey" value="orangeTeaDesc"/>
+	<property name="DisplayType" value="water"/>
 	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -16385,6 +16140,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFfruitSalad">
 	<property name="CustomIcon" value="fruitSalad" />
 	<property name="DescriptionKey" value="fruitSaladDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="23"/>
@@ -16413,6 +16169,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFgrilledYucca">
 	<property name="CustomIcon" value="grilledYuccaFruit" />
 	<property name="DescriptionKey" value="grilledYuccaDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Food/fruit_yucca"/>
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="14"/>
@@ -16439,6 +16196,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFbakedApple">
 	<property name="CustomIcon" value="bakedApple" />
 	<property name="DescriptionKey" value="bakedAppleDesc"/>	
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="#Plants.unity3d?Apple.prefab" />
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="14"/>
@@ -16465,6 +16223,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFstickyApple">
 	<property name="CustomIcon" value="stickyApple" />
 	<property name="DescriptionKey" value="stickyAppleDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="#Plants.unity3d?Apple.prefab" />
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="14"/>
@@ -16491,6 +16250,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFbananaBread">
 	<property name="CustomIcon" value="bananaBread" />
 	<property name="DescriptionKey" value="bananaBreadDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16516,6 +16276,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFbananaPancakes">
 	<property name="CustomIcon" value="bananaPancakes" />
 	<property name="DescriptionKey" value="bananaPancakesDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -16541,6 +16302,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DForangeMarmalade">
 	<property name="CustomIcon" value="marmalade"/>
 	<property name="DescriptionKey" value="orangeMarmaladeDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="HoldType" value="3"/>
@@ -16568,6 +16330,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFmarmaladeToast">
 	<property name="CustomIcon" value="marmaladeontoast"/>
 	<property name="DescriptionKey" value="marmaladeToastDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16595,6 +16358,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFpasta">
 	<property name="CustomIcon" value="pasta" />
 	<property name="DescriptionKey" value="PastaDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16620,6 +16384,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFveggieBolognaise">
 	<property name="CustomIcon" value="vegbolognese" />
 	<property name="DescriptionKey" value="veggieBolognaiseDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16646,6 +16411,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFmeatBolognaise">
 	<property name="CustomIcon" value="meatbolognese" />
 	<property name="DescriptionKey" value="meatBolognaiseDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16672,6 +16438,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFdough">
 	<property name="CustomIcon" value="dough" />
 	<property name="DescriptionKey" value="DoughDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16698,6 +16465,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFbread">
 	<property name="CustomIcon" value="Bread" />
 	<property name="DescriptionKey" value="BreadDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16723,6 +16491,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFtunaSandwich">
 	<property name="CustomIcon" value="tunaSandwich" />
 	<property name="DescriptionKey" value="tunaSandwichDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16748,6 +16517,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFsteakSandwich">
 	<property name="CustomIcon" value="steakSandwich" />
 	<property name="DescriptionKey" value="steakSandwichDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16773,6 +16543,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFvegetableSoup">
 	<property name="CustomIcon" value="bowlSoup" />
 	<property name="DescriptionKey" value="vegetableSoupDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="23"/>
@@ -16799,6 +16570,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFbatter">
 	<property name="CustomIcon" value="batter" />
 	<property name="DescriptionKey" value="BatterDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -16826,6 +16598,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFroastDinner">
 	<property name="CustomIcon" value="roastDinner" />
 	<property name="DescriptionKey" value="roastDinnerDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="23"/>
@@ -16851,6 +16624,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFblueberryPancakes">
 	<property name="CustomIcon" value="pancakes" />
 	<property name="DescriptionKey" value="blueberryPancakesDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Morganic"/>
@@ -16876,6 +16650,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFapplePie">
 	<property name="CustomIcon" value="applePie" />
 	<property name="DescriptionKey" value="applePieDesc"/>
+	<property name="DisplayType" value="food"/>
 	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="HoldType" value="23"/>
@@ -16900,6 +16675,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFjerky">
 	<property name="CustomIcon" value="jerky"/>
 	<property name="DescriptionKey" value="jerkyDesc"/>
+	<property name="DisplayType" value="foodWater"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -17412,7 +17188,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillArmorBook">
 	<property name="CustomIcon" value="skillCloth-Armor" />
 	<property name="DescriptionKey" value="skillCloth-ArmorBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASArmorUse,perkASArmorUse"/>
@@ -17425,7 +17201,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillAthleticsBook">
 	<property name="CustomIcon" value="skillAthletics" />
 	<property name="DescriptionKey" value="skillAthleticsBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASAthletics,perkASAthletics"/>
@@ -17438,7 +17214,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillConstructionBook">
 	<property name="CustomIcon" value="skillConstruction" />
 	<property name="DescriptionKey" value="skillConstructionBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASConstructionTools,perkASConstructionTools"/>
@@ -17451,7 +17227,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillMiningBook">
 	<property name="CustomIcon" value="skillMining" />
 	<property name="DescriptionKey" value="skillMiningBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASMiningTools,perkASMiningTools"/>
@@ -17464,7 +17240,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillScavengingBook">
 	<property name="CustomIcon" value="skillScavenging" />
 	<property name="DescriptionKey" value="skillScavengingBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASScavenging,perkASScavenging"/>
@@ -17477,7 +17253,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillArcheryBook">
 	<property name="CustomIcon" value="skillArchery" />
 	<property name="DescriptionKey" value="skillArcheryBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASArchery,perkASArchery"/>
@@ -17490,7 +17266,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillAutomaticsBook">
 	<property name="CustomIcon" value="skillRifle" />
 	<property name="DescriptionKey" value="skillAutomaticsBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASAutomatics,perkASAutomatics"/>
@@ -17503,7 +17279,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillBluntBook">
 	<property name="CustomIcon" value="skillBlunt" />
 	<property name="DescriptionKey" value="skillBluntBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASBlunt,perkASBlunt"/>
@@ -17516,7 +17292,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillBladesBook">
 	<property name="CustomIcon" value="skillBlades" />
 	<property name="DescriptionKey" value="skillBladesBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASBladed,perkASBladed"/>
@@ -17529,7 +17305,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillPistolBook">
 	<property name="CustomIcon" value="skillPistol" />
 	<property name="DescriptionKey" value="skillPistolBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASPistols,perkASPistols"/>
@@ -17542,7 +17318,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillShotgunBook">
 	<property name="CustomIcon" value="skillShotgun" />
 	<property name="DescriptionKey" value="skillShotgunBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASShotguns,perkASShotguns"/>
@@ -17555,7 +17331,7 @@ So no clothing dyes until that can be resolved. -->
 <item name="DFskillRiflesBook">
 	<property name="CustomIcon" value="skillRifle" />
 	<property name="DescriptionKey" value="skillRifleBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
+	<property name="Extends" value="unlockBookMaster"/>
     <property class="Action0">
 		<property name="Class" value="GainSkill"/>
 		<property name="Skills_to_gain" value="perkASRifles,perkASRifles"/>
@@ -18514,7 +18290,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="5"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="250"/>
-	<property name="Group" value="Books"/>
+	<property name="Group" value="Special Items"/>
 </item>
 
 <!-- Legendary Items -->
@@ -18615,12 +18391,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DegradationMax" operation="base_set" value="5000,9000" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="9"/>
 	</effect_group>
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="1">
-			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="40"/>
-	</effect_group>
 </item>
 
 <item name="DFEriksHammer">
@@ -18692,14 +18462,6 @@ So no clothing dyes until that can be resolved. -->
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
-	
-	<effect_group name="Action Skills">
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
-				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
-	</effect_group>
-	
 </item>
 
 <!-- DF Zombie & NPC Weapons -->
@@ -18856,8 +18618,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
-	<!-- <property name="Meshfile" value="#Weapons.unity3d?AR15.prefab"/> -->
-	<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab"/>
+	<property name="Meshfile" value="#Weapons.unity3d?AR15.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
 
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->

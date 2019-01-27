@@ -2185,6 +2185,237 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="DFcoilsniperReceiver" count="1" />
 </lootgroup>
 
+<!-- Animal Snares Mod -->
+
+<lootgroup name="meat+hide" count="all">
+	<item name="foodRawMeat" count="1"/>
+	<item name="resourceLeather" count="5"/>
+	<item name="resourceAnimalFat" count="3"/> 
+</lootgroup>
+
+<lootgroup name="bigmeat+hide" count="all">
+	<item name="foodRawMeat" count="2,3"/>
+	<item name="resourceLeather" count="5,8"/>  
+	<item name="resourceAnimalFat" count="3"/> 
+</lootgroup>
+
+<lootgroup name="CapturedBird" count="all">
+	<item name="foodRawMeat" count="1"/>
+	<item name="resourceFeather" count="3,5"/> 
+	<item name="foodEgg" count="1,2" />
+</lootgroup>
+
+<!-- Item Loot Groups For Class Quest Rewards. Suck it, 7DTD -->
+
+<lootgroup name="DFallsCivilianQ1a" count="all">
+	<item name="suitPants" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsCivilianQ1b" count="all">
+	<item name="suitJacket" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsCivilianQ1c" count="all">
+	<item name="dressShoes" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsCivilianQ2a" count="all">
+	<item name="drinkCanRiverWater" count="2"/>
+</lootgroup>
+
+<lootgroup name="DFallsCivilianQ2b" count="all">
+	<item name="foodRawMeat" count="10"/>
+</lootgroup>
+
+<lootgroup name="DFallsCivilianQ3a" count="all">
+	<item name="drugPainkillers" count="2"/>
+</lootgroup>
+
+<lootgroup name="DFallsCivilianQ3b" count="all">
+	<item name="medicalBandage" count="2"/>
+</lootgroup>
+
+<lootgroup name="DFallsCivilianQ4" count="all">
+	<item name="meleeToolFlashlight02" count="1" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsCivilianQ6" count="all">
+	<item name="vehicleBicyclePlaceable" count="1"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ1a" count="all">
+	<item name="denimPants" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ1b" count="all">
+	<item name="cowboyBoots" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ1c" count="all">
+	<item name="cowboyHat" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ1d" count="all">
+	<item name="tshirt" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ2a" count="all">
+	<item name="drinkCanBoiledWater" count="1"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ2b" count="all">
+	<item name="foodCanBeef" count="2"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ3" count="all">
+	<item name="medicalFirstAidBandage" count="2"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ5a" count="all">
+	<item name="gunBlunderbuss" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsFarmerQ5b" count="all">
+	<item name="ammoBlunderbuss" count="50"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ1a" count="all">
+	<item name="denimPants" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ1b" count="all">
+	<item name="wornBoots" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ1c" count="all">
+	<item name="cowboyHat" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ1d" count="all">
+	<item name="tshirt" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ2a" count="all">
+	<item name="drinkCanBoiledWater" count="1"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ2b" count="all">
+	<item name="foodCanChicken" count="2"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ3" count="all">
+	<item name="medicalFirstAidBandage" count="2"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ4" count="all">
+	<item name="DFmeleeToolMacheteScrap" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ5a" count="all">
+	<item name="DFgunPipeRifle" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsHunterQ5b" count="all">
+	<item name="ammo762mmBulletFMJ" count="100"/>
+</lootgroup>
+
+<lootgroup name="DFallsLaborerQ1a" count="all">
+	<item name="denimPants" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsLaborerQ1b" count="all">
+	<item name="wornBoots" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsLaborerQ1c" count="all">
+	<item name="armorMiningHelmet" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsLaborerQ1d" count="all">
+	<item name="tshirt" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsLaborerQ6" count="all">
+	<item name="gunToolNailgun" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsMechanicQ1a" count="all">
+	<item name="overalls" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsMechanicQ1b" count="all">
+	<item name="wornBoots" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsMechanicQ1c" count="all">
+	<item name="ballCap" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsMechanicQ1d" count="all">
+	<item name="tshirtZUWhite" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsMechanicQ3" count="all">
+	<item name="meleeToolWrench" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsScientistQ1a" count="all">
+	<item name="jacketWhite" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsScientistQ1b" count="all">
+	<item name="tshirt" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsScientistQ1c" count="all">
+	<item name="suitPants" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsScientistQ1d" count="all">
+	<item name="dressShoes" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSecurityQ1a" count="all">
+	<item name="armyPants" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSecurityQ1b" count="all">
+	<item name="armyShirt" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSecurityQ1c" count="all">
+	<item name="wornBoots" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSecurityQ1d" count="all">
+	<item name="ballCap" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSecurityQ3a" count="all">
+	<item name="DFgunPipePistol" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSecurityQ3b" count="all">
+	<item name="ammo9mmBullet" count="100"/>
+</lootgroup>
+
+<lootgroup name="DFallsSurvivalistQ1a" count="all">
+	<item name="armyPants" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSurvivalistQ1b" count="all">
+	<item name="cowboyBoots" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSurvivalistQ1c" count="all">
+	<item name="cowboyHat" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+<lootgroup name="DFallsSurvivalistQ1d" count="all">
+	<item name="tshirt" mods="dye" mod_chance="0.5"/>
+</lootgroup>
+
+
 <!--
 	<item group="modAllT3" count="1" loot_prob_template="GradeCLoot"/>
 
@@ -3716,5 +3947,18 @@ treasureTemplate
 	<item group="questChallenge" count="1" prob="0.191"/>
 	<item group="treasureMaps" count="1" prob="0.161"/> 
 </lootcontainer>
+
+<!-- Animal snares and shit -->
+<lootcontainer id="166" count="1,3" size="4,3" destroy_on_close="true" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
+	<item name="foodEgg" count="1,2" prob="0.25" />
+	<item name="resourceFeather" count="4,10" prob="0.75" />
+</lootcontainer>
+
+<lootcontainer id="167" count="1" size="3,1" destroy_on_close="true" sound_open="UseActions/open_animal" sound_close="UseActions/close_animal" open_time="2.5" loot_quality_template="baseTemplate">
+	<item group="meat+hide" />
+	<item group="CapturedBird" />
+	<item group="bigmeat+hide" prob="0.3" />
+</lootcontainer> 
+
 
 </lootcontainers>

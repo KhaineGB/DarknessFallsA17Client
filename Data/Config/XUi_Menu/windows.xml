@@ -168,7 +168,7 @@
 						</rect>
 						<rect>
 							<label depth="4" width="150" height="30" style="hover" tooltip_key="xuiWorldSize" text="World Size" text_key="xuiWorldSize" font_size="28" color="[white]" justify="right" pivot="topleft" />
-							<combobox depth="108" pos="155,0" width="300" height="32" name="WorldSize" type="ComboBoxList&lt;System.String&gt;" values="4096,8192,16384" value_wrap="false" />
+							<combobox depth="108" pos="155,0" width="300" height="32" name="WorldSize" type="ComboBoxList&lt;System.String&gt;" values="4096,6114,8192,10240,12288,14336,16384" value_wrap="false" />
 						</rect>
 						<rect>
 							<simplebutton name="generate" pos="189,0" width="232" height="32" font_size="26" text="Generate World" caption_key="btnGenerateWorld"/>

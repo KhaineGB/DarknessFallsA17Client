@@ -6,10 +6,22 @@
 		<ruleset name="vanillaSmall" world_size="4096" terrain_generator="vanilla" biome_generator="vanillaSmall">
 			<cell_rule name="default" prob="1"/>
 		</ruleset>
+		<ruleset name="vanillaSmallish" world_size="6114" terrain_generator="vanilla" biome_generator="vanillaSmall">
+			<cell_rule name="default" prob="1"/>
+		</ruleset>
 		<ruleset name="vanillaMedium" world_size="8192" terrain_generator="vanilla" biome_generator="vanillaSmall">
 			<cell_rule name="default" prob="1"/>
 		</ruleset>
-		<ruleset name="vanillaLarge" world_size="16384" terrain_generator="vanilla" biome_generator="vanillaSmall">
+		<ruleset name="vanillaMediumish" world_size="10240" terrain_generator="vanilla" biome_generator="vanillaSmall">
+			<cell_rule name="default" prob="1"/>
+		</ruleset>
+		<ruleset name="vanillaLarge" world_size="12288" terrain_generator="vanilla" biome_generator="vanillaSmall">
+			<cell_rule name="default" prob="1"/>
+		</ruleset>
+		<ruleset name="vanillaLargeish" world_size="14336" terrain_generator="vanilla" biome_generator="vanillaSmall">
+			<cell_rule name="default" prob="1"/>
+		</ruleset>
+		<ruleset name="vanillaXLarge" world_size="16384" terrain_generator="vanilla" biome_generator="vanillaSmall">
 			<cell_rule name="default" prob="1"/>
 		</ruleset>
 	</rulesets>

@@ -299,6 +299,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarRiverWater" count="1"/>
 </recipe>
 
+<recipe name="DFbowlWater" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="DFbowlRiverWater" count="1"/>
+</recipe>
+
 <recipe name="drinkJarRiverWater" count="1" craft_area="campfire">
 	<ingredient name="resourceSnowBall" count="1"/>
 	<ingredient name="drinkJarEmpty" count="1"/>
@@ -1860,7 +1864,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceClayLump" count="2"/>
 </recipe>
 
-<recipe name="plantedPotato1" count="1" craft_time="1" >
+<recipe name="plantedPotato1" count="1" craft_time="1" always_unlocked="true">
 	<ingredient name="foodCropPotato" count="4"/>
 </recipe>
 
@@ -4715,9 +4719,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_clay" count="30"/>
 </recipe>
 
-<recipe name="DFMandP" count="1" craft_area="advforge" material_based="true" craft_time = "30" tags="learnable">
+<!-- <recipe name="DFMandP" count="1" craft_area="advforge" material_based="true" craft_time = "30" tags="learnable">
 	<ingredient name="unit_clay" count="30"/>
-</recipe>
+</recipe> -->
 
 <recipe name="plantedSnowberry1" count="1" craft_time="1" >
 	<ingredient name="resourceCropSnowberryPlant" count="4"/>
@@ -6178,6 +6182,14 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceScrapLead" count="10"/>
 	<ingredient name="resourceScrapBrass" count="10"/>	
 	<ingredient name="resourceAcid" count="1" />
+</recipe>
+
+<recipe name="vehicleWheels" count="1" tags="learnable">
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="resourceAcid" count="1"/>
+	<ingredient name="resourceForgedIron" count="2"/>
+	<ingredient name="resourceOil" count="2"/>
+	<ingredient name="resourceCoal" count="10"/>
 </recipe>
 
 <!-- Extra Player Storage -->
