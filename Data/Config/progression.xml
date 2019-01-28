@@ -219,16 +219,17 @@
 		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="60" desc_key="reqPlayerLevel60"/></level_requirements>
 		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqPlayerLevel90"/></level_requirements>
 		<effect_group>
-			<passive_effect name="WaterMax" operation="base_set" value="100,180" level="1,9"/>
-			<passive_effect name="WaterMax" operation="base_set" value="200" level="10"/>
-			<passive_effect name="WaterMax" operation="base_set" value="205,250" level="11,20"/>
+			<passive_effect name="HealthMax" operation="base_set" value="100,180" level="1,9"/>
+			<passive_effect name="HealthMax" operation="base_set" value="200" level="10"/>
+			<passive_effect name="HealthMax" operation="base_set" value="205,250" level="11,20"/>
 
 			<passive_effect name="HealthLossMaxMult" operation="perc_add" value="0.0,0.24" level="1,9"/>
 			<passive_effect name="HealthLossMaxMult" operation="perc_add" value="0.3" level="10"/>
 			<passive_effect name="HealthLossMaxMult" operation="perc_add" value="0.31,0.40" level="11,20"/>
 
-			<passive_effect name="WaterMax" operation="base_set" value="105,150" level="1,10"/>
-			<passive_effect name="WaterMax" operation="base_set" value="155,200" level="11,20"/>
+			<passive_effect name="WaterMax" operation="base_set" value="100,180" level="1,9"/>
+			<passive_effect name="WaterMax" operation="base_set" value="200" level="10"/>
+			<passive_effect name="WaterMax" operation="base_set" value="205,250" level="11,20"/>
 			
 			<effect_description level="1" desc_key="attFortitudeRank1Desc"/>
 			<effect_description level="2" desc_key="attFortitudeRank2Desc"/>
