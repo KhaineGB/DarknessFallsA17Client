@@ -3504,13 +3504,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceCloth" count="1"/>
 </recipe>
 
-<recipe name="ammoArrowSteelAP" count="1" craft_area="workstationMetal" >
+<recipe name="ammoArrowSteelAP" count="1" craft_area="workstationMetal" tags="learnable">
 	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
 	<ingredient name="DFstick" count="1"/>
 	<ingredient name="resourceScrapPolymers" count="1"/>
 </recipe>
 
-<recipe name="ammoCrossbowBoltSteelAP" count="1" craft_area="workstationMetal">
+<recipe name="ammoCrossbowBoltSteelAP" count="1" craft_area="workstationMetal" tags="learnable">
 	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
 	<ingredient name="DFstick" count="1"/>
 	<ingredient name="resourceScrapPolymers" count="1"/>

@@ -69,27 +69,17 @@
 		<action type="ShowTip" value="tutorialTipQuest02" />
 		<action type="TrackQuest" />
 
-		<reward type="Skill" id="perkPerception" value="1" />
-		<reward type="Skill" id="perkStrength" value="1" />
-		<reward type="Skill" id="attFortitude" value="1" />
-		<reward type="Skill" id="perkAgility" value="1" />
-		<reward type="Skill" id="perkIntellect" value="1" />
-		
-		<!-- <reward type="Skill" id="perkASArmorUse" value="1" />
-		<reward type="Skill" id="perkASAthletics" value="1" />
-		<reward type="Skill" id="perkASConstructionTools" value="1" />
-		<reward type="Skill" id="perkASMiningTools" value="1" />
-		<reward type="Skill" id="perkASScavenging" value="1" />
-		<reward type="Skill" id="perkASBlunt" value="1" />
-		<reward type="Skill" id="perkASBladed" value="1" />
-		<reward type="Skill" id="perkASArchery" value="1" />
-		<reward type="Skill" id="perkASPistols" value="1" />
-		<reward type="Skill" id="perkASShotguns" value="1" />
-		<reward type="Skill" id="perkASRifles" value="1" />
-		<reward type="Skill" id="perkASAutomatics" value="1" />	-->	
+		<objective type="FetchKeep" id="resourceYuccaFibers" value="20" phase="1" />
+		<objective type="Craft">
+			<property name="phase" value="2" />
+			<property name="item" value="bedroll" />
+			<property name="count" value="1" />
+		</objective>
+
+		<objective type="BlockPlace" id="bedroll" value="1" phase="2" />
 		
 		<reward type="Quest" id="quest_BasicSurvival2" />
-    </quest>
+    </quest> -->
 	
 	<quest id="quest_BasicSurvival2">
 		<property name="group_name_key" value="quest_BasicSurvival" />
@@ -102,17 +92,21 @@
 		<property name="offer_key" value="quest_BasicSurvival_offer" />
 		<property name="shareable" value="false" />
 
-		<objective type="FetchKeep" id="resourceYuccaFibers" value="20" phase="1" />
+		<objective type="FetchKeep" id="resourceYuccaFibers" value="2" phase="1" />
+		<objective type="FetchKeep" id="resourceWood" value="2" phase="1" />
+		<objective type="FetchKeep" id="resourceRockSmall" value="4" phase="1" />
+
 		<objective type="Craft">
 			<property name="phase" value="2" />
-			<property name="item" value="bedroll" />
+			<property name="item" value="DFmeleeToolstoneHammer" />
 			<property name="count" value="1" />
 		</objective>
 
-		<objective type="BlockPlace" id="bedroll" value="1" phase="2" />
-
 		<reward type="Exp" value="100" />
-		<reward type="Quest" id="quest_BasicSurvival3" />
+		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete">
+			<property name="chainquest" value="false" />
+		</reward>
+		<reward type="SkillPoints" value="4" chainreward="true" />
     </quest>
 
 	<!-- Basic Survival 2 - Craft a Stone Axe /> -->

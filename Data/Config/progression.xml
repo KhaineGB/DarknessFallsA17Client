@@ -174,7 +174,7 @@
 
 <perks min_level="0" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1" >
 
-	<perk name="perkAgility" name_key="perkAgilityName" parent="skillAttributes" desc_key="perkAgilityDesc" min_level="0" max_level="10" icon="ui_game_symbol_agility">
+	<perk name="perkAgility" name_key="perkAgilityName" parent="skillAttributes" desc_key="perkAgilityDesc" min_level="1" max_level="10" icon="ui_game_symbol_agility">
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
@@ -207,7 +207,7 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="attFortitude" name_key="perkFortitudeName" parent="skillAttributes" desc_key="perkFortitudeDesc" min_level="0" max_level="10" icon="ui_game_symbol_add">
+	<perk name="attFortitude" name_key="perkFortitudeName" parent="skillAttributes" desc_key="perkFortitudeDesc" min_level="1" max_level="10" icon="ui_game_symbol_add">
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
@@ -251,7 +251,7 @@
 		</effect_group>			
 	</perk>
 	
-	<perk name="perkIntellect" name_key="perkIntellectName" parent="skillAttributes" desc_key="perkIntellectDesc" min_level="0" max_level="10" icon="ui_game_symbol_intellect">
+	<perk name="perkIntellect" name_key="perkIntellectName" parent="skillAttributes" desc_key="perkIntellectDesc" min_level="1" max_level="10" icon="ui_game_symbol_intellect">
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
@@ -289,7 +289,7 @@
 		</effect_group>
 	</perk>
 
-	<perk name="perkPerception" name_key="perkPerceptionName" parent="skillAttributes" desc_key="perkPerceptionDesc" min_level="0" max_level="10" icon="ui_game_symbol_stealth">
+	<perk name="perkPerception" name_key="perkPerceptionName" parent="skillAttributes" desc_key="perkPerceptionDesc" min_level="1" max_level="10" icon="ui_game_symbol_stealth">
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
@@ -347,7 +347,7 @@
 		</effect_group>
 	</perk>
 
-	<perk name="perkStrength" name_key="perkStrengthName" parent="skillAttributes" desc_key="perkStrengthDesc" min_level="0" max_level="10" icon="ui_game_symbol_muscle">
+	<perk name="perkStrength" name_key="perkStrengthName" parent="skillAttributes" desc_key="perkStrengthDesc" min_level="1" max_level="10" icon="ui_game_symbol_muscle">
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
