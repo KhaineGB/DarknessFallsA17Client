@@ -4399,7 +4399,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="5"/><!--This is your delay duration-->
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="AS_Athletics_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$AS_Athletics_XP" operation="add" value="2"/>
 		</effect_group>
 	</buff>
 	
@@ -4407,7 +4407,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="2"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" target="self" cvar="AS_Scavenging_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" target="self" cvar="$AS_Scavenging_XP" operation="add" value="2"/>
 		</effect_group>
 	</buff>
 	
@@ -4415,7 +4415,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" target="self" cvar="AS_Scavenging_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" target="self" cvar="$AS_Scavenging_XP" operation="add" value="2"/>
 		</effect_group>
 	</buff>
 	
@@ -4423,7 +4423,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$AS_Archery_XP" operation="add" value="8">
 				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 			</triggered_effect>
 		</effect_group>	
@@ -4433,7 +4433,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="32"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Archery_XP" operation="add" value="32"/>
 		</effect_group>	
 	</buff>
 	
@@ -4441,7 +4441,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="8">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$AS_Automatics_XP" operation="add" value="8">
 				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 			</triggered_effect>
 		</effect_group>	
@@ -4451,7 +4451,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="32"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Automatics_XP" operation="add" value="32"/>
 		</effect_group>	
 	</buff>
 	
@@ -4459,7 +4459,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="12">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$AS_Blunt_XP" operation="add" value="12">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 			</triggered_effect>
 		</effect_group>	
@@ -4469,7 +4469,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="36"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Blunt_XP" operation="add" value="36"/>
 		</effect_group>	
 	</buff>
 	
@@ -4477,7 +4477,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="8">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$AS_Bladed_XP" operation="add" value="8">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 			</triggered_effect>
 		</effect_group>	
@@ -4487,7 +4487,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="24"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Bladed_XP" operation="add" value="24"/>
 		</effect_group>	
 	</buff>
 	
@@ -4496,8 +4496,8 @@ icon="ui_game_symbol_pack_mule"
 		<duration value="1"/>
 		<effect_group name="Action Skills">
 			<requirement name="HoldingItemHasTags" tags="construction"/>
-			<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
-			<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="8"/>
+			<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="$AS_ConstructionTools_XP" operation="add" value="8"/>
+			<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="$AS_ConstructionTools_XP" operation="add" value="8"/>
 		</effect_group>
 	</buff>
 	
@@ -4506,7 +4506,7 @@ icon="ui_game_symbol_pack_mule"
 		<duration value="1"/>
 		<effect_group name="Action Skills">
 			<requirement name="HoldingItemHasTags" tags="perkMotherLode"/>
-			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="8"/>
+			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="$AS_MiningTools_XP" operation="add" value="8"/>
 		</effect_group>
 	</buff>
 	
@@ -4514,7 +4514,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="8">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$AS_Pistols_XP" operation="add" value="8">
 				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 			</triggered_effect>
 		</effect_group>	
@@ -4524,7 +4524,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="32"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Pistols_XP" operation="add" value="32"/>
 		</effect_group>	
 	</buff>
 	
@@ -4532,7 +4532,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="8">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$AS_Shotguns_XP" operation="add" value="8">
 				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 			</triggered_effect>
 		</effect_group>	
@@ -4542,7 +4542,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="32"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Shotguns_XP" operation="add" value="32"/>
 		</effect_group>	
 	</buff>
 	
@@ -4550,7 +4550,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="8">
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="$AS_Rifles_XP" operation="add" value="8">
 				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 			</triggered_effect>
 		</effect_group>	
@@ -4560,7 +4560,7 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group name="Action Skills">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="32"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Rifles_XP" operation="add" value="32"/>
 		</effect_group>	
 	</buff>
 	

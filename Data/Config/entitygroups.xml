@@ -191,7 +191,7 @@
 		<entity name="zombieMaleHazmat" prob="0.2"/>
 		<entity name="zombieFatHawaiian"/>
 		<entity name="DFzombieBehemothFemale" prob="0.25"/>
-		<entity name="DFzombieBehemoth" prob="0.25"/>
+		<!-- <entity name="DFzombieBehemoth" prob="0.25"/> -->
 	</entitygroup>
 
 	<entitygroup name="ZombiesWastelandNight">
@@ -215,9 +215,9 @@
 		<entity name="zombieNurseRadiated" />
 		<entity name="legendaryZombieBusinessMan" />
 		<entity name="DFzombieBehemothFemale" prob="0.75"/>
-		<entity name="DFzombieBehemoth" prob="0.75"/>
+		<!-- <entity name="DFzombieBehemoth" prob="0.75"/> -->
 		<entity name="DFzombieBehemothFemaleRadiated" prob="0.25"/>
-		<entity name="DFzombieBehemothRadiated" prob="0.25"/>
+		<!-- <entity name="DFzombieBehemothRadiated" prob="0.25"/> -->
 	</entitygroup>
 	
 	<entitygroup name="ZombiesFeralNight">
@@ -401,7 +401,7 @@
 		<entity name="zombieMoeBomber" />
 		<entity name="zombieFatCopBomber" />
 		<entity name="DFzombieBehemothFemale" prob="0.2" />
-		<entity name="DFzombieBehemoth" prob="0.2" />
+		<!-- <entity name="DFzombieBehemoth" prob="0.2" /> -->
 	</entitygroup>	
 	
 	<entitygroup name="DemonHorde">
@@ -409,7 +409,7 @@
 		<entity name="zombieMoeBomber" />
 		<entity name="zombieFatCopBomber" />
 		<entity name="DFzombieBehemothFemaleRadiated" prob="0.5" />
-		<entity name="DFzombieBehemothRadiated" prob="0.5" />
+		<!-- <entity name="DFzombieBehemothRadiated" prob="0.5" /> -->
 	</entitygroup>	
 	
 	<entitygroup name="ZombieFeralRadWandering">
@@ -433,7 +433,7 @@
 		<entity name="zombieNurseRadiated" />
 		<entity name="legendaryZombieBusinessMan" />
 		<entity name="DFzombieBehemothFemaleRadiated" prob="0.25"/>
-		<entity name="DFzombieBehemothRadiated" prob="0.25"/>
+		<!-- <entity name="DFzombieBehemothRadiated" prob="0.25"/> -->
 	</entitygroup>
 
 	<entitygroup name="ZombiesCave">

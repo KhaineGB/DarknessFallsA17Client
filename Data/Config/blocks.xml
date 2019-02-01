@@ -800,7 +800,7 @@ tbnsew:
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="290,2,2,2,2,2"/>
 	<property name="Class" value="UpgradeRated"/>
-	<property name="UpgradeRated.ToBlock" value="DFAirDowngrade"/>
+	<property name="UpgradeRated.ToBlock" value="DFgoreBlockDowngrade"/>
 	<property name="UpgradeRated.Rate" value="10"/>
 	<property name="Tag" value="Gore"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -23009,7 +23009,7 @@ NOT the TextureNumber.
 	<property name="Material" value="Mmetal"/>
 	<property name="PassThroughDamage" value="true"/>
 	<property name="LightOpacity" value="1"/>
-	<property name="MaxDamage" value="1300"/> <!-- need higher hit points to account for their area -->
+	<property name="MaxDamage" value="2500"/> <!-- need higher hit points to account for their area -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Tag" value="Door"/>
 	<property name="Model" value="Entities/Doors/garage_metal_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
@@ -24467,7 +24467,7 @@ NOT the TextureNumber.
 <block name="woodLogSpike1"> <!-- log spike 1 wood -->
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="TrunkTip"/>
-	<property name="Damage" value="3"/>
+	<property name="Damage" value="10"/>
 	<property name="Damage_received" value="7"/>
 	<property name="Material" value="Mwood_regular"/>
 	<property name="Shape" value="New"/>
@@ -24502,7 +24502,7 @@ NOT the TextureNumber.
 <block name="rWoodLogSpike2"> <!-- log spike 2 rWood -->
 	<property name="Extends" value="woodLogSpike1"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Damage" value="4"/>
+	<property name="Damage" value="15"/>
 	<property name="Damage_received" value="7"/>
 	<property name="Texture" value="379"/>
 	<property name="ImposterExchange" value="imposterPyramid" param1="119"/>
@@ -24519,7 +24519,7 @@ NOT the TextureNumber.
 <block name="rWoodMetalLogSpike3"> <!-- log spike 3 wood+metal -->
 	<property name="Extends" value="rWoodLogSpike2" param1="RepairItems"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Damage" value="5"/>
+	<property name="Damage" value="20"/>
 	<property name="Damage_received" value="10"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Texture" value="380"/>
@@ -24537,7 +24537,7 @@ NOT the TextureNumber.
 <block name="scrapIronLogSpike4"> <!-- log spike 4 scrap -->
 	<property name="Extends" value="rWoodLogSpike2" param1="DowngradeBlock,RepairItems"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Damage" value="6"/>
+	<property name="Damage" value="25"/>
 	<property name="Damage_received" value="9"/>
 	<property name="DisplayType" value="blockHardened" />
 	<property name="Material" value="Mmetal_medium"/>
@@ -24556,7 +24556,7 @@ NOT the TextureNumber.
 <block name="rScrapIronLogSpike5"> <!-- log spike 5 rScrap -->
 	<property name="Extends" value="scrapIronLogSpike4"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Damage" value="7"/>
+	<property name="Damage" value="30"/>
 	<property name="Damage_received" value="10"/>
 	<property name="Texture" value="352"/>
 	<property name="ImposterExchange" value="imposterPyramid" param1="110"/>
@@ -24572,7 +24572,7 @@ NOT the TextureNumber.
 <block name="steelLogSpike6"> <!-- log spike 6 Steel -->
 	<property name="Class" value="TrunkTip"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Damage" value="7"/>
+	<property name="Damage" value="40"/>
 	<property name="Damage_received" value="40"/>
 	<property name="DisplayType" value="blockHardened" />
 	<property name="Material" value="Msteel"/>
@@ -29241,13 +29241,18 @@ ore block visualisation end -->
 
 <!-- Blocks that constantly spawn mobs -->
 
-<block name="DFAirDowngrade"> <!-- This is for downgrading -->
-	<property name="Material" value="Mair"/>
-	<property name="Shape" value="Invisible"/>
-	<property name="Texture" value="250"/>
-	<property name="FilterTags" value="fterrain"/>
-	<property name="SortOrder1" value="d0j0"/>
-	<property name="SortOrder2" value="0050"/>
+<block name="DFgoreBlockDowngrade">
+	<property name="Material" value="Morganic"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Gore/gore_block1_bonesPrefab"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<drop event="Destroy" name="resourceFemur" count="1" prob="0.5"/>
+	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
+	<property name="FilterTags" value="fdecor,fother"/>
 </block>
 
 <block name="NestTest">

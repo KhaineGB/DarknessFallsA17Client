@@ -4495,6 +4495,165 @@
 		<reward type="Item" id="DFscrapSkill" value="15" />
     </quest>
 	
+<!-- Admin Quests for character reset issues -->
+
+	<quest id="quest_admincivilian">
+		<property name="name_key" value="quest_admincivilian" />
+		<property name="subtitle_key" value="quest_admincivilian_subtitle" />
+		<property name="description_key" value="quest_admincivilian_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_admincivilian_offer" />
+		<property name="repeatable" value="false" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Skill" id="attClassCivilian" value="1" />
+		<reward type="SkillPoints" value="6" />
+		<reward type="Exp" value="600" />
+    </quest>
+	
+	<quest id="quest_adminfarmer">
+		<property name="name_key" value="quest_adminfarmer" />
+		<property name="subtitle_key" value="quest_adminfarmer_subtitle" />
+		<property name="description_key" value="quest_adminfarmer_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_adminfarmer_offer" />
+		<property name="repeatable" value="false" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Skill" id="attClassFarmer" value="2" />
+		<reward type="Skill" id="perkSousChef" value="2" />
+		<reward type="Skill" id="perkLivingOffTheLand" value="1" />
+		<reward type="Recipe" id="meleeToolHoeIron"/>
+		<reward type="Exp" value="600" />
+    </quest>
+	
+	<quest id="quest_adminhunter">
+		<property name="name_key" value="quest_adminhunter" />
+		<property name="subtitle_key" value="quest_adminhunter_subtitle" />
+		<property name="description_key" value="quest_adminhunter_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_adminhunter_offer" />
+		<property name="repeatable" value="false" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Skill" id="attClassHunter" value="2" />
+		<reward type="Skill" id="perkTheHuntsman" value="2" /> 
+		<reward type="Skill" id="perkStealthAssassin" value="1" />
+		<reward type="Exp" value="600" />
+    </quest>
+	
+	<quest id="quest_adminlaborer">
+		<property name="name_key" value="quest_adminlaborer" />
+		<property name="subtitle_key" value="quest_adminlaborer_subtitle" />
+		<property name="description_key" value="quest_adminlaborer_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_adminlaborer_offer" />
+		<property name="repeatable" value="false" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Skill" id="attClassLaborer" value="2" />
+		<reward type="Skill" id="perkHammerForge" value="3" />
+		<reward type="Exp" value="600" />
+    </quest>
+	
+	<quest id="quest_adminmechanic">
+		<property name="name_key" value="quest_adminmechanic" />
+		<property name="subtitle_key" value="quest_adminmechanic_subtitle" />
+		<property name="description_key" value="quest_adminmechanic_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_adminmechanic_offer" />
+		<property name="repeatable" value="false" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Skill" id="attClassMechanic" value="2" />
+		<reward type="Skill" id="perkSalvageOperations" value="3" />
+		<reward type="Exp" value="600" />
+    </quest>
+	
+	<quest id="quest_adminscientist">
+		<property name="name_key" value="quest_adminscientist" />
+		<property name="subtitle_key" value="quest_adminscientist_subtitle" />
+		<property name="description_key" value="quest_adminscientist_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_adminscientist_offer" />
+		<property name="repeatable" value="false" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Skill" id="attClassScientist" value="2" />
+		<reward type="Skill" id="perkPhysician" value="2" />
+		<reward type="Skill" id="perkSelfMedicated" value="1" />
+		<reward type="Exp" value="600" />
+    </quest>
+	
+	<quest id="quest_adminsecurity">
+		<property name="name_key" value="quest_adminsecurity" />
+		<property name="subtitle_key" value="quest_adminsecurity_subtitle" />
+		<property name="description_key" value="quest_adminsecurity_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_adminsecurity_offer" />
+		<property name="repeatable" value="false" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Skill" id="attClassSecurity" value="2" />
+		<reward type="Skill" id="perkPainTolerance" value="2" />
+		<reward type="Skill" id="perkFlurryOfBlows" value="1" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="600" />
+    </quest>
+	
+	<quest id="quest_adminsurvivalist">
+		<property name="name_key" value="quest_adminsurvivalist" />
+		<property name="subtitle_key" value="quest_adminsurvivalist_subtitle" />
+		<property name="description_key" value="quest_adminsurvivalist_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_adminsurvivalist_offer" />
+		<property name="repeatable" value="false" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Skill" id="attClassSurvivalist" value="2" />
+		<reward type="Recipe" id="armorLeatherBoots"/>
+		<reward type="Recipe" id="armorLeatherGloves"/>
+		<reward type="Recipe" id="armorLeatherHood"/>
+		<reward type="Recipe" id="armorLeatherChest"/>
+		<reward type="Recipe" id="armorLeatherPants"/>
+		<reward type="Recipe" id="DFmeleeToolFireaxeScrap" />
+		<reward type="Recipe" id="DFmeleeToolPickaxeScrap" />
+		<reward type="Recipe" id="DFmeleeToolShovelScrap" />
+		<reward type="Recipe" id="DFWatch" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="600" />
+    </quest>
+	
+	<quest id="quest_admingainlvl">
+		<property name="name_key" value="quest_admingainlvl" />
+		<property name="subtitle_key" value="quest_admingainlvl_subtitle" />
+		<property name="description_key" value="quest_admingainlvl_description" />
+		<property name="icon" value="ui_game_symbol_skills" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="quest_admingainlvl_offer" />
+		<property name="repeatable" value="true" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<reward type="Exp" value="10000" />
+    </quest>
+	
 <!-- Quest for Darkness Falls testing ONLY -->
 
 	<quest id="disassembleStoneArrow">

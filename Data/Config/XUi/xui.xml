@@ -349,7 +349,7 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowToolsAdvForge" />
 			<window name="windowAdvForgeInput" />
-			<window name="windowOutput" />
+			<window name="windowAdvForgeOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		

@@ -15457,7 +15457,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EquipSlot" value="Head"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_add" value="18"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
 
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.014" tags="walking"/>
@@ -15485,7 +15485,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EquipSlot" value="Chest"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
 
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.014" tags="walking"/>
@@ -15512,7 +15512,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EquipSlot" value="Hands"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
 
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.014" tags="walking"/>
@@ -15539,7 +15539,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EquipSlot" value="Legs"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
 
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.014" tags="walking"/>
@@ -15566,7 +15566,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EquipSlot" value="Feet"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6"/>
 
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.014" tags="walking"/>
@@ -18748,6 +18748,206 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EconomicValue" value="5"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+
+<!-- DF Admin Books for reset character issues -->
+
+<item name="DFCivilianAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="civilianBook" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminClassBookDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_admincivilian"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFFarmerAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="farmerBook" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminClassBookDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_adminfarmer"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFHunterAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="hunterBook" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminClassBookDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_adminhunter"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFLaborerAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="constructionBook" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminClassBookDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_adminlaborer"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFMechanicAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="mechanicBook" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminClassBookDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_adminmechanic"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFScientistAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="scientistBook" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminClassBookDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_adminscientist"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFSecurityAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="securityBook" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminClassBookDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_adminsecurity"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFSurvivalistAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="survivalistBook" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminClassBookDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_adminsurvivalist"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item name="DFLevelUpAdminBook">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="skillGeneric" />
+	<property name="CustomIconTint" value="a5247b"/>
+	<property name="DescriptionKey" value="AdminGainLvlBookDesc" />
+	<property name="Stacknumber" value="50"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_admingainlvl"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
 </item>
 
 <!-- DF Testing Stuff 

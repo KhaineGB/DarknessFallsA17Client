@@ -17,43 +17,43 @@
 
 	<attribute name="attActionSkills" name_key="attActionSkillsName" desc_key="attActionSkillsDesc" min_level="1" max_level="1" icon="ui_game_symbol_skills">
 		<effect_group name="Action Skills Lvl 0 Set">
-			<requirement name="CVarCompare" cvar="AS_ArmorUse_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Athletics_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_ConstructionTools_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_MiningTools_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Scavenging_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Blunt_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Bladed_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Archery_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Pistols_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Shotguns_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Rifles_XP" operation="Equals" value="0"/>
-			<requirement name="CVarCompare" cvar="AS_Automatics_XP" operation="Equals" value="0"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_XP_Mult" operation="set" value="1.015"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_ArmorUse_LvlNextAdd" operation="set" value="150"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_ArmorUse_LvlNextTotal" operation="set" value="150"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Athletics_LvlNextAdd" operation="set" value="70"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Athletics_LvlNextTotal" operation="set" value="70"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextAdd" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextTotal" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_MiningTools_LvlNextAdd" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_MiningTools_LvlNextTotal" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Scavenging_LvlNextAdd" operation="set" value="30"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Scavenging_LvlNextTotal" operation="set" value="30"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Blunt_LvlNextAdd" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Blunt_LvlNextTotal" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Bladed_LvlNextAdd" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Bladed_LvlNextTotal" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Archery_LvlNextAdd" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Archery_LvlNextTotal" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Pistols_LvlNextAdd" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Pistols_LvlNextTotal" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Shotguns_LvlNextAdd" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Shotguns_LvlNextTotal" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Rifles_LvlNextAdd" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Rifles_LvlNextTotal" operation="set" value="200"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Automatics_LvlNextAdd" operation="set" value="500"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Automatics_LvlNextTotal" operation="set" value="500"/>
+			<requirement name="CVarCompare" cvar="$AS_ArmorUse_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Athletics_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_ConstructionTools_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_MiningTools_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Scavenging_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Blunt_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Bladed_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Archery_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Pistols_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Shotguns_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Rifles_XP" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="$AS_Automatics_XP" operation="Equals" value="0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_XP_Mult" operation="set" value="1.015"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ArmorUse_LvlNextAdd" operation="set" value="150"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ArmorUse_LvlNextTotal" operation="set" value="150"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Athletics_LvlNextAdd" operation="set" value="70"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Athletics_LvlNextTotal" operation="set" value="70"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextAdd" operation="set" value="200"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextTotal" operation="set" value="200"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_MiningTools_LvlNextAdd" operation="set" value="500"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_MiningTools_LvlNextTotal" operation="set" value="500"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextAdd" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextTotal" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Blunt_LvlNextAdd" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Blunt_LvlNextTotal" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Bladed_LvlNextAdd" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Bladed_LvlNextTotal" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Archery_LvlNextAdd" operation="set" value="200"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Archery_LvlNextTotal" operation="set" value="200"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Pistols_LvlNextAdd" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Pistols_LvlNextTotal" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextAdd" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextTotal" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Rifles_LvlNextAdd" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Rifles_LvlNextTotal" operation="set" value="300"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Automatics_LvlNextAdd" operation="set" value="500"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Automatics_LvlNextTotal" operation="set" value="500"/>
 		</effect_group>
 	</attribute>
 
@@ -890,7 +890,7 @@
 	<perk name="perkHammerForge" parent="skillLaborerBasic" max_level="5" name_key="perkHammerForgeName" desc_key="perkHammerForgeDesc" icon="ui_game_symbol_forge">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassLaborer" operation="GTE" value="1" desc_key="reqClassQuest1"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attClassLaborer" operation="GTE" value="1" desc_key="reqClassQuest1"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attClassLaborer" operation="GTE" value="2" desc_key="reqClassQuestComplete"/><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attClassLaborer" operation="GTE" value="2" desc_key="reqClassQuestComplete"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attClassLaborer" operation="GTE" value="2" desc_key="reqClassQuestComplete"/><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqPlayerLevel30"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attClassLaborer" operation="GTE" value="2" desc_key="reqClassQuestComplete"/><requirement name="PlayerLevel" target="self" operation="GTE" value="45" desc_key="reqPlayerLevel45"/></level_requirements>
 
@@ -974,7 +974,7 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attClassLaborer" operation="GTE" value="2" desc_key="reqClassQuestComplete"/><requirement name="PlayerLevel" target="self" operation="GTE" value="45" desc_key="reqPlayerLevel45"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="BlockDamage" operation="perc_add" value=".3,1.5" level="1,5"  tags="secondary"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".3,1.5" level="1,5"  tags="perkMotherLode"/>
 
 			<effect_description level="1" desc_key="perkMiner69rRank1Desc"/>
 			<effect_description level="2" desc_key="perkMiner69rRank2Desc"/>
@@ -1008,7 +1008,7 @@
 	<perk name="perkSalvageOperations" parent="skillMechanicBasic" name_key="perkSalvageOperationsName" desc_key="perkSalvageOperationsDesc" icon="ui_game_symbol_scrap">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="1" desc_key="reqClassQuest1"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="1" desc_key="reqClassQuest1"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="2" desc_key="reqClassQuestComplete"/><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="2" desc_key="reqClassQuestComplete"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="2" desc_key="reqClassQuestComplete"/><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqPlayerLevel30"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="2" desc_key="reqClassQuestComplete"/><requirement name="PlayerLevel" target="self" operation="GTE" value="45" desc_key="reqPlayerLevel45"/></level_requirements>
 
@@ -1322,19 +1322,19 @@
 			<passive_effect name="DegradationMax" operation="perc_add" value="0.20,1" level="1,100" tags="armor"/>
 		</effect_group>
 		<effect_group name="AS Armor Use Lvl Increase">
-			<requirement name="CVarCompare" cvar="AS_ArmorUse_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_ArmorUse_XP" operation="GTE" value="@AS_ArmorUse_LvlNextTotal"/>
-				<triggered_effect trigger="onOtherDamagedSelf" target="self" action="ModifyCVar" cvar="AS_ArmorUse_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onOtherDamagedSelf" target="self" action="ModifyCVar" cvar="AS_ArmorUse_LvlNextTotal" operation="add" value="@AS_ArmorUse_LvlNextAdd"/>
-				<triggered_effect trigger="onOtherDamagedSelf" target="self" action="ModifyCVar" cvar="AS_ArmorUse_Lvl" operation="add" value="1"/>
+			<requirement name="CVarCompare" cvar="$AS_ArmorUse_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_ArmorUse_XP" operation="GTE" value="@$AS_ArmorUse_LvlNextTotal"/>
+				<triggered_effect trigger="onOtherDamagedSelf" target="self" action="ModifyCVar" cvar="$AS_ArmorUse_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onOtherDamagedSelf" target="self" action="ModifyCVar" cvar="$AS_ArmorUse_LvlNextTotal" operation="add" value="@$AS_ArmorUse_LvlNextAdd"/>
+				<triggered_effect trigger="onOtherDamagedSelf" target="self" action="ModifyCVar" cvar="$AS_ArmorUse_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ShowToolbeltMessage" message="Your Skill In Armor Has Increased!"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_ArmorUse_XP" operation="add" value="@AS_ArmorUse_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_ArmorUse_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_ArmorUse_LvlNextTotal" operation="add" value="@AS_ArmorUse_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_ArmorUse_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ArmorUse_XP" operation="add" value="@$AS_ArmorUse_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ArmorUse_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ArmorUse_LvlNextTotal" operation="add" value="@$AS_ArmorUse_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ArmorUse_Lvl_Perm" operation="add" value="1"/>
 			<!-- <triggered_effect trigger="onPerkLevelChanged" action="ShowToolbeltMessage" message="Your Skill In Armor Has Increased!"/> -->
 		</effect_group>
 	</perk>
@@ -1346,7 +1346,7 @@
 			<passive_effect name="HealthLoss" operation="perc_subtract" value="0.1,0.5" level="1,100" tags="running"/>
 		</effect_group>
 		<effect_group name="AS Athletics Lvl Increase">
-			<requirement name="CVarCompare" cvar="AS_Athletics_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Athletics_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfWalk" action="AddBuff" target="self" buff="buffAthleticsSkillXPTick"/>
 				<triggered_effect trigger="onSelfRun" action="AddBuff" target="self" buff="buffAthleticsSkillXPTick"/>
 				<triggered_effect trigger="onSelfJump" action="AddBuff" target="self" buff="buffAthleticsSkillXPTick"/>
@@ -1355,19 +1355,19 @@
 				<triggered_effect trigger="onSelfSwimStart" action="AddBuff" target="self" buff="buffAthleticsSkillXPTick"/>
 		</effect_group>
 		<effect_group name="AS Athletics Lvl Increase">
-			<requirement name="CVarCompare" cvar="AS_Athletics_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Athletics_XP" operation="GTE" value="@AS_Athletics_LvlNextTotal"/>
-				<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="AS_Athletics_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="AS_Athletics_LvlNextTotal" operation="add" value="@AS_Athletics_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="AS_Athletics_Lvl" operation="add" value="1"/>
+			<requirement name="CVarCompare" cvar="$AS_Athletics_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Athletics_XP" operation="GTE" value="@$AS_Athletics_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$AS_Athletics_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$AS_Athletics_LvlNextTotal" operation="add" value="@$AS_Athletics_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$AS_Athletics_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="Your Skill In Athletics Has Increased!"/>
 				<triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Athletics_XP" operation="add" value="@AS_Athletics_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Athletics_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Athletics_LvlNextTotal" operation="add" value="@AS_Athletics_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Athletics_Lvl" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="@$AS_Athletics_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Athletics_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Athletics_LvlNextTotal" operation="add" value="@$AS_Athletics_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Athletics_Lvl" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 
@@ -1381,31 +1381,31 @@
 		
 		<effect_group name="AS Construction Tools Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="construction"/>
-			<requirement name="CVarCompare" cvar="AS_ConstructionTools_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_ConstructionTools_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfRepairBlock" action="AddBuff" target="self" buff="buffConstructionSkillXP"/>
 				<triggered_effect trigger="onSelfUpgradedBlock" action="AddBuff" target="self" buff="buffConstructionSkillXP"/>
 		</effect_group>	
 		
 		<effect_group name="AS Construction Tools Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_ConstructionTools_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_ConstructionTools_XP" operation="GTE" value="@AS_ConstructionTools_LvlNextTotal"/>
-				<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextTotal" operation="add" value="@AS_ConstructionTools_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="AS_ConstructionTools_Lvl" operation="add" value="1"/>
+			<requirement name="CVarCompare" cvar="$AS_ConstructionTools_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_ConstructionTools_XP" operation="GTE" value="@$AS_ConstructionTools_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextTotal" operation="add" value="@$AS_ConstructionTools_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="$AS_ConstructionTools_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfRepairBlock" action="ShowToolbeltMessage" message="Your Skill In Construction Tools Has Increased!"/>
 				<triggered_effect trigger="onSelfRepairBlock" action="PlaySound" sound="levelup" play_in_head="true"/>
 				
-				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextTotal" operation="add" value="@AS_ConstructionTools_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="AS_ConstructionTools_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextTotal" operation="add" value="@$AS_ConstructionTools_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="$AS_ConstructionTools_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfUpgradedBlock" action="ShowToolbeltMessage" message="Your Skill In Construction Tools Has Increased!"/>
 				<triggered_effect trigger="onSelfUpgradedBlock" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_ConstructionTools_XP" operation="add" value="@AS_ConstructionTools_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_ConstructionTools_LvlNextTotal" operation="add" value="@AS_ConstructionTools_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_ConstructionTools_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ConstructionTools_XP" operation="add" value="@$AS_ConstructionTools_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextTotal" operation="add" value="@$AS_ConstructionTools_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ConstructionTools_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 
@@ -1419,24 +1419,24 @@
 		
 		<effect_group name="AS Mining Tools Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="perkMotherLode"/>
-			<requirement name="CVarCompare" cvar="AS_MiningTools_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_MiningTools_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfHarvestBlock" action="AddBuff" target="self" buff="buffMiningSkillXP"/>
 		</effect_group>	
 
 		<effect_group name="AS Mining Tools Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_MiningTools_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_MiningTools_XP" operation="GTE" value="@AS_MiningTools_LvlNextTotal"/>
-				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_LvlNextTotal" operation="add" value="@AS_MiningTools_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_MiningTools_Lvl" operation="add" value="1"/>
+			<requirement name="CVarCompare" cvar="$AS_MiningTools_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_MiningTools_XP" operation="GTE" value="@$AS_MiningTools_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="$AS_MiningTools_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="$AS_MiningTools_LvlNextTotal" operation="add" value="@$AS_MiningTools_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="$AS_MiningTools_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfHarvestBlock" action="ShowToolbeltMessage" message="Your Skill In Mining Tools Has Increased!"/>
 				<triggered_effect trigger="onSelfHarvestBlock" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_MiningTools_XP" operation="add" value="@AS_MiningTools_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_MiningTools_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_MiningTools_LvlNextTotal" operation="add" value="@AS_MiningTools_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_MiningTools_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_MiningTools_XP" operation="add" value="@$AS_MiningTools_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_MiningTools_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_MiningTools_LvlNextTotal" operation="add" value="@$AS_MiningTools_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_MiningTools_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 	
@@ -1445,12 +1445,12 @@
 			<passive_effect name="TreasureRadius" operation="base_set" value="9"/>
 			<passive_effect name="TreasureRadius" operation="base_subtract" value="2,6" level="1,100"/>
 
-			<passive_effect name="LootGamestage" operation="base_add" value="50,250" level="1,100"/>
+			<passive_effect name="LootGamestage" operation="base_add" value="3,300" level="1,100"/>
 
 			<passive_effect name="ScavengingTime" operation="perc_subtract" value=".1,.9" level="1,100"/>
 		</effect_group>
 		<effect_group name="AS Scavenging Lvl Increase 1">
-			<requirement name="CVarCompare" cvar="AS_Scavenging_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Scavenging_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfLootContainer" action="AddBuff" target="self" buff="buffScavengingSkillXPTick"/>
 		</effect_group>
 		<effect_group name="AS Scavenging Lvl Increase 2">
@@ -1458,29 +1458,29 @@
 				<triggered_effect trigger="onSelfHarvestBlock" action="AddBuff" target="self" buff="buffScavengingDisassembleSkillXPTick"/>
 		</effect_group>
 		<effect_group name="AS Scavenging Lvl Increase 3">
-			<requirement name="CVarCompare" cvar="AS_Scavenging_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Scavenging_XP" operation="GTE" value="@AS_Scavenging_LvlNextTotal"/>
-				<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" cvar="AS_Scavenging_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" cvar="AS_Scavenging_LvlNextTotal" operation="add" value="@AS_Scavenging_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" cvar="AS_Scavenging_Lvl" operation="add" value="1"/>
+			<requirement name="CVarCompare" cvar="$AS_Scavenging_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Scavenging_XP" operation="GTE" value="@$AS_Scavenging_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextTotal" operation="add" value="@$AS_Scavenging_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" cvar="$AS_Scavenging_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfLootContainer" action="ShowToolbeltMessage" message="Your Skill In Scavenging Has Increased!"/>
 				<triggered_effect trigger="onSelfLootContainer" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group name="AS Scavenging Lvl Increase 4">
 			<requirement name="HoldingItemHasTags" tags="scavenging"/>
-			<requirement name="CVarCompare" cvar="AS_Scavenging_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Scavenging_XP" operation="GTE" value="@AS_Scavenging_LvlNextTotal"/>
-				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_Scavenging_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_Scavenging_LvlNextTotal" operation="add" value="@AS_Scavenging_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_Scavenging_Lvl" operation="add" value="1"/>
+			<requirement name="CVarCompare" cvar="$AS_Scavenging_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Scavenging_XP" operation="GTE" value="@$AS_Scavenging_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextTotal" operation="add" value="@$AS_Scavenging_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="$AS_Scavenging_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfHarvestBlock" action="ShowToolbeltMessage" message="Your Skill In Scavenging Has Increased!"/>
 				<triggered_effect trigger="onSelfHarvestBlock" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Scavenging_XP" operation="add" value="@AS_Scavenging_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Scavenging_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Scavenging_LvlNextTotal" operation="add" value="@AS_Scavenging_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Scavenging_Lvl" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Scavenging_XP" operation="add" value="@$AS_Scavenging_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextTotal" operation="add" value="@$AS_Scavenging_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Scavenging_Lvl" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 		
@@ -1517,27 +1517,27 @@
 		</effect_group>
 		<effect_group name="AS Archery Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="perkArchery"/>
-			<requirement name="CVarCompare" cvar="AS_Archery_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Archery_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffArcherySkillXPInjure">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffArcherySkillXPKill"/>
 		</effect_group>	
 		<effect_group name="AS Archery Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_Archery_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Archery_XP" operation="GTE" value="@AS_Archery_LvlNextTotal"/>
+			<requirement name="CVarCompare" cvar="$AS_Archery_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Archery_XP" operation="GTE" value="@$AS_Archery_LvlNextTotal"/>
 			<requirement name="HoldingItemHasTags" tags="perkArchery"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Archery_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Archery_LvlNextTotal" operation="add" value="@AS_Archery_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Archery_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Archery_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Archery_LvlNextTotal" operation="add" value="@$AS_Archery_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Archery_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Archery Has Increased!"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="@AS_Archery_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Archery_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Archery_LvlNextTotal" operation="add" value="@AS_Archery_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Archery_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Archery_XP" operation="add" value="@$AS_Archery_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Archery_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Archery_LvlNextTotal" operation="add" value="@$AS_Archery_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Archery_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 	
@@ -1562,27 +1562,27 @@
 		
 		<effect_group name="AS Automatics Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="perkAutomaticWeapons"/>
-			<requirement name="CVarCompare" cvar="AS_Automatics_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Automatics_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffAutomaticSkillXPInjure">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffAutomaticSkillXPKill"/>
 		</effect_group>		
 		<effect_group name="AS Automatics Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_Automatics_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Automatics_XP" operation="GTE" value="@AS_Automatics_LvlNextTotal"/>
+			<requirement name="CVarCompare" cvar="$AS_Automatics_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Automatics_XP" operation="GTE" value="@$AS_Automatics_LvlNextTotal"/>
 			<requirement name="HoldingItemHasTags" tags="perkAutomaticWeapons"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Automatics_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Automatics_LvlNextTotal" operation="add" value="@AS_Automatics_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Automatics_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Automatics_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Automatics_LvlNextTotal" operation="add" value="@$AS_Automatics_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Automatics_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Automatic Weapons Has Increased!"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Automatics_XP" operation="add" value="@AS_Automatics_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Automatics_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Automatics_LvlNextTotal" operation="add" value="@AS_Automatics_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Automatics_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Automatics_XP" operation="add" value="@$AS_Automatics_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Automatics_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Automatics_LvlNextTotal" operation="add" value="@$AS_Automatics_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Automatics_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 
@@ -1643,7 +1643,7 @@
 		
 		<effect_group name="AS Blunt Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="blunt"/>
-			<requirement name="CVarCompare" cvar="AS_Blunt_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Blunt_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffBluntSkillXPInjure">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 				</triggered_effect>
@@ -1651,20 +1651,20 @@
 		</effect_group>	
 		
 		<effect_group name="AS Blunt Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_Blunt_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Blunt_XP" operation="GTE" value="@AS_Blunt_LvlNextTotal"/>
+			<requirement name="CVarCompare" cvar="$AS_Blunt_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Blunt_XP" operation="GTE" value="@$AS_Blunt_LvlNextTotal"/>
 			<requirement name="HoldingItemHasTags" tags="blunt"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Blunt_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Blunt_LvlNextTotal" operation="add" value="@AS_Blunt_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Blunt_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Blunt_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Blunt_LvlNextTotal" operation="add" value="@$AS_Blunt_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Blunt_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Blunt Weapons Has Increased!"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Blunt_XP" operation="add" value="@AS_Blunt_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Blunt_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Blunt_LvlNextTotal" operation="add" value="@AS_Blunt_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Blunt_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Blunt_XP" operation="add" value="@$AS_Blunt_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Blunt_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Blunt_LvlNextTotal" operation="add" value="@$AS_Blunt_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Blunt_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 	
@@ -1677,7 +1677,7 @@
 		
 		<effect_group name="AS Bladed Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="perkDeepCuts"/>
-			<requirement name="CVarCompare" cvar="AS_Bladed_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Bladed_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffBladedSkillXPInjure">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 				</triggered_effect>
@@ -1685,20 +1685,20 @@
 		</effect_group>
 		
 		<effect_group name="AS Bladed Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_Bladed_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Bladed_XP" operation="GTE" value="@AS_Bladed_LvlNextTotal"/>
+			<requirement name="CVarCompare" cvar="$AS_Bladed_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Bladed_XP" operation="GTE" value="@$AS_Bladed_LvlNextTotal"/>
 			<requirement name="HoldingItemHasTags" tags="perkDeepCuts"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Bladed_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Bladed_LvlNextTotal" operation="add" value="@AS_Bladed_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Bladed_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Bladed_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Bladed_LvlNextTotal" operation="add" value="@$AS_Bladed_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Bladed_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Bladed Weapons Has Increased!"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Bladed_XP" operation="add" value="@AS_Bladed_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Bladed_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Bladed_LvlNextTotal" operation="add" value="@AS_Bladed_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Bladed_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Bladed_XP" operation="add" value="@$AS_Bladed_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Bladed_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Bladed_LvlNextTotal" operation="add" value="@$AS_Bladed_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Bladed_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="perkDeepCuts"/>
@@ -1789,7 +1789,7 @@
 		
 		<effect_group name="AS Pistols Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="perkGunslinger"/>
-			<requirement name="CVarCompare" cvar="AS_Pistols_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Pistols_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffPistolSkillXPInjure">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 				</triggered_effect>
@@ -1797,20 +1797,20 @@
 		</effect_group>		
 		
 		<effect_group name="AS Pistols Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_Pistols_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Pistols_XP" operation="GTE" value="@AS_Pistols_LvlNextTotal"/>
+			<requirement name="CVarCompare" cvar="$AS_Pistols_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Pistols_XP" operation="GTE" value="@$AS_Pistols_LvlNextTotal"/>
 			<requirement name="HoldingItemHasTags" tags="perkGunslinger"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Pistols_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Pistols_LvlNextTotal" operation="add" value="@AS_Pistols_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Pistols_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Pistols_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Pistols_LvlNextTotal" operation="add" value="@$AS_Pistols_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Pistols_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Pistols Has Increased!"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Pistols_XP" operation="add" value="@AS_Pistols_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Pistols_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Pistols_LvlNextTotal" operation="add" value="@AS_Pistols_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Pistols_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Pistols_XP" operation="add" value="@$AS_Pistols_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Pistols_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Pistols_LvlNextTotal" operation="add" value="@$AS_Pistols_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Pistols_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 		
@@ -1829,7 +1829,7 @@
 		
 		<effect_group name="AS Shotguns Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="perkShotgunMessiah"/>
-			<requirement name="CVarCompare" cvar="AS_Pistols_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Pistols_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffShotgunSkillXPInjure">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 				</triggered_effect>
@@ -1837,20 +1837,20 @@
 		</effect_group>	
 		
 		<effect_group name="AS Shotguns Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_Shotguns_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Shotguns_XP" operation="GTE" value="@AS_Shotguns_LvlNextTotal"/>
+			<requirement name="CVarCompare" cvar="$AS_Shotguns_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Shotguns_XP" operation="GTE" value="@$AS_Shotguns_LvlNextTotal"/>
 			<requirement name="HoldingItemHasTags" tags="perkShotgunMessiah"/>
-				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Shotguns_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Shotguns_LvlNextTotal" operation="add" value="@AS_Shotguns_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="AS_Shotguns_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextTotal" operation="add" value="@$AS_Shotguns_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$AS_Shotguns_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfKilledOther" action="ShowToolbeltMessage" message="Your Skill In Shotguns Has Increased!"/>
 				<triggered_effect trigger="onSelfKilledOther" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Shotguns_XP" operation="add" value="@AS_Shotguns_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Shotguns_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Shotguns_LvlNextTotal" operation="add" value="@AS_Shotguns_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Shotguns_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Shotguns_XP" operation="add" value="@$AS_Shotguns_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextTotal" operation="add" value="@$AS_Shotguns_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Shotguns_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 	
@@ -1873,30 +1873,30 @@
 			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-0.05,-.25" level="1,100"/>
 		</effect_group>	
 		
-		<effect_group name="AS Shotguns Lvl Increase 1">
+		<effect_group name="AS Rifles Lvl Increase 1">
 			<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
-			<requirement name="CVarCompare" cvar="AS_Pistols_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Rifles_Lvl" operation="LT" value="100"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffRifleSkillXPInjure">
 					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffRifleSkillXPKill"/>
 		</effect_group>	
 		
-		<effect_group name="AS Shotguns Lvl Increase 2">
-			<requirement name="CVarCompare" cvar="AS_Rifles_Lvl" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="AS_Rifles_XP" operation="GTE" value="@AS_Rifles_LvlNextTotal"/>
+		<effect_group name="AS Rifles Lvl Increase 2">
+			<requirement name="CVarCompare" cvar="$AS_Rifles_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$AS_Rifles_XP" operation="GTE" value="@$AS_Rifles_LvlNextTotal"/>
 			<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Rifles_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Rifles_LvlNextTotal" operation="add" value="@AS_Rifles_LvlNextAdd"/>
-				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="AS_Rifles_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Rifles_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Rifles_LvlNextTotal" operation="add" value="@$AS_Rifles_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Rifles_Lvl" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Rifles Has Increased!"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Rifles_XP" operation="add" value="@AS_Rifles_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Rifles_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Rifles_LvlNextTotal" operation="add" value="@AS_Rifles_LvlNextAdd"/>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Rifles_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Rifles_XP" operation="add" value="@$AS_Rifles_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Rifles_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Rifles_LvlNextTotal" operation="add" value="@$AS_Rifles_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Rifles_Lvl_Perm" operation="add" value="1"/>
 		</effect_group>
 	</perk>
 	
