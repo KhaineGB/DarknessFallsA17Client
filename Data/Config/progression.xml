@@ -1232,7 +1232,7 @@
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassSecurity" operation="GTE" value="2" desc_key="reqClassQuestComplete"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFclubTitaniumSpiked,DFarmorTitaniumBoots,DFarmorTitaniumVest,DFarmorTitaniumGloves,DFarmorTitaniumHelmet,DFarmorTitaniumLegs,DFgunM4A1,DFautoRifleParts,DFautoRifleBarrel,DFautoRifleBarrel,DFM4A1Receiver"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFclubTitaniumSpiked,DFarmorTitaniumBoots,DFarmorTitaniumVest,DFarmorTitaniumGloves,DFarmorTitaniumHelmet,DFarmorTitaniumLegs,DFgunM4A1,DFautoRifleParts,DFautoRifleBarrel,DFautoRifleBarrel,DFM4A1Receiver,armorMilitaryBoots,armorMilitaryVest,armorMilitaryGloves,armorMilitaryHelmet,armorMilitaryLegs"/>
 			<effect_description level="1" desc_key="perkMasterSecurityRank1Desc"/>
 		</effect_group>
 	</perk>
@@ -1304,7 +1304,7 @@
 <!-- Survivalist Perks (Master) -->
 
 	<perk name="perkMasterSurvivalist" parent="skillSurvivalistMaster" max_level="1" name_key="perkMasterSurvivalistName" desc_key="perkMasterSurvivalistDesc" icon="ui_game_symbol_temperature" base_skill_point_cost="30">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassSecurity" operation="GTE" value="2" desc_key="reqClassQuestComplete"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassSurvivalist" operation="GTE" value="2" desc_key="reqClassQuestComplete"/></level_requirements>
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFmeleeToolMacheteTitanium,DFjerky,DFradio,DFtorchSurvival"/>
