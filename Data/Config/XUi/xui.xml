@@ -334,7 +334,7 @@
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowToolsForge" />
+			<window name="windowToolsBigForge" />
 			<window name="windowFuel" />
 			<window name="windowBigForgeInput" />
 			<window name="windowBigForgeOutput" />

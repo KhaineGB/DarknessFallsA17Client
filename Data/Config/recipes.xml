@@ -1158,7 +1158,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceSpring" count="10"/>
 </recipe>
 
-<!--
 <recipe name="modGunMeleeRadRemover" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="modGunMeleeRadRemoverSchematic" count="1"/>
 	<ingredient name="resourceForgedSteel" count="5"/>
@@ -1166,7 +1165,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMechanicalParts" count="5"/>
 	<ingredient name="resourceSpring" count="10"/>
 </recipe>
--->
 
 <!--
 <recipe name="modGunMeleeBlessedMetal" count="1" craft_area="workbench" tags="learnable">
@@ -1470,10 +1468,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="foodMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
-	<ingredient name="foodRawMeat" count="10"/>
+	<ingredient name="foodRawMeat" count="5"/>
 	<ingredient name="foodCropPotato" count="2"/>
 	<ingredient name="foodCropCorn" count="2"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
 </recipe>
 
 <recipe name="metalSignLetter_a" count="1">
@@ -1653,8 +1652,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
-	<ingredient name="foodRawMeat" count="10"/>
+	<ingredient name="foodRawMeat" count="5"/>
 	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
 </recipe>
 
 <recipe name="foodFishTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
@@ -3719,6 +3720,28 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_clay" count="15"/>
 </recipe>
 
+<recipe name="DFclayBucketEmpty" count="1" craft_time = "120">
+	<ingredient name="resourceClayLump" count="20"/>
+</recipe>
+
+<recipe name="DFclayBucketEmpty" count="1" craft_area="forge" material_based="true" craft_time = "60">
+	<ingredient name="unit_clay" count="30"/>
+</recipe>
+
+<recipe name="DFclayBucketEmpty" count="1" craft_area="advforge" material_based="true" craft_time = "60">
+	<ingredient name="unit_clay" count="30"/>
+</recipe>
+
+<recipe name="DFwaterBarrelEmptyItem" count="1">
+	<ingredient name="resourceWood" count="60" />
+	<ingredient name="resourceYuccaFibers" count="20"/>
+</recipe>
+
+<recipe name="DFRainCatcher" count="1">
+	<ingredient name="resourceWood" count="60" />
+	<ingredient name="resourceScrapIron" count="30"/>
+</recipe>
+
 <!-- DF Class Mastery Stuff seperated by Class -->
 
 <!-- Farmer Mastery -->
@@ -4122,8 +4145,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceLeather" count="10"/>
 </recipe>
 
-<!-- <recipe name="DFgunM4A1" count="1" tags="learnable"> Do this later -->
-
 <!-- Survivalist Mastery -->
 
 <recipe name="DFmeleeToolMacheteTitanium" count="1" craft_area="workbench" craft_time="60" tags="learnable">
@@ -4134,12 +4155,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="DFjerky" count="2" craft_area="workstationTailor" craft_tool="DFtooltanningRack" tags="learnable">
 	<ingredient name="foodRawMeat" count="1"/>
-</recipe>
-
-<recipe name="DFradio" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable">
-	<ingredient name="resourceMechanicalParts" count="20"/>
-	<ingredient name="resourceElectricParts" count="10"/>
-	<ingredient name="resourceForgedSteel" count="10"/>
 </recipe>
 
 <recipe name="DFtorchSurvival" count="1" tags="learnable">
@@ -4155,6 +4170,34 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <!-- Advanced Forge Recipies -->
+
+<recipe name="resourceClayLump" count="1" craft_area="advforge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
+	<ingredient name="unit_clay" count="5"/>
+</recipe>
+
+<recipe name="resourceBrokenGlass" count="1" craft_area="advforge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
+	<ingredient name="unit_glass" count="5"/>
+</recipe>
+
+<recipe name="resourceRockSmall" count="1" craft_area="advforge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
+	<ingredient name="unit_stone" count="5"/>
+</recipe>
+
+<recipe name="resourceScrapBrass" count="1" craft_area="advforge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
+	<ingredient name="unit_brass" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapIron" count="1" craft_area="advforge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
+	<ingredient name="unit_iron" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapLead" count="1" craft_area="advforge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
+	<ingredient name="unit_lead" count="1"/>
+</recipe>
+
+<recipe name="DFscrapTitanium" count="1" craft_area="advforge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true">
+	<ingredient name="unit_titanium" count="1"/>
+</recipe>
 
 <recipe name="toolAnvil" count="1" craft_area="advforge" material_based="true">
 	<ingredient name="unit_iron" count="100"/>
@@ -4240,7 +4283,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_clay" count="3"/>
 </recipe>
 
-<recipe name="resourceForgedSteel" count="1" craft_area="advforge" craft_tool="toolForgeCrucible" material_based="true">
+<recipe name="resourceForgedSteel" count="1" craft_area="advforge" craft_tool="toolForgeCrucible" material_based="true" tags="learnable">
 	<ingredient name="unit_iron" count="20"/>
 	<ingredient name="unit_clay" count="10"/>
 </recipe>
@@ -4719,9 +4762,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_clay" count="30"/>
 </recipe>
 
-<!-- <recipe name="DFMandP" count="1" craft_area="advforge" material_based="true" craft_time = "30" tags="learnable">
+<recipe name="DFMandP" count="1" craft_area="advforge" material_based="true" craft_time = "30" tags="learnable">
 	<ingredient name="unit_clay" count="30"/>
-</recipe> -->
+</recipe> 
 
 <recipe name="plantedSnowberry1" count="1" craft_time="1" >
 	<ingredient name="resourceCropSnowberryPlant" count="4"/>
@@ -5621,154 +5664,154 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <!-- Lathe Recipes -->
 
-<recipe name="DFpistolGrip" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFpistolGrip" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceScrapPolymers" count="10"/>
 </recipe>
 
-<recipe name="DFpistolParts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFpistolParts" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceMechanicalParts" count="10"/>
 </recipe>
 
-<recipe name="DFpistolBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFpistolBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceMetalPipe" count="1"/>
 </recipe>
 
-<recipe name="DFpistolFrame" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFpistolFrame" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFP225Frame" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFP225Frame" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFmagnumFrame" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFmagnumFrame" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFrifleStock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFrifleStock" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceScrapPolymers" count="15"/>
 </recipe>
 
-<recipe name="DFrifleParts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFrifleParts" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceMechanicalParts" count="15"/>
 </recipe>
 
-<recipe name="DFrifleBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFrifleBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceMetalPipe" count="2"/>
 </recipe>
 
-<recipe name="DFhuntingRifleReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFhuntingRifleReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="15"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFwinchesterRifleReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFwinchesterRifleReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="15"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFsniperRifleReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFsniperRifleReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="15"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFautoRifleStock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFautoRifleStock" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceScrapPolymers" count="15"/>
 </recipe>
 
-<recipe name="DFautoRifleParts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFautoRifleParts" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceMechanicalParts" count="15"/>
 </recipe>
 
-<recipe name="DFautoRifleBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFautoRifleBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceMetalPipe" count="2"/>
 </recipe>
 
-<recipe name="DFAK47Receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFAK47Receiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="15"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFAR15Receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFAR15Receiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="15"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFM4A1Receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFM4A1Receiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="15"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFshotgunStock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFshotgunStock" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceScrapPolymers" count="15"/>
 </recipe>
 
-<recipe name="DFshotgunParts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFshotgunParts" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceMechanicalParts" count="15"/>
 </recipe>
 
-<recipe name="DFshotgunBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFshotgunBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceMetalPipe" count="2"/>
 </recipe>
 
-<recipe name="DFshotgunReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFshotgunReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="15"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFautoShotgunReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFautoShotgunReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="15"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 </recipe>
 
-<recipe name="DFcoilgunParts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFcoilgunParts" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="resourceMechanicalParts" count="20"/>
 	<ingredient name="resourceElectricParts" count="20"/>
 </recipe>
 
-<recipe name="DFcoilgunGrip" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFcoilgunGrip" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="20"/>
 	<ingredient name="resourceMechanicalParts" count="10"/>
 	<ingredient name="resourceElectricParts" count="10"/>
 </recipe>
 
-<recipe name="DFcoilpistolBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFcoilpistolBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceMetalPipe" count="4"/>
 </recipe>
 
-<recipe name="DFcoilpistolReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFcoilpistolReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="20"/>
 	<ingredient name="resourceMechanicalParts" count="10"/>
 	<ingredient name="resourceElectricParts" count="10"/>
 </recipe>
 
-<recipe name="DFcoilrifleBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFcoilrifleBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceMetalPipe" count="6"/>
 </recipe>
 
-<recipe name="DFcoilrifleReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFcoilrifleReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="20"/>
 	<ingredient name="resourceMechanicalParts" count="10"/>
 	<ingredient name="resourceElectricParts" count="10"/>
 </recipe>
 
-<recipe name="DFcoilsniperBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFcoilsniperBarrel" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceMetalPipe" count="6"/>
 </recipe>
 
-<recipe name="DFcoilsniperReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+<recipe name="DFcoilsniperReceiver" count="1" craft_area="cncMachine" craft_tool="carBattery" tags="learnable">
 	<ingredient name="resourceForgedSteel" count="20"/>
 	<ingredient name="resourceMechanicalParts" count="10"/>
 	<ingredient name="resourceElectricParts" count="10"/>
@@ -6300,6 +6343,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="flagPole" count="1"/>
 	<ingredient name="flagCanvas" count="1"/>
 	<ingredient name="resourcePaint" count="5"/>
+</recipe>
+
+<!-- Invisible Wires Mod -->
+
+<recipe name="DFJunctionBox" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch">
+	<ingredient name="resourceElectricParts" count="2"/>
+	<ingredient name="resourceForgedIron" count="4"/>
 </recipe>
 
 </recipes>

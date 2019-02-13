@@ -121,11 +121,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/> <!-- using perc_add here increases StaminaOT for no obvious reason -->
 
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
@@ -188,11 +188,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="22" tags="secondary"/>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
@@ -259,11 +259,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="20,15" tier="1,6" tags="secondary"/>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
@@ -424,11 +424,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="StaminaLoss" operation="base_add" value="24" tags="secondary"/>
 	</effect_group>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	
@@ -522,11 +522,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="25,20" tier="1,6" tags="secondary"/>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 
@@ -589,11 +589,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="StaminaLoss" operation="base_add" value="25,20" tier="1,6" tags="secondary"/>
 
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 
@@ -655,11 +655,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="StaminaLoss" operation="base_add" value="26" tags="secondary"/>
 
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 
@@ -785,11 +785,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="StaminaLoss" operation="base_add" value="25,20" tier="1,6" tags="secondary"/>
 
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
@@ -836,7 +836,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.03,0.08" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Iron Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.1,0.2" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Iron Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -844,11 +844,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="25" tags="secondary"/>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
@@ -993,7 +993,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.03,0.08" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Iron Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.1,0.2" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Iron Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -1028,7 +1028,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.06,0.11" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Steel Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.2,0.3" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Steel Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -1094,11 +1094,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="StaminaLoss" operation="base_add" value="60,50" tier="1,6" tags="secondary"/>
 
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
@@ -1149,22 +1149,22 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.03,0.08" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Iron Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.1,0.2" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Iron Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="42" tags="secondary"/>
-	</effect_group>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
+	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
@@ -1194,13 +1194,21 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.06,0.11" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Steel Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.2,0.3" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Steel Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="30" tags="secondary"/>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
 	</effect_group>
 </item>
 
@@ -1230,7 +1238,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.06,0.11" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Steel Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.2,0.3" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Steel Tool Harvest Bonus -->
 	</effect_group>
 
 	<effect_group name="Power Attack">
@@ -1239,11 +1247,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="30" tags="secondary"/>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 	</effect_group>
@@ -2397,7 +2405,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
 		<property name="Hitmask_override" value="Arrow"/>
 		<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming"/>
+		<property name="Magazine_items" value="ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,DFammoArrowTitanium"/>
 		<!-- <property name="Reload_time" value=".9"/> -->
 		<property name="Sound_start" value="bow_fire"/>
 		<property name="Sound_repeat" value=""/>
@@ -3619,7 +3627,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="IsSticky" value="true"/>
+	<property name="IsSticky" value="false"/>
 	<property name="StickyOffset" value="0.5"/>
 	<property name="Material" value="Mwood"/>
 	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
@@ -3643,10 +3651,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
-
+	
 	<!-- <effect_group name="Action Skills">
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="AS_Archery_XP" operation="add" value="8">
 			<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
@@ -3672,8 +3678,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3692,8 +3696,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3704,6 +3706,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="StickyMeshFile" value="Items/Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab"/>
+	<property name="IsSticky" value="false"/>
 	<property name="UsableUnderwater" value="false"/>
 	<property name="FuelValue" value="27"/>
 	<property name="EconomicValue" value="44"/>
@@ -3723,8 +3726,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffBurningFlamingArrow"/>
 	</effect_group>
 </item>
@@ -3738,7 +3739,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_stonePrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mwood"/>
-	<property name="IsSticky" value="true"/>
+	<property name="IsSticky" value="false"/>
 	<property name="StickyOffset" value="0.05"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="FuelValue" value="8"/>
@@ -3764,8 +3765,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="67.5"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3777,7 +3776,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="IsSticky" value="true"/>
+	<property name="IsSticky" value="false"/>
 	<property name="StickyOffset" value="0.05"/>
 	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
 	<property name="FuelValue" value="25"/>
@@ -3802,15 +3801,13 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="75"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
 <item name="ammoCrossbowBoltSteelAP">
 	<property name="Extends" value="ammoCrossbowBoltIron"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
-	<property name="IsSticky" value="true"/>
+	<property name="IsSticky" value="false"/>
 	<property name="StickyOffset" value="0.05"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
@@ -3828,8 +3825,6 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -3868,8 +3863,6 @@ We _want_ players to specialise so we also have to make it feasible.
 			<!-- do we have damage modifiers for explosions? -->
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 		<display_value name="ExRadius" value="4" />
 	</effect_group>
 </item>
@@ -5940,6 +5933,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CreativeMode" value="Dev"/>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="PerkLevel" tags="perkStrength" operation="base_add" value="1"/>
 		<passive_effect name="Bartering" operation="base_add" value="0.1"/>
 	</effect_group>
 </item>
@@ -8658,6 +8652,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Focused_blockname_5" value="terrWaterPOI"/>
 		<property name="Focused_blockname_6" value="DFworkingGraniteSink"/>
 		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>
+		<property name="Focused_blockname_8" value="DFwaterBarrelFull"/>		
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -8794,6 +8789,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Focused_blockname_5" value="terrWaterPOI"/>
 		<property name="Focused_blockname_6" value="DFworkingGraniteSink"/>
 		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>
+		<property name="Focused_blockname_8" value="DFwaterBarrelFull"/>
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -9239,7 +9235,8 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="terrWaterPOI"/>
 		<property name="Focused_blockname_6" value="DFworkingGraniteSink"/>
-		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>		
+		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>	
+		<property name="Focused_blockname_8" value="DFwaterBarrelFull"/>			
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -9618,13 +9615,13 @@ So no clothing dyes until that can be resolved. -->
 
 <item name="modArmorMuffledConnectorsSchematic">
 	<property name="Extends" value="schematicMaster"/>
-	<property name="DescriptionKey" value="schematicMaster3Desc"/>
+	<property name="DescriptionKey" value="schematicMaster2Desc"/>
 	<property name="EconomicValue" value="500"/>
 </item>
 
 <item name="modArmorAdvancedMuffledConnectorsSchematic">
 	<property name="Extends" value="schematicMaster"/>
-	<property name="DescriptionKey" value="schematicMaster2Desc"/>
+	<property name="DescriptionKey" value="schematicMaster3Desc"/>
 	<property name="EconomicValue" value="500"/>
 </item>
 
@@ -12404,11 +12401,11 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="StaminaLoss" operation="base_add" value="12" tags="secondary"/>
 
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
 
@@ -12663,7 +12660,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0,0.05" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Scrap Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0,0.1" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Scrap Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.7" tags="secondary"/>
@@ -12727,7 +12724,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0,0.05" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Scrap Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0,0.1" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Scrap Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.7" tags="secondary"/>
@@ -12767,7 +12764,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0,0.05" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Scrap Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0,0.1" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Scrap Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -12984,7 +12981,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.09,0.14" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Titanium Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.3,0.4" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Titanium Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.7" tags="secondary"/>
@@ -13049,7 +13046,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.09,0.14" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Titanium Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.3,0.4" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Titanium Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.7" tags="secondary"/>
@@ -13090,7 +13087,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-		<passive_effect name="HarvestCount" operation="perc_add" value="0.09,0.14" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Titanium Tool Harvest Bonus -->
+		<passive_effect name="HarvestCount" operation="perc_add" value="0.3,0.4" tier="1,6" tags="oreWoodHarvest"/> <!-- DF Titanium Tool Harvest Bonus -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
@@ -13213,7 +13210,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
 
 		<passive_effect name="EntityDamage" operation="base_set" value="8.5"/> <!-- meleeToolChainsaw -->
-		<passive_effect name="BlockDamage" operation="base_set" value="15"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="50"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="9" tags="wood"/>
 
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
@@ -13287,7 +13284,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
 
 		<passive_effect name="EntityDamage" operation="base_set" value="12"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="52"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="45"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="wood"/>
 
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
@@ -13699,6 +13696,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
+			<requirement name="EntityTagCompare" tags="sdxentity"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
@@ -13976,7 +13974,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,magazine,firingMode,selfLoading,perkGunslinger"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="44"/>
-	<property name="Meshfile" value="#Weapons.unity3d?PipePistol.prefab"/>
+	<property name="Meshfile" value="#PipeGuns.unity3d?PipePistol.prefab"/>
 	<property name="Material" value="Miron_scrap"/> <property name="Weight" value="20"/>
 	<property name="RepairTools" value="resourceScrapIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -13994,7 +13992,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
-	<property name="EconomicValue" value="1650"/>
+	<property name="EconomicValue" value="225"/>
 
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
@@ -14056,7 +14054,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkDeadEye"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
-	<property name="Meshfile" value="#Weapons.unity3d?PipeRifle.prefab"/>
+	<property name="Meshfile" value="#PipeGuns.unity3d?PipeRifle.prefab"/>
 	<property name="Material" value="Miron_scrap"/> <property name="Weight" value="54"/>
 
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
@@ -14073,7 +14071,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="ActionSkillGroup" value="Rifles"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 
-	<property name="EconomicValue" value="6000"/>
+	<property name="EconomicValue" value="225"/>
 
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
@@ -14138,7 +14136,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,flashlight,smallTopAttachments,magazine,firingMode,selfLoading,perkGunslinger"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="#Weapons.unity3d?P225.prefab"/>
+	<property name="Meshfile" value="#NewGuns.unity3d?P225.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="20"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -14218,7 +14216,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,perkDeadEye"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="30"/>
-	<property name="Meshfile" value="#Weapons.unity3d?winchester.prefab"/>
+	<property name="Meshfile" value="#PipeGuns.unity3d?winchester.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -14298,7 +14296,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,perkShotgunMessiah"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="5"/>
-	<property name="Meshfile" value="#Weapons.unity3d?CombatShotgun.prefab"/>
+	<property name="Meshfile" value="#NewGuns.unity3d?CombatShotgun.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -14378,7 +14376,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
-	<property name="Meshfile" value="#Weapons.unity3d?AR15.prefab"/>
+	<property name="Meshfile" value="#NewGuns.unity3d?AR15.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
 
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
@@ -14468,7 +14466,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
-	<property name="Meshfile" value="#Weapons.unity3d?M4A1.prefab"/>
+	<property name="Meshfile" value="#NewGuns.unity3d?M4A1.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
 
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
@@ -14557,7 +14555,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,bow,smallTopAttachments,mediumTopAttachments,perkArchery"/>
 	<property name="DisplayType" value="rangedBow"/>
 	<property name="HoldType" value="26"/>
-	<property name="Meshfile" value="#Weapons.unity3d?steelCrossbow.prefab"/>
+	<property name="Meshfile" value="#NewGuns.unity3d?steelCrossbow.prefab"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceForgedSteel"/>
 	<property name="FuelValue" value="200"/>
@@ -14632,7 +14630,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,flashlight,smallTopAttachments,magazine,firingMode,selfLoading,perkGunslinger"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="#Weapons.unity3d?Coilpistol.prefab"/>
+	<property name="Meshfile" value="#Coilguns.unity3d?Coilpistol.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="20"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -14675,8 +14673,8 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="MaxRange" operation="base_set" value="75"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="35,50" tier="1,6"/>
 
-		<passive_effect name="EntityDamage" operation="perc_add" value="0.25"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="0.25"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="0.1"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0.1"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 
@@ -14686,7 +14684,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="MagazineSize" operation="base_set" value="5"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2s -->
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1,0.15" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.5"/>
@@ -14712,7 +14710,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
-	<property name="Meshfile" value="#Weapons.unity3d?Coilrifle.prefab"/>
+	<property name="Meshfile" value="#Coilguns.unity3d?Coilrifle.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
 
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
@@ -14755,8 +14753,8 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="EconomicValue" operation="base_set" value="6000"/>
 		<passive_effect name="MaxRange" operation="base_set" value="125"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="75,100" tier="1,6"/>
-		<passive_effect name="EntityDamage" operation="perc_add" value="0.25"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="0.25"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="0.1"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0.1"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/>
 
@@ -14783,7 +14781,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DegradationPerUse" operation="base_set" value="16"/>
 
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15,0.3" tier="2,6" tags="EntityDamage"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1,0.15" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 	</effect_group>
 	<!-- disable for testing 
@@ -14802,7 +14800,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkDeadEye"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
-	<property name="Meshfile" value="#Weapons.unity3d?CoilSniper.prefab"/>
+	<property name="Meshfile" value="#Coilguns.unity3d?CoilSniper.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="67"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -14847,6 +14845,8 @@ So no clothing dyes until that can be resolved. -->
 	<effect_group name="Base Effects"> <!-- Rifle, Sniper -->
 		<passive_effect name="MaxRange" operation="base_set" value="200"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="90,120" tier="1,6"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="0.1"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0.1"/>
 
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="150"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
@@ -14854,7 +14854,7 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2.7s -->
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1,0.2" tier="2,6" tags="EntityDamage"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1,0.15" tier="2,6" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="6"/>
@@ -15095,6 +15095,7 @@ So no clothing dyes until that can be resolved. -->
 		<property name="Focused_blockname_5" value="terrWaterPOI"/>
 		<property name="Focused_blockname_6" value="DFworkingGraniteSink"/>
 		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>
+		<property name="Focused_blockname_8" value="DFwaterBarrelFull"/>
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -15453,7 +15454,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="armorMilitaryHelmet"/>
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="titaniumArmorDesc"/>
-	<property name="Tags" value="head,armor,armorHead,lightarmor"/>
+	<property name="Tags" value="head,armor,armorHead,lightarmor,heavyarmor"/>
 	<property name="EquipSlot" value="Head"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -15481,7 +15482,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="armorMilitaryVest"/>
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="titaniumArmorDesc"/>
-	<property name="Tags" value="upperbody,chest,armor,armorChest,lightarmor"/>
+	<property name="Tags" value="upperbody,chest,armor,armorChest,lightarmor,heavyarmor"/>
 	<property name="EquipSlot" value="Chest"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -15508,7 +15509,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="armorMilitaryGloves"/>
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="titaniumArmorDesc"/>
-	<property name="Tags" value="upperbody,hands,armor,armorHands,lightarmor"/>
+	<property name="Tags" value="upperbody,hands,armor,armorHands,lightarmor,heavyarmor"/>
 	<property name="EquipSlot" value="Hands"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -15535,7 +15536,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="armorMilitaryLegs"/>
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="titaniumArmorDesc"/>
-	<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightarmor"/>
+	<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightarmor,heavyarmor"/>
 	<property name="EquipSlot" value="Legs"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -15562,7 +15563,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="armorMilitaryBoots"/>
 	<property name="CustomIconTint" value="0033FF"/>
 	<property name="DescriptionKey" value="titaniumArmorDesc"/>
-	<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightarmor"/>
+	<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightarmor,heavyarmor"/>
 	<property name="EquipSlot" value="Feet"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -16722,7 +16723,7 @@ So no clothing dyes until that can be resolved. -->
 	</property>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
-		<property name="Blockname" value="wallTorchLight"/>
+		<property name="Blockname" value="DFSurvivallTorchLight"/>
 	</property>
 	<property name="Group" value="Basics,Decor/Miscellaneous"/>
 	<property name="LightValue" value="0.35"/>
@@ -17892,7 +17893,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="SellableToTrader" value="false"/>
 	
 	<effect_group name="Base Effects" tiered="false">
-		<passive_effect name="EntityDamage" operation="base_set" value="120"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="100"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="18"/>
 	</effect_group>
 </item>
@@ -18192,6 +18193,22 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EconomicValue" value="500"/>
 </item>
 
+<item name="DFcombatAxeSchematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="CustomIcon" value="combatAxeSchematic" />
+	<property name="DescriptionKey" value="DFcombatAxeSchematicDesc"/>	
+	<property name="CreativeMode" value="Player"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="DFmeleeToolcombatAxe" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="DFmeleeToolcombatAxe" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Combat Axe Recipe Unlocked!"/>
+	</effect_group>
+	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
+</item>
+
 <item name="meleeToolAugerSchematic">
 	<property name="Extends" value="unlockBookMaster"/>
 	<property name="CustomIcon" value="augerSchematic" />
@@ -18203,6 +18220,7 @@ So no clothing dyes until that can be resolved. -->
 	</property>
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolAuger" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Auger Recipe Unlocked!"/>
 	</effect_group>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -18218,6 +18236,7 @@ So no clothing dyes until that can be resolved. -->
 	</property>
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolChainsaw" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Chainsaw Recipe Unlocked!"/>
 	</effect_group>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -18233,6 +18252,7 @@ So no clothing dyes until that can be resolved. -->
 	</property>
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="batterybank" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Battery Bank Recipe Unlocked!"/>
 	</effect_group>
 </item>
 
@@ -18246,6 +18266,7 @@ So no clothing dyes until that can be resolved. -->
 	</property>
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarBeer" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Beer Recipe Unlocked!"/>
 	</effect_group>
 </item>
 
@@ -18259,7 +18280,8 @@ So no clothing dyes until that can be resolved. -->
 		<requirement name="CVarCompare" cvar="drugHerbalAntibiotics" operation="Equals" value="0"/>
 	</property>
 	<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHerbalAntibiotics" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHerbalAntibiotics" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Herbal Antibiotics Recipe Unlocked!"/>
 	</effect_group>
 </item>
 
@@ -18273,7 +18295,8 @@ So no clothing dyes until that can be resolved. -->
 		<requirement name="CVarCompare" cvar="meleeToolSledgehammer" operation="Equals" value="0"/>
 	</property>
 	<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSledgehammer" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSledgehammer" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Sledgehammer Recipe Unlocked!"/>
 	</effect_group>
 </item>
 
@@ -18618,7 +18641,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
-	<property name="Meshfile" value="#Weapons.unity3d?AR15.prefab"/>
+	<property name="Meshfile" value="#NewGuns.unity3d?AR15.prefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
 
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
@@ -18950,6 +18973,105 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Special Items"/>
 </item>
 
+<!-- DF Water Barrel and Extra Buckets Mod -->
+
+<item name="DFwaterBarrelFullItem">
+	<property name="CustomIcon" value="wineBarrel" />
+	<property name="CustomIconTint" value="1454B7"/>
+	<property name="DescriptionKey" value="DFwaterBarrelFullItemDesc" />
+	<property name="HoldType" value="34"/>
+	<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="88"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="PlaceAsBlock"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Blockname" value="DFwaterBarrelFull"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
+<item name="DFwaterBarrelEmptyItem">
+	<property name="HoldType" value="34"/>
+	<property name="CustomIcon" value="wineBarrel" />
+	<property name="DescriptionKey" value="DFwaterBarrelEmptyItemDesc" />
+	<property name="Meshfile" value="Items/Crafting/Metal/IronBucket"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="84"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Change_item_to" value="DFwaterBarrelFullItem"/>
+		<property name="Do_block_action" value="deplete3"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="terrWaterPOI"/>
+		<property name="Focused_blockname_6" value="DFworkingGraniteSink"/>
+		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>		
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
+<item name="DFclayBucketEmpty">
+	<property name="CustomIcon" value="bucketEmpty" />
+	<property name="CustomIconTint" value="5C1505"/>
+	<property name="DescriptionKey" value="DFclayBucketEmptyDesc" />
+	<property name="HoldType" value="34"/>
+	<property name="Meshfile" value="Items/Crafting/Metal/IronBucket"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="84"/>
+	<property class="Action0">
+		<property name="Class" value="BailLiquid"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Sound_start" value="bucketbail_water"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Change_item_to" value="bucketRiverWater"/>
+		<property name="Do_block_action" value="deplete3"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="terrWaterPOI"/>
+		<property name="Focused_blockname_6" value="DFworkingGraniteSink"/>
+		<property name="Focused_blockname_7" value="DFworkingutilitySink"/>	
+		<property name="Focused_blockname_8" value="DFwaterBarrelFull"/>			
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
+<item name="DFclayBucketRiverWater">
+	<property name="CustomIcon" value="bucketEmpty" />
+	<property name="CustomIconTint" value="5C1505"/>
+	<property name="DescriptionKey" value="DFclayBucketFullDesc" />
+	<property name="HoldType" value="34"/>
+	<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="88"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="PlaceAsBlock"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Blockname" value="waterMovingBucket"/>
+		<property name="Change_item_to" value="DFclayBucketEmpty"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
 <!-- DF Testing Stuff 
 
 <item name="PerkBookTest">
@@ -19048,5 +19170,43 @@ So no clothing dyes until that can be resolved. -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="attribIncreaseCivilian"/>
 	</effect_group>
 </item> -->
+
+		<item name="handAshShotgun">
+			<property name="Extends" value="meleeHandZombie01"/>
+			<property name="CreativeMode" value="None"/>
+			<property class="Action0">
+				<property name="DamageEntity" value="50"/>
+				<property name="DamageBlock" value="15"/>
+				<property name="Range" value="2.2"/>
+				<property name="Sphere" value=".5"/>
+				<property name="Sound_start" value="chainsaw_fire_rev"/>
+				<property name="Buff" value="criticalBlunt,injuryStunned,injurySprainedLeg" />
+				<property name="Buff_chance" value="0.3,0.1,0.1" /> 
+				<property name="DamageBonus.head" value="5" />
+			</property>
+			<property class="Action1"> 
+				<property name="Class" value="Vomit"/>
+				<property name="Delay" value="0"/> 
+				<property name="Range" value="200"/>
+				<property name="Infinite_ammo" value="true"/>
+				<property name="Magazine_items" value="ammoProjectileBanditSlug"/>
+				<property name="Reload_time" value="0"/>
+				<property name="Sound_start" value="pump_shotgun_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value=""/>
+				<property name="Sound_reload" value=""/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="150"/>
+				<passive_effect name="MaxRange" operation="base_set" value="200"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2"/>
+			</effect_group>
+		</item>	
 
 </items> <!-- Item limit: There can be 32k items in the game. IDs are generated internally on loading the game/items. -->

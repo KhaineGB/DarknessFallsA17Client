@@ -334,17 +334,6 @@
 			<effect_description level="10" desc_key="attPerceptionRank10Desc"/>
 		</effect_group>
 		
-		<effect_group>
-			<requirement name="HoldingItemHasTags" tags="ranged"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.25,1" level="1,9" tags="head"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="1.5" level="10" tags="head"/>
-			<passive_effect name="DismemberChance" operation="base_add" value="0.05,0.15" level="6,10" tags="head"/>
-			<effect_description level="1" desc_key="perkHeadshotRank1Desc"/>
-			<effect_description level="2" desc_key="perkHeadshotRank2Desc"/>
-			<effect_description level="3" desc_key="perkHeadshotRank3Desc"/>
-			<effect_description level="4" desc_key="perkHeadshotRank4Desc"/>
-			<effect_description level="5" desc_key="perkHeadshotRank5Desc"/>
-		</effect_group>
 	</perk>
 
 	<perk name="perkStrength" name_key="perkStrengthName" parent="skillAttributes" desc_key="perkStrengthDesc" min_level="1" max_level="10" icon="ui_game_symbol_muscle">
@@ -564,11 +553,11 @@
             <requirement name="HoldingItemHasTags" tags="lockpick"/>
 			<passive_effect name="NoiseMultiplier" operation="perc_subtract" value="0.15,0.90" level="0,5"/>
 
-            <effect_description level="1" desc_base="perkLockpickingRank1Desc"/>
-            <effect_description level="2" desc_base="perkLockpickingRank2Desc"/>
-            <effect_description level="3" desc_base="perkLockpickingRank3Desc"/>
-            <effect_description level="4" desc_base="perkLockpickingRank4Desc"/>
-            <effect_description level="5" desc_base="perkLockpickingRank5Desc"/>			
+            <effect_description level="1" desc_key="perkLockpickingRank1Desc"/>
+            <effect_description level="2" desc_key="perkLockpickingRank2Desc"/>
+            <effect_description level="3" desc_key="perkLockpickingRank3Desc"/>
+            <effect_description level="4" desc_key="perkLockpickingRank4Desc"/>
+            <effect_description level="5" desc_key="perkLockpickingRank5Desc"/>			
         </effect_group>
     </perk>
 
@@ -898,7 +887,7 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="DFmeleeToolFireaxeScrap,DFmeleeToolPickaxeScrap,DFmeleeToolShovelScrap"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="forge,meleeToolFireaxeIron,meleeToolPickaxeIron,meleeToolHoeIron,meleeToolShovelIron,meleeToolClawHammer,meleeToolSledgehammer,meleeToolHuntingKnife"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="armorIronBoots,armorIronChest,armorIronGloves,armorIronHelmet,armorIronLegs,DFBigForge"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="toolForgeCrucible,resourceArrowHeadSteelAP,resourceForgedSteel,meleeToolPickaxeSteel,meleeToolShovelSteel,meleeToolFireaxeSteel,meleeToolMachete"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="toolForgeCrucible,resourceArrowHeadSteelAP,resourceForgedSteel,meleeToolPickaxeSteel,meleeToolShovelSteel,meleeToolFireaxeSteel,meleeToolMachete,cementMixer"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="armorSteelBoots,armorSteelChest,armorSteelGloves,armorSteelHelmet,armorSteelLegs,DFAdvForge"/>
 			<effect_description level="1" desc_key="perkHammerForgeRank1Desc"/>
 			<effect_description level="2" desc_key="perkHammerForgeRank2Desc"/>
@@ -975,6 +964,7 @@
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".3,1.5" level="1,5"  tags="perkMotherLode"/>
+			<passive_effect name="StaminaLoss" operation="perc_subtract" value="0.03,0.15" level="1,5" tags="perkMotherLode"/>
 
 			<effect_description level="1" desc_key="perkMiner69rRank1Desc"/>
 			<effect_description level="2" desc_key="perkMiner69rRank2Desc"/>
@@ -1016,6 +1006,7 @@
 			<requirement name="HoldingItemHasTags" tags="perkSalvageOperations"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" level="1,5"/>
 				<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="salvageHarvest"/>
+				<passive_effect name="StaminaLoss" operation="perc_subtract" value="0.03,0.15" level="1,5" />
 		</effect_group>
 
 		<effect_group>
@@ -1448,6 +1439,8 @@
 			<passive_effect name="LootGamestage" operation="base_add" value="3,300" level="1,100"/>
 
 			<passive_effect name="ScavengingTime" operation="perc_subtract" value=".1,.9" level="1,100"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="0.01,0.25" level="1,100"/>
+				<requirement name="HoldingItemHasTags" tags="perkSalvageOperations"/>
 		</effect_group>
 		<effect_group name="AS Scavenging Lvl Increase 1">
 			<requirement name="CVarCompare" cvar="$AS_Scavenging_Lvl" operation="LT" value="100"/>
@@ -1919,7 +1912,7 @@
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqPlayerLevel50"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="toolForgeCrucible,DFAdvForge"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFAdvForge"/>
 			<effect_description level="1" desc_key="perkAdvancedForgeRank1Desc"/>
 		</effect_group>
 	</perk>
@@ -2185,7 +2178,7 @@
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_base="reqPlayerLevel50"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolFireaxeSteel,meleeToolPickaxeSteel,meleeToolShovelSteel"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolFireaxeSteel,meleeToolPickaxeSteel,meleeToolShovelSteel,resourceForgedSteel,toolForgeCrucible"/>
 			<effect_description level="1" desc_key="perkSteelCraftingRank1Desc"/>
 		</effect_group>
 	</perk>
@@ -2194,7 +2187,7 @@
 		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_base="reqPlayerLevel100"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFforgedTitanium,DFmeleeSpearTitanium,DFclubTitanium,DFresourceArrowHeadTitanium,DFmeleeToolFireaxeTitanium,DFmeleeToolPickaxeTitanium,DFmeleeToolShovelTitanium"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFforgedTitanium,DFmeleeSpearTitanium,DFclubTitanium,DFresourceArrowHeadTitanium,DFmeleeToolFireaxeTitanium,DFmeleeToolPickaxeTitanium,DFmeleeToolShovelTitanium,DFtitaniumSledgehammer"/>
 			<effect_description level="1" desc_key="perkTitaniumCraftingRank1Desc"/>
 		</effect_group>
 	</perk>

@@ -670,7 +670,7 @@
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 
 			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-			required_tools="toolAnvil,toolForgeCrucible,toolAndDieSet" required_tools_only="true">
+			required_tools="toolAnvil,toolAndDieSet" required_tools_only="true">
 				<required_item_stack name="0"/>
 			</grid>
 
@@ -4020,7 +4020,7 @@
 	<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 		<texture name="DFalls" depth="0" size="888,666" texture="@file:Mods\DarknessFalls\UI\MainMenu\darknessfallsLogo.png" material="Materials/Transparent Colored" pos="-299,255" />
 		<!-- <label name="DFalls" pos="0, -80" depth="0" size="250,33" text="Darkness Falls" font_size="64" effect="outline" color="[red]" justify="center" /> -->
-		<label name="DFallsVersion" pos="0, -240" depth="0" size="250,33" text="V2.02" font_size="42" effect="outline" color="[white]" justify="center" />
+		<label name="DFallsVersion" pos="0, -240" depth="0" size="250,33" text="V2.03" font_size="42" effect="outline" color="[white]" justify="center" />
 		<grid name="buttons" pos="0, -275" cols="1" width="250" cell_width="250" cell_height="48" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnInvite" depth="3" width="250" height="38" caption_key="xuiMenuInvite" font_size="32" />
 			<simplebutton name="btnOptions" depth="3" width="250" height="38" caption_key="xuiMenuOptions" font_size="32" />
@@ -4150,19 +4150,50 @@
 	</window>
 	
 	<window name="windowAdvForgeOutput" pos="0,-48" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
-		<panel style="header.panel" pos="0,-40" height="43" depth="1" disableautobackground="false" >
-			<sprite style="header.icon" pos="4,-4" sprite="ui_game_symbol_loot_sack"/>
-			<label style="header.name" pos="42,-6" text="OUTPUT" text_key="xuiOutput" />
+		<panel style="header.panel" pos="0,-40">
+			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+			<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
 		</panel>
+
+
 		<rect name="content" depth="0" pos="0,-88" height="150" disablefallthrough="true" on_press="true">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
-			<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
-				<item_stack name="0"/>
-			</grid>
+				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
 		</rect>
 	</window>
 	
 	<!-- Big Forge Mod -->
+	
+	<window name="windowToolsBigForge" width="228" height="121" panel="Right" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_wrench"/>
+			<label style="header.name" text="TOOLS" text_key="xuiTools" />
+		</panel>
+
+		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
+
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="toolAnvil,toolForgeCrucible,toolAndDieSet" required_tools_only="true">
+				<required_item_stack name="0"/>
+			</grid>
+
+			<!-- <grid name="slot_preview" depth="1" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="SlotPreview">
+				<rect>
+					<sprite name="slot" depth="2" width="70" height="50" foregroundlayer="true" color="[white_quarter_alpha]" sprite="toolAnvil" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center"/>
+				</rect>
+				<rect>
+					<sprite name="slot" depth="2" width="70" height="50" foregroundlayer="true" color="[white_quarter_alpha]" sprite="toolForgeCrucible" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center"/>
+				</rect>
+				<rect>
+					<sprite name="slot" depth="2" width="70" height="50" foregroundlayer="true" color="[white_quarter_alpha]" sprite="toolAndDieSet" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center"/>
+				</rect>
+			</grid> -->
+		</rect>
+
+	</window>
 	
 	<window name="windowBigForgeInput" width="228" height="229" panel="Right"
 		controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
@@ -4189,15 +4220,17 @@
 	</window>
 	
 	<window name="windowBigForgeOutput" pos="0,-48" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
-		<panel style="header.panel" pos="0,-40" height="43" depth="1" disableautobackground="false" >
-			<sprite style="header.icon" pos="4,-4" sprite="ui_game_symbol_loot_sack"/>
-			<label style="header.name" pos="42,-6" text="OUTPUT" text_key="xuiOutput" />
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+			<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
 		</panel>
-		<rect name="content" depth="0" pos="0,-88" height="150" disablefallthrough="true" on_press="true">
+
+
+		<rect name="content" depth="0" pos="0,-46" height="150" disablefallthrough="true" on_press="true">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
-			<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
-				<item_stack name="0"/>
-			</grid>
+				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
 		</rect>
 	</window>
 

@@ -100,7 +100,7 @@ tbnsew:
 	<property name="Weight" value="125"/>
 	<property name="Map.Color" value="100,100,100"/>
 	<property class="RepairItems"> <property name="resourceCobblestones" value="6"/> </property>
-	<!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceIronFragment" count="2" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -149,6 +149,7 @@ tbnsew:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrSidewalk" count="1" prob="0.25" stick_chance="1"/>
@@ -191,6 +192,7 @@ tbnsew:
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDirt" count="1" prob="0.25" stick_chance="1"/>
@@ -222,6 +224,7 @@ tbnsew:
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="resourceYuccaFibers" count="2"/>
 	<drop event="Fall" name="terrForestGround" count="1" prob="0.25" stick_chance="1"/>
@@ -253,6 +256,7 @@ tbnsew:
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="resourceYuccaFibers" count="1" prob="0.25"/>
 	<drop event="Fall" name="terrBurntForestGround" count="1" prob="0.25" stick_chance="1"/>
@@ -282,6 +286,7 @@ tbnsew:
 		<property name="resourceCrushedSand" value="8"/>
 		<property name="resourceClayLump" value="1"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Fall" name="resourceCrushedSand" count="11" prob="0.5" stick_chance="0"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="CanMobsSpawnOn" value="true"/>
@@ -310,6 +315,7 @@ tbnsew:
 	<property name="ImposterExclude" value="true"/>
 	<property name="Map.Color" value="107,78,57"/>
 	<property class="RepairItems"> <property name="resourceCrushedSand" value="9"/> <property name="resourceRockSmall" value="4"/> </property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceCrushedSand" count="8" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="4" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -335,6 +341,7 @@ tbnsew:
 	<property name="Map.Color" value="230,230,255"/>
 	<property name="CanMobsSpawnOn" value="true"/>
 	<property class="RepairItems"> <property name="resourceSnowBall" value="11"/> </property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceSnowBall" count="10" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrSnow" count="1" prob="0.25" stick_chance="1"/>
@@ -370,6 +377,7 @@ tbnsew:
 	<property name="Weight" value="90"/>
 	<property name="Map.Color" value="152,149,63"/>
 	<property class="RepairItems"> <property name="resourceCobblestones" value="6"/> </property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceCrushedSand" count="4" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -391,6 +399,7 @@ tbnsew:
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="438"/>
 	<property name="ImposterExclude" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="3" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Map.Color" value="110,95,49"/>
@@ -410,7 +419,7 @@ tbnsew:
 	<property name="ImposterExclude" value="true"/>
 	<property name="Group" value="Resources"/>
 	<property name="Map.Color" value="158,139,124"/>
-	<!-- gravel: 7 sand, 8 rocks  (1/2 the hit points of stone) -->
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceCrushedSand" count="8" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="9" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -435,6 +444,7 @@ tbnsew:
 	<property name="Map.Color" value="204,177,131"/>
 	<property class="RepairItems"><property name="resourceConcreteMix" value="5"/></property>
 	<property name="Group" value="Building"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceRockSmall" count="27" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
@@ -459,6 +469,7 @@ tbnsew:
 	<property name="Map.Color" value="204,177,131"/>
 	<property class="RepairItems"><property name="resourceConcreteMix" value="5"/></property>
 	<property name="Group" value="Building"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceRockSmall" count="27" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
@@ -513,6 +524,7 @@ tbnsew:
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="33"/>
 	<property name="ImposterExclude" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceIronFragment" count="49" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -531,6 +543,7 @@ tbnsew:
 	<property name="Texture" value="316"/>
 	<property name="Weight" value="100"/>
 	<property name="ImposterExclude" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceScrapLead" count="33" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -551,6 +564,7 @@ tbnsew:
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="34"/>
 	<property name="ImposterExclude" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceCoal" count="33" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -568,6 +582,7 @@ tbnsew:
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="300"/>
 	<property name="ImposterExclude" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="33" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -587,6 +602,7 @@ tbnsew:
 	<property name="ImposterExclude" value="true"/>
 	<property name="LPHardnessScale" value="2"/>
 	<property name="Map.Color" value="110,95,49"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceOilShale" count="33" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -675,6 +691,7 @@ tbnsew:
 	<property name="Extends" value="terrSand"/>
 	<property name="CustomIcon" value="terrSand"/>
 	<drop event="Destroy" name="resourceIronFragment" count="1"/>
+	<property name="Texture" value="11"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="FilterTags" value="fterrain"/>
 	<property name="SortOrder1" value="d0l0"/>
@@ -684,6 +701,7 @@ tbnsew:
 <block name="terrOreSandPlusLead">
 	<property name="Extends" value="terrSand"/>
 	<drop event="Destroy" name="resourceScrapLead" count="1"/>
+	<property name="Texture" value="11"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="FilterTags" value="fterrain"/>
 	<property name="SortOrder1" value="d0l0"/>
@@ -694,6 +712,7 @@ tbnsew:
 <block name="terrOreSandPlusOil">
 	<property name="Extends" value="terrSand"/>
 	<drop event="Destroy" name="resourceOilShale" count="1"/>
+	<property name="Texture" value="11"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="FilterTags" value="fterrain"/>
 	<property name="SortOrder1" value="d0l0"/>
@@ -704,6 +723,7 @@ tbnsew:
 <block name="terrOreSandPlusCoal">
 	<property name="Extends" value="terrSand"/>
 	<drop event="Destroy" name="resourceCoal" count="1"/>
+	<property name="Texture" value="11"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="FilterTags" value="fterrain"/>
 	<property name="SortOrder1" value="d0l0"/>
@@ -714,6 +734,7 @@ tbnsew:
 <block name="terrOreSandPlusPotassium">
 	<property name="Extends" value="terrSand"/>
 	<drop event="Destroy" name="resourcePotassiumNitratePowder" count="1"/>
+	<property name="Texture" value="11"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="FilterTags" value="fterrain"/>
 	<property name="SortOrder1" value="d0l0"/>
@@ -729,6 +750,7 @@ tbnsew:
 	<property name="ImposterExclude" value="true"/>
 	<property name="CanMobsSpawnOn" value="false"/>
 	<property class="RepairItems"> <property name="resourceClayLump" value="14"/> </property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrFertileDirt" count="1" prob="0.25" stick_chance="1"/>
@@ -800,7 +822,7 @@ tbnsew:
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="290,2,2,2,2,2"/>
 	<property name="Class" value="UpgradeRated"/>
-	<property name="UpgradeRated.ToBlock" value="DFgoreBlockDowngrade"/>
+	<property name="UpgradeRated.ToBlock" value="goreBlockHumanBones"/>
 	<property name="UpgradeRated.Rate" value="10"/>
 	<property name="Tag" value="Gore"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -3190,7 +3212,7 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="solidWoodFrameBlock"/>
 		<property name="ItemCount" value="3"/>
 	</property>
-	<drop event="Destroy" name="resourceCoal" count="3" prob="0.35"/>
+	<drop event="Destroy" name="resourceCoal" count="2,4"/>
 	<property name="FilterTags" value="fconstruction,fdestruction"/>
 </block>
 
@@ -10604,6 +10626,7 @@ NOT the TextureNumber.
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="SortOrder2" value="0120"/> <!-- SortTree -->
@@ -10659,6 +10682,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/Trees/Haunted_Shrub_Wasteland2Prefab"/> <!-- uses dummy texture id from opaque atlas -->
 	<property name="ModelOffset" value="0,-0.15,0"/>
 	<property name="Collide" value="melee,rocket"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Destroy" name="resourceWood" count="2,5" prob="1"/>
 	<property name="FilterTags" value="foutdoor,fshrubbery"/>
 	<property name="SortOrder1" value="a060"/>
@@ -10671,6 +10695,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,4,1"/>
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
 	<!-- <drop event="Destroy" name="treePlantedMaple1m" count="x"/> -->
@@ -10683,6 +10708,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/Trees/Haunted_Shrub_WastelandPrefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="Collide" value="melee,rocket"/> <!-- no movement effect on Shape="ModelTree" -->
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_02"/>
 	<!-- <drop event="Destroy" name="treePlantedMaple1m" count="x"/> -->
@@ -10698,6 +10724,7 @@ NOT the TextureNumber.
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedOak1m" count="1"/>
 	<property name="SortOrder2" value="0140"/> <!-- SortTree -->
@@ -10712,6 +10739,7 @@ NOT the TextureNumber.
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="70" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="SortOrder2" value="0140"/> <!-- SortTree -->
@@ -10726,6 +10754,7 @@ NOT the TextureNumber.
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="SortOrder2" value="0140"/> <!-- SortTree -->
@@ -10740,6 +10769,7 @@ NOT the TextureNumber.
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="SortOrder2" value="0140"/> <!-- SortTree -->
@@ -10778,6 +10808,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,7,1"/>
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="PlantGrowing.Next" value="treePlantedOak16m"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedOak1m" count="1"/>
 	<property name="SortOrder2" value="0144"/> <!-- SortTree -->
@@ -10793,6 +10824,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,15,1"/>
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="PlantGrowing.Next" value="treePlantedOak27m"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="70" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="SortOrder2" value="0146"/> <!-- SortTree -->
@@ -10809,6 +10841,7 @@ NOT the TextureNumber.
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="PlantGrowing.Next" value="treePlantedOak41m"/>
 	<property name="PlantGrowing.FertileLevel" value="3"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
@@ -10824,12 +10857,12 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,40,1"/>
 	<property name="PlantGrowing.FertileLevel" value="5"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<property name="SortOrder2" value="0370"/> <!-- SortTree -->
 </block>
-
 
 <block name="treePlainsTree"> <!-- shrubbery -->
 	<property name="Material" value="Mleaves"/>
@@ -10841,6 +10874,7 @@ NOT the TextureNumber.
 	<property name="Collide" value="melee"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/> <!-- uses dummy texture id from opaque atlas -->
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Destroy" name="resourceWood" count="1,5"/>
 	<property name="FilterTags" value="foutdoor,fshrubbery"/>
 	<property name="SortOrder1" value="a060"/>
@@ -10855,6 +10889,7 @@ NOT the TextureNumber.
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<!-- <drop event="Destroy" name="treePlantedMaple1m" count="x"/> -->
 	<property name="SortOrder2" value="0150"/> <!-- SortTree -->
@@ -10868,6 +10903,7 @@ NOT the TextureNumber.
 	<property name="Collide" value="melee"/>
 	<property name="CanDecorateOnSlopes" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Destroy" name="resourceWood" count="1,3"/>
 	<property name="FilterTags" value="foutdoor,fshrubbery"/>
 	<property name="SortOrder1" value="a060"/>
@@ -10882,6 +10918,7 @@ NOT the TextureNumber.
 	<property name="Collide" value="melee"/>
 	<property name="CanDecorateOnSlopes" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Destroy" name="resourceWood" count="1,3"/>
 	<property name="FilterTags" value="foutdoor,fshrubbery"/>
 	<property name="SortOrder1" value="a060"/>
@@ -10897,6 +10934,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/Trees/AzaleaPrefab"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Destroy" name="resourceWood" count="1,3" prob="1"/>
 	<!-- property name="FallOver" value="false" /-->
 	<property name="EconomicValue" value="20"/> <!-- disassemble value -->
@@ -10910,11 +10948,13 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.5,0"/>
 	<property name="MultiBlockDim" value="1,12,1"/>
 	<property name="BigDecorationRadius" value="4"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 	<property name="SortOrder2" value="0300"/> <!-- SortTree -->
 </block>
+
 <block name="treeMountainPine8m"> <!-- deprecated, 3 hits -->
 	<property name="Extends" value="treeMountainPine12m"/>
 	<property name="CreativeMode" value="None"/>
@@ -10928,6 +10968,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.5,0"/>
 	<property name="MultiBlockDim" value="1,19,1"/>
 	<property name="BigDecorationRadius" value="4"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="70" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
@@ -10941,6 +10982,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.5,0"/>
 	<property name="MultiBlockDim" value="1,27,1"/>
 	<property name="BigDecorationRadius" value="5"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
@@ -10954,6 +10996,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.2,0"/>
 	<property name="MultiBlockDim" value="1,31,1"/>
 	<property name="BigDecorationRadius" value="5"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
@@ -10967,6 +11010,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.5,0"/>
 	<property name="MultiBlockDim" value="1,41,1"/>
 	<property name="BigDecorationRadius" value="6"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
@@ -10980,6 +11024,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.2,0"/>
 	<property name="MultiBlockDim" value="1,47,1"/>
 	<property name="BigDecorationRadius" value="4"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
@@ -10993,6 +11038,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,21,1"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="ModelOffset" value="0,-0.5,0"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
@@ -11006,6 +11052,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.2,0"/>
 	<property name="MultiBlockDim" value="1,24,1"/>
 	<property name="BigDecorationRadius" value="4"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
@@ -11043,6 +11090,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.4,0"/>
 	<property name="MultiBlockDim" value="1,12,1"/>
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine19m"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="SortOrder2" value="0355"/> <!-- SortTree -->
@@ -11058,6 +11106,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.4,0"/>
 	<property name="MultiBlockDim" value="1,19,1"/>
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine27m"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="70" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="SortOrder2" value="0360"/> <!-- SortTree -->
@@ -11073,6 +11122,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,27,1"/>
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine41m"/>
 	<property name="PlantGrowing.FertileLevel" value="3"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
@@ -11088,6 +11138,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.5,0"/>
 	<property name="MultiBlockDim" value="1,41,1"/>
 	<property name="PlantGrowing.FertileLevel" value="5"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
@@ -11100,6 +11151,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,0,0"/>
 	<property name="MultiBlockDim" value="1,6,1"/>
 	<property name="BigDecorationRadius" value="3"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<property name="FallOver" value="true"/>
 	<property name="ParticleOnDeath" value="treeGib_winter_small"/>
@@ -11115,6 +11167,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,12,1"/>
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="70" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_winter01"/>
@@ -11128,6 +11181,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.4,0"/>
 	<property name="MultiBlockDim" value="1,19,1"/>
 	<property name="BigDecorationRadius" value="3"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_winter02"/>
@@ -11141,6 +11195,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.5,0"/>
 	<property name="MultiBlockDim" value="1,27,1"/>
 	<property name="BigDecorationRadius" value="3"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="ParticleOnDeath" value="treeGib_winter03"/>
@@ -11195,6 +11250,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,6,1"/>
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine13m"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
 	<property name="SortOrder2" value="0455"/> <!-- SortTree -->
@@ -11211,6 +11267,7 @@ NOT the TextureNumber.
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine19m"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="70" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="SortOrder2" value="0460"/> <!-- SortTree -->
@@ -11227,6 +11284,7 @@ NOT the TextureNumber.
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine28m"/>
 	<property name="PlantGrowing.FertileLevel" value="3"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="SortOrder2" value="0465"/> <!-- SortTree -->
@@ -11241,6 +11299,7 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-0.5,0"/>
 	<property name="MultiBlockDim" value="1,28,1"/>
 	<property name="BigDecorationRadius" value="3"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="SortOrder2" value="0470"/> <!-- SortTree -->
@@ -11342,8 +11401,9 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,3,1"/>
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_small"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="3,5" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="3,8" tag="oreWoodHarvest"/>
 	<property name="SortOrder2" value="0130"/> <!-- SortTree -->
 </block>
 
@@ -11355,8 +11415,9 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-.4,0"/>
 	<property name="MultiBlockDim" value="1,5,1"/>
 	<property name="BigDecorationRadius" value="5"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="8,15" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="11,22" tag="oreWoodHarvest"/>
 	<!-- <drop event="Destroy" name="treePlantedMaple1m" count="x"/> -->
 	<property name="SortOrder2" value="0133"/> <!-- SortTree -->
 </block>
@@ -11369,8 +11430,9 @@ NOT the TextureNumber.
 	<property name="ModelOffset" value="0,-.6,0"/>
 	<property name="MultiBlockDim" value="2,9,2"/>
 	<property name="BigDecorationRadius" value="5"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="10,20" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="15,30" tag="oreWoodHarvest"/>
 	<!-- <drop event="Destroy" name="treePlantedMaple1m" count="x"/> -->
 	<property name="SortOrder2" value="0136"/> <!-- SortTree -->
 	<property name="ActivationDistance" value="14"/>
@@ -12200,7 +12262,7 @@ NOT the TextureNumber.
 	<property name="CustomIcon" value="plantedSnowberry3Harvest"/>
 	<property name="CanPickup" value="false"/>		
 	<property name="Texture" value="369"/>
-	<property name="PlantGrowing.Next" value="plantedSnowberry3Harvest"/>
+	<property name="PlantGrowing.Next" value="plantedSnowberry3HarvestPlayer"/>
 	<drop event="Destroy" name="plantedSnowberry1" count="1"/>
 </block>
 
@@ -12215,7 +12277,7 @@ NOT the TextureNumber.
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="CustomIcon" value="plantedSnowberry1"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="CanPickup" value="false"/>		
+	<property name="CanPickup" value="false"/>	
 	<drop event="Harvest" name="resourceCropSnowberryPlant" count="1" tag="cropHarvest"/>
 	<property name="DowngradeBlock" value="plantedSnowberry1"/>
 	<property name="Material" value="Mcorn"/>
@@ -12472,6 +12534,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Industrial/control_panel_base_01" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="2"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="1" prob="0.1" tag="salvageHarvest"/>
@@ -12566,6 +12629,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> <property name="HandleFace" value="South"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
 	<property name="EconomicValue" value="150"/> <!-- disassemble value -->
@@ -12736,7 +12800,6 @@ NOT the TextureNumber.
 <block name="signRoadMaple">
 	<property name="Extends" value="signRoadAZ260eastSpeed65"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Class" value="Sign"/>
 	<property name="Model" value="Entities/StreetSigns/sign_street_maplePrefab" />
 </block>
 
@@ -15846,6 +15909,7 @@ NOT the TextureNumber.
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="Weight" value="7"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/> <!-- HV: mounted fluorescent lamp -->
 	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
@@ -15952,6 +16016,7 @@ NOT the TextureNumber.
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
@@ -15974,6 +16039,7 @@ NOT the TextureNumber.
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceForgedIron" count="4,8" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20,50" tag="allHarvest"/>
@@ -16043,6 +16109,7 @@ NOT the TextureNumber.
 		<property name="resourceMetalPipe" value="10"/>
 	</property>
 	<property name="DowngradeBlock" value="bed01Frame"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
@@ -16065,6 +16132,7 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="2" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
@@ -16094,6 +16162,7 @@ NOT the TextureNumber.
 		<property name="resourceWood" value="20"/>
 		<property name="resourceMetalPipe" value="10"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceCloth" count="16" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceCropCottonPlant" count="16" tag="salvageHarvest"/>
@@ -16164,6 +16233,7 @@ NOT the TextureNumber.
 		<property name="resourceSpring" value="10"/>
 		<property name="resourceMetalPipe" value="10"/>
 	</property> -->
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
@@ -16193,6 +16263,7 @@ NOT the TextureNumber.
 		<property name="resourceSpring" value="10"/>
 		<property name="resourceMetalPipe" value="10"/>
 	</property> -->
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
@@ -16212,7 +16283,8 @@ NOT the TextureNumber.
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1,3" prob="1" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.33" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceFemur" count="1,2" tag="butcherHarvest"/>
 	<drop event="Destroy" name="resourceScrapPolymers" count="1,2"/>
 	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
@@ -17454,7 +17526,7 @@ NOT the TextureNumber.
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Collide" value="movement,melee"/>
 	<property name="Model" value="OutdoorDecor/stalactite01" param1="main_mesh"/>
-	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="14" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="resourcePotassiumNitratePowder" count="12" prob="0.5" stick_chance="0"/>
 	<property name="FilterTags" value="foutdoor,fterrain"/>
@@ -17508,7 +17580,7 @@ NOT the TextureNumber.
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<!-- <property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/> -->
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="resourceCoal" count="1,2" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="2,4" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="resourceWood" count="1"/>
 	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
 </block>
@@ -17529,7 +17601,7 @@ NOT the TextureNumber.
 	<property name="Model" value="OutdoorDecor/ember_pile_3" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="resourceCoal" count="1,2" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="2,4" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="resourceWood" count="1"/>
 	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
 </block>
@@ -17553,7 +17625,7 @@ NOT the TextureNumber.
 	<property name="ParticleOffset" value="0,0,0"/> -->
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="resourceCoal" count="1,2" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="3,6" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="resourceWood" count="1"/>
 	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
 </block>
@@ -18507,7 +18579,7 @@ NOT the TextureNumber.
 <block name="cntBuriedStashChest">
 	<property name="Extends" value="cntLootChestHeroInsecure" param1="DescriptionKey"/>
 	<property name="CustomIcon" value="cntLootChestHero"/>
-	<property name="Class" value="Loot"/>
+	<property name="Class" value="QuestLoot"/>
 	<property name="LootList" value="102"/>
 	<property name="CreativeMode" value="Dev"/>
 </block>
@@ -18547,6 +18619,7 @@ NOT the TextureNumber.
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
 	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
@@ -18610,9 +18683,9 @@ NOT the TextureNumber.
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
-	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceOil" count="2,6" prob="0.75" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceCloth" count="3,7" tag="allHarvest"/>
@@ -18746,6 +18819,7 @@ NOT the TextureNumber.
 	<property name="DisplayType" value="blockMulti" />
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="ammoGasCan" count="50,150" prob="0.5" tag="allHarvest"/>
@@ -18753,6 +18827,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.45" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -18829,6 +18904,7 @@ NOT the TextureNumber.
 		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
@@ -19207,6 +19283,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/Lighting/porchLight01Prefab"/> <property name="HandleFace" value="West"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property class="RepairItems"> <property name="resourceForgedIron" value="1"/> <property name="resourceElectricParts" value="3"/> </property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/> <!-- HV: mounted lamp -->
 	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
@@ -19286,6 +19363,7 @@ NOT the TextureNumber.
 		<property name="resourceElectricParts" value="3"/>
 		<property name="resourceElectricParts" value="2"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/> <!-- HV: mounted fluorescent lamp -->
 	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
@@ -19303,6 +19381,7 @@ NOT the TextureNumber.
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Model" value="Entities/Lighting/street_light01Prefab"/> <!-- <property name="HandleFace" value="Bottom"/> -->
 	<property name="OnlySimpleRotations" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="4,8" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
@@ -19324,6 +19403,7 @@ NOT the TextureNumber.
 	<property name="ImposterExchange" value="imposterDontBlockCTRPole" param1="169"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="4,6" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
@@ -19346,6 +19426,7 @@ NOT the TextureNumber.
 		<property name="resourceElectricParts" value="3"/>
 		<property name="resourceElectricParts" value="2"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/> <!-- HV: mounted fluorescent lamp -->
 	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
@@ -19399,6 +19480,7 @@ NOT the TextureNumber.
 		<property name="resourceElectricParts" value="3"/>
 		<property name="resourceMechanicalParts" value="2"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" tag="salvageHarvest"/>
 </block>
@@ -19482,6 +19564,7 @@ NOT the TextureNumber.
 		<property name="resourceElectricParts" value="6"/>
 		<property name="resourceScrapIron" value="40"/>
 	</property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
 	<drop event="Harvest" name="resourceScrapIron" count="24" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20" tag="salvageHarvest"/>
@@ -19729,7 +19812,7 @@ NOT the TextureNumber.
 	<property name="Texture" value="189"/>
 	<property name="Weight" value="0"/>
 	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
-	<property class="RepairItems"> <property name="resourceRockSmall" value="100"/> </property>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="10"/> </property>
 	<property name="IndexName" value="lpblock"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Stacknumber" value="1"/>
@@ -20311,7 +20394,7 @@ NOT the TextureNumber.
 	<property name="RequiredPower" value="10"/>
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property class="RepairItems">
-		<property name="resourceForgedSteel" value="16"/>
+		<property name="resourceForgedIron" value="16"/>
 		<property name="resourceMechanicalParts" value="3"/>
 		<property name="resourceElectricParts" value="2"/>
 	</property>
@@ -20414,7 +20497,7 @@ NOT the TextureNumber.
 	<property name="AmmoItem" value="ammo9mmBullet"/>
 	<property name="TurnSpeed" value="22.5"/>
 	<property name="MaxDistance" value="30"/>
-	<property name="EntityDamage" value="23"/> <!-- 146 dps, 330 / burst -->
+	<property name="EntityDamage" value="32"/> <!-- 188 dps, 213 dps burst -->
 	<property name="BlockDamage" value="1"/>
 	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
 
@@ -20476,7 +20559,7 @@ NOT the TextureNumber.
 	<property name="Extends" value="autoTurret"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="AmmoItem" value="ammo9mmBulletSteel"/>
-	<property name="EntityDamage" value="22"/>
+	<property name="EntityDamage" value="29"/>
 	<property name="DescriptionKey" value="autoTurretDesc"/>
 </block>
 
@@ -20486,10 +20569,10 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
 	<property name="AmmoItem" value="ammoShotgunShell"/> <!-- does not use the damage value -->
 	<property name="MaxDistance" value="15"/>
-	<property name="EntityDamage" value="6"/>
+	<property name="EntityDamage" value="9"/> <!-- does not use range falloff for damage -->
 	<property name="BlockDamage" value="1"/>
 	<property name="RaySpread" value="5.2"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
-	<property name="RayCount" value="10"/>
+	<property name="RayCount" value="8"/>
 
 	<property name="BustRoundCount" value="4"/>
 	<property name="BurstFireRate" value="0.61"/>
@@ -21776,6 +21859,7 @@ NOT the TextureNumber.
 	<drop event="Harvest" name="foodRottingFlesh" count="1" prob="1" tag="allHarvest"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1,3" prob="1" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
 	<drop event="Destroy" name="resourceFemur" count="1,2"/>
 	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
 	<property name="FilterTags" value="fdecor,fother"/>
@@ -21796,7 +21880,8 @@ NOT the TextureNumber.
 	<property name="ImposterDontBlock" value="true"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" prob="1" tag="allHarvest"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1,2" prob="1" tag="butcherHarvest"/>
-	<drop event="Destroy" name="resourceFemur" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
+	<drop event="Destroy" name="resourceFemur" count="1,2" tag="allHarvest"/>
 	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
 	<property name="FilterTags" value="fdecor,fother"/>
 	<!-- <property name="DroppedEntityClass" value="EvisceratedRemains"/>
@@ -21832,7 +21917,8 @@ NOT the TextureNumber.
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Destroy" name="resourceFemur" count="1" prob="0.5"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="2,4" tag="butcherHarvest"/>
+	<drop event="Destroy" name="resourceFemur" count="1,2"/>
 	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
 	<property name="FilterTags" value="fdecor,fother"/>
 </block>
@@ -24350,7 +24436,7 @@ NOT the TextureNumber.
 	<property name="Collide" value="movement,melee"/>
 	<property name="LightOpacity" value="6"/>
 	<property name="Path" value="solid"/>
-	<property name="FuelValue" value="300"/>
+	<property name="FuelValue" value="1000"/>
 	<!-- <property name="BuffsWhenWalkedOn" value="trapDamageZombie"/> -->
 	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -24369,7 +24455,7 @@ NOT the TextureNumber.
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Traps/trap_wood_spikes_dmg2" param1="main_mesh"/>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="trapSpikesWoodDmg1"/>
+		<property name="ToBlock" value="trapSpikesWoodDmg0"/>
 		<property name="Item" value="resourceWood"/>
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
@@ -25665,7 +25751,7 @@ ore block visualisation end -->
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10" tool_category="Disassemble"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-	<property name="TakeDelay" value="15"/>
+	<property name="CanPickup" value="true"/>
 	<property name="Group" value="Basics,Building"/>
 	<property name="DescriptionKey" value="workingGraniteSinkDesc"/>
 	<property name="EconomicValue" value="80"/> 
@@ -25688,7 +25774,7 @@ ore block visualisation end -->
 	<drop event="Harvest" name="resourceScrapIron" count="4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10" tool_category="Disassemble"/>
 	<drop event="Destroy" name="resourceScrapIron" count="5"/>
-	<property name="TakeDelay" value="15"/>
+	<property name="CanPickup" value="true"/>
 	<property name="Group" value="Basics,Building"/>
 	<property name="DescriptionKey" value="workingutilitySinkDesc"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
@@ -27278,9 +27364,10 @@ ore block visualisation end -->
 	<property name="UpgradeRated.ToBlock" value="DFchickenCoop2" />
 	<property name="UpgradeRated.Rate" value="1" />
 	<property class="RepairItems">
-		<property name="wood" value="10" />	
+		<property name="resourceWood" value="10" />	
 	</property>	
-	<drop event="Destroy" count="0" />
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 	<property name="CraftingSkillGroup" value="Traps"/>
 </block>
 
@@ -27302,8 +27389,8 @@ ore block visualisation end -->
 		<property name="IsGrowOnTopEnabled" value="true" />
 		<property name="GrowOnTop" value="DFchickenNest" param1="1" param2="DFchickenNest" />
 	</property>
-	<drop event="Destroy" count="0" />
-	<drop event="Harvest" name="rawMeat" count="2" />
+	<drop event="Harvest" name="rawMeat" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="DFchickenNest">
@@ -27316,18 +27403,20 @@ ore block visualisation end -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="LootList" value="166" />
-	<drop event="Destroy" count="0" prob="1" />
+	<drop event="Harvest" name="resourceFeather" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="DFanimalSnare">
 	<property name="CustomIcon" value="animalSnare" />
 	<property name="DescriptionKey" value="animalSnareDesc"/>
 	<property name="LightOpacity" value="0"/>
-	<property name="Material" value="DFsnare" />
+	<property name="Material" value="Mwood_weak" />
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Plate"/>
 	<property name="Texture" value="196" />
-	<drop event="Destroy" name="woodDebris" count="0" />
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 	<property name="Place" value="TowardsPlacer" />
 	<property name="Class" value="UpgradeRated" />
 	<property name="UpgradeRated.ToBlock" value="DFanimalbaitedsnare" />
@@ -27338,11 +27427,12 @@ ore block visualisation end -->
 <block name="DFanimalbaitedsnare">
 	<property name="CustomIcon" value="animalSnare" />
 	<property name="LightOpacity" value="0"/>
-	<property name="Material" value="DFsnare" />
+	<property name="Material" value="Mwood_weak" />
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Plate"/>
 	<property name="Texture" value="196" />
-	<drop event="Destroy" name="woodDebris" count="0" />
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 	<property name="Class" value="PlantGrowing" />
 		<property class="PlantGrowing">
 		<property name="Next" value="DFBaitedSnareCaptured" />
@@ -27366,7 +27456,8 @@ ore block visualisation end -->
 	<property name="HeatMapStrength" value="5"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="1"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="Place" value="Door" />
 </block>
@@ -29234,26 +29325,21 @@ ore block visualisation end -->
 	<property name="CustomIcon" value="FlagLooted" />
 </block>
 
-<block name="DFwaterBarrel">
+<block name="DFwaterBarrelFull">
 	<property name="Extends" value="wineBarrel"/>
 	<property name="Model" value="Entities/Decor/BarrelPrefab"/>
+	<property name="Class" value="UpgradeRated"/>
+	<property name="UpgradeRated.ToBlock" value="DFwaterBarrelEmpty"/>
+	<property name="UpgradeRated.Rate" value="63"/> 
+</block>
+
+<block name="DFwaterBarrelEmpty">
+	<property name="Extends" value="wineBarrel"/>
+	<property name="Model" value="Entities/Decor/BarrelPrefab"/>
+	<property name="CanPickup" value="true" param1="DFwaterBarrelEmptyItem"/>
 </block>
 
 <!-- Blocks that constantly spawn mobs -->
-
-<block name="DFgoreBlockDowngrade">
-	<property name="Material" value="Morganic"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="Entities/Gore/gore_block1_bonesPrefab"/>
-	<property name="ImposterExclude" value="true"/>
-	<property name="ImposterDontBlock" value="true"/>
-	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Destroy" name="resourceFemur" count="1" prob="0.5"/>
-	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
-	<property name="FilterTags" value="fdecor,fother"/>
-</block>
 
 <block name="NestTest">
 	<property name="Class" value="Spawner, Mods" />		
@@ -29299,6 +29385,136 @@ ore block visualisation end -->
 	<property name="UpgradeRated.Rate" value="3"/> 
 	<property name="Group" value="Building" />
 </block> -->
+
+<!-- Invisible Wires Mod -->
+
+<block name="DFJunctionBox">
+	<property name="Class" value="ElectricWire"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Texture" value="8"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="DamageReceived" value="0.5"/>
+	<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> <property name="HandleFace" value="South"/>
+	<property name="CustomIcon" value="fusebox"/>
+	<property name="DescriptionKey" value="DFJunctionBoxDesc" />
+	<property class="RepairItems"> <property name="resourceElectricParts" value="1"/> <property name="resourceScrapIron" value="1"/> </property>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="RequiredPower" value="0"/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="4"/>
+		<property name="resourceElectricParts" value="1"/>
+	</property>
+	<drop event="Harvest" name="resourceElectricParts" count="0,1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,40"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="62"/>
+</block>
+
+<!-- Rain Catcher Mod -->
+
+<block name="DFRainCatcher">
+	<property name="CustomIcon" value="chickenCoop" />
+	<property name="DescriptionKey" value="DFRainCatcherDesc"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="Material" value="Mwood" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Barrel.unity3d?WaterCatcher.prefab"/>
+	<property name="RotationAllowed" value="pivotOnFloor" />
+	<property name="CanPickup" value="true" />
+	<property name="Class" value="UpgradeRated" />
+	<property name="UpgradeRated.ToBlock" value="DFRainCatcher2" />
+	<property name="UpgradeRated.Rate" value="2" />
+	<property class="RepairItems">
+		<property name="resourceWood" value="10" />	
+	</property>	
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="12"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="CraftingSkillGroup" value="Traps"/>
+</block>
+
+<block name="DFRainCatcher2">
+	<property name="CustomIcon" value="chickenCoop" />
+	<property name="LightOpacity" value="0"/>
+	<property name="Material" value="Mwood" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Barrel.unity3d?WaterCatcher.prefab"/>
+	<property name="RotationAllowed" value="pivotOnFloor" />
+	<property name="CanPickup" value="false"/>
+	<property name="Class" value="PlantGrowing" />
+		<property class="PlantGrowing">
+		<property name="FertileLevel" value="0" />
+		<property name="Next" value="DFRainCatcher" />
+		<property name="GrowthRate" value="2" />
+		<property name="LightLevelStay" value="0" />
+		<property name="IsRandom" value="false" />
+		<property name="IsGrowOnTopEnabled" value="true" />
+		<property name="GrowOnTop" value="waterMovingBucket" param1="1" param2="waterMovingBucket" />
+	</property>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="12"/>
+	<property name="EconomicBundleSize" value="1"/>
+</block>
+
+<block name="DFSurvivallTorchLight">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="Light"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="MaxDamage" value="1"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Entities/Lighting/torch_wallPrefab"/>
+	<!--property name="ParticleName" value="torch_wall"/-->
+	<property name="Place" value="Torch"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="CanPickup" value="true" param1="DFtorchSurvival"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<drop event="Destroy" name="meleeToolTorch" count="1"/>
+	<property name="Group" value="Basics,Building"/>
+	<property name="DescriptionKey" value="torchGroupDesc"/>
+	<property name="FilterTags" value="fdecor,felectrical"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+
+<!-- Custom Radiation Biome -->
+
+<block name="DFterrRadiated">
+	<property name="Material" value="Mrubble"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="6,569,569,569,569,569"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Weight" value="90"/>
+	<property name="Map.Color" value="75, 9, 83"/>
+	<property class="RepairItems"> <property name="resourceCobblestones" value="6"/> </property>
+	<property name="HarvestOverdamage" value="true"/> <!-- Turned this back on because Steel+ tools are SHITE otherwise. So are mods -->
+	<drop event="Harvest" name="resourceCrushedSand" count="4" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fterrain,fconstruction,fdestruction"/>
+	<property name="SortOrder1" value="d0k0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrainFertile" />
+</block>
 
 <!--
 Block replacements

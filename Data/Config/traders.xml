@@ -1,4 +1,4 @@
-<traders buy_markup="2" sell_markdown="0.2" quality_mod="0.4,8" currency_item="casinoCoin" >
+<traders buy_markup="2" sell_markdown="0.15" quality_mod="0.4,8" currency_item="casinoCoin" >
 <!--
 When adding items or blocks to the list, check if they have an "EconomicValue".
 Most world-decoration blocks like "cntSuitcase" or "airConditioner" do not have values set.
@@ -305,6 +305,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="leatherDusterBlack" prob="0.1"/>
 			<item group="hazmatGear" prob="0.1"/>
 			<item name="facialPiercings" prob="0.1"/>
+			<item name="gothBootsBlack" prob=".3"/>
+			<item name="gothicPants" prob=".3"/>
 		</trader_item_group>
 
 		<trader_item_group name="warmClothes">
@@ -630,8 +632,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="preparedFood">
-			<item name="foodBlueberryPie" count="2,4"/>
-			<item name="foodMeatStew" count="2,4"/>
+			<item name="foodBlueberryPie" count="1"/>
+			<item name="foodMeatStew" count="1"/>
 			<item name="foodCornBread" count="2,4"/>
 			<item name="foodCharredMeat" count="2,4"/>
 			<item name="foodGrilledMeat" count="2,4"/>
@@ -661,10 +663,10 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="foodAll">
-			<item group="cannedfood" count="2,4"/>
-			<item group="foodSupplies" count="2,4"/>
-			<item group="preparedFood" count="2,4"/>
-			<item group="preparedDrink" count="1,3"/>
+			<item group="cannedfood" count="1"/>
+			<item group="foodSupplies" count="1"/>
+			<item group="preparedFood" count="1"/>
+			<item group="preparedDrink" count="1"/>
 		</trader_item_group>
 
 		<trader_item_group name="landMines" count="1">
@@ -816,7 +818,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="ammo" count="3"/>
 			<item group="ammoSupplies" count="2"/>
 			<item name="resourcePotassiumNitratePowder" count="2,5"/> <!-- 10 -->
-			<item group="foodAll" count="2,5"/>
+			<item group="foodAll" count="1,3"/>
 
 		</trader_item_group>
 
@@ -838,7 +840,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="preparedDrink" count="1"/>
 			<item group="constructionSupplies" count="1,3" prob="0.8"/>
 			<item group="rareTools" count="1" prob="0.2" quality="3"/>
-			<item group="rareMedicine" count="1" prob="0.2"/>
+			<item group="rareMedicine" count="1" prob="0.3"/>
 			<item group="medicine" count="1,2" prob="1"/>
 		</trader_item_group>
 

@@ -242,8 +242,8 @@ Console command: forcegamestage
 		<gamestage stage="21"><spawn group="ZombieRadGroup"				num="03" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="22"><spawn group="ZombieRadGroup"				num="03" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="23"><spawn group="ZombieRadGroup"				num="12" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="24"><spawn group="BaseBreakersBears"			num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="25"><spawn group="BaseBreakersBears"			num="04" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="24"><spawn group="BaseBreakersNoBears"		num="01" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="25"><spawn group="BaseBreakersNoBears"		num="04" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="26"><spawn group="ZombieFeralWandering"		num="02" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="27"><spawn group="ZombieFeralWandering"		num="02" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="28"><spawn group="ZombieFeralWandering"		num="10" maxAlive="30" duration="09"/></gamestage>

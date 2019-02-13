@@ -66,7 +66,7 @@
 
 	<biome name="snow">
 		<spawn maxcount="1" respawndelay="4" time="Day"	entitygroup="SnowZombies" />
-		<spawn maxcount="5" respawndelay="4" time="Night" entitygroup="SnowZombiesNight" />
+		<spawn maxcount="3" respawndelay="4" time="Night" entitygroup="SnowZombiesNight" />
 		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="EnemyAnimalsSnow" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="FriendlyAnimalsSnow" spawnDeadChance="0" />
 	</biome>

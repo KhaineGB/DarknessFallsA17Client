@@ -1014,7 +1014,7 @@ A single player on default diff can have a GS of up to 480 without perks.
 </lootgroup>
 
 <lootgroup name="commonBooks" count="1">
-	<item name="resourcePaper" count="5,15" prob="0.66"/>
+	<item name="resourcePaper" count="5,15" prob="0.45"/>
 	<item name="modArmorHelmetLightSchematic"/>
 	<item name="modArmorBandolierSchematic"/>
 	<item name="modArmorInsulatedLinerSchematic"/>
@@ -1117,6 +1117,7 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="beerSchematic"/>
 	<item name="drugHerbalAntibioticsRecipeSchematic"/>
 	<item name="meleeToolSledgehammerSchematic"/>
+	<item name="DFcombatAxeSchematic"/>
 	<item name="DFFarmerMasteryBook" prob="0.25"/>
 	<item name="DFHunterMasteryBook" prob="0.25"/>
 	<item name="DFLaborerMasteryBook" prob="0.25"/>
@@ -1192,6 +1193,9 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="modDyeBrown"/>
 	<item name="modDyeBlack"/>
 	<item name="modDyePink"/>
+	<item name="modDyePurple"/>
+	<item name="modDyeYellow"/>
+	<item name="modDyeOrange"/>
 </lootgroup>
 
 <lootgroup name="books" count="1">
@@ -1437,6 +1441,8 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="leatherDuster"/>
 	<item name="leatherDusterBlack" prob="0.2"/>
 	<item name="leatherPoncho" prob="1"/>
+	<item name="gothBootsBlack" prob=".3"/>
+	<item name="gothicPants" prob=".3"/>
 </lootgroup>
 
 <lootgroup name="warmClothes">
@@ -2480,7 +2486,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
-<lootcontainer id="2" count="0" size="7,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+<lootcontainer id="2" count="0" size="8,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
 	<item name="cobweb" count="0" prob="0.01"/>
 </lootcontainer>
 
@@ -3086,7 +3092,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="modAllT1" loot_prob_template="probTemplate1.0"/>
 	<item group="modAllT2" loot_prob_template="probTemplate0.75"/>
 	<item group="modAllT3" loot_prob_template="probTemplate0.5"/>
-	<item group="modAllT3" loot_prob_template="vehicleParts"/>
+	<item group="vehicleParts" loot_prob_template="probTemplate0.5"/>
 	<item name="DFgunPorkinsShotgun" prob="0.03"/>
 	<item name="DFEriksHammer" prob="0.03"/>
 </lootcontainer>

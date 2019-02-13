@@ -235,7 +235,7 @@
 		<objective type="BlockPlace" id="campfire" value="1" phase="2" />
 
 
-		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete">
+		<reward type="Quest" id="quest_whiteRiverCitizen1" >
 			<property name="chainquest" value="false" />
 		</reward>
 		<reward type="SkillPoints" value="4" chainreward="true" />
@@ -253,7 +253,9 @@
 		<property name="difficulty" value="medium" />
 		<property name="shareable" value="false" />
 
-		<action type="ShowTip" value="quest_WhiteRiverCitizen1_description" />
+		<action type="ShowTip" value="quest_WhiteRiverCitizen1_description">
+			<property name="delay" value="3" />
+		</action>
 		<objective type="Goto" id="trader" value="5" phase="1" />
 
 		<objective type="InteractWithNPC">
@@ -2989,7 +2991,7 @@
 
 		<objective type="FetchKeep" id="resourceYuccaFibers" value="2" phase="1" />
 		<objective type="FetchKeep" id="resourceWood" value="2" phase="1" />
-		<objective type="FetchKeep" id="resourceRockSmall" value="4" phase="1" />
+		<objective type="FetchKeep" id="resourceRockSmall" value="1" phase="1" />
 
 		<objective type="Craft">
 			<property name="phase" value="2" />
@@ -3004,7 +3006,7 @@
 		<reward type="LootItem" id="DFallsCivilianQ1a" ischosen="false" isfixed="true" value="1" />
 		<reward type="LootItem" id="DFallsCivilianQ1b" ischosen="false" isfixed="true" value="1" />
 		<reward type="LootItem" id="DFallsCivilianQ1c" ischosen="false" isfixed="true" value="1" /> -->
-		<reward type="Skill" id="attClassCivilian" value="1" />
+		<reward type="Skill" id="attClassCivilian" value="1" stage="aftercomplete"/>
 		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingcivilian2" />
@@ -3023,8 +3025,8 @@
 
 		<objective type="FetchKeep" id="casinoCoin" value="500" />
 
-		<reward type="Item" id="drinkCanRiverWater" value="2" />
-		<reward type="Item" id="foodRawMeat" value="10" />
+		<reward type="LootItem" id="DFallsCivilianQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsCivilianQ2b" ischosen="false" isfixed="true" value="16" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingcivilian3" />
@@ -3042,11 +3044,11 @@
 		<property name="offer_key" value="quest_classtrainingcivilian_offer" />
 		<property name="shareable" value="false" />
 
-		<objective type="FetchKeep" id="drinkCanBoiledWater" value="2" phase="2" />
-		<objective type="FetchKeep" id="foodCharredMeat" value="2" phase="2" />
+		<objective type="FetchKeep" id="drinkCanBoiledWater" value="2" />
+		<objective type="FetchKeep" id="foodCharredMeat" value="2" />
 
-		<reward type="Item" id="drugPainkillers" value="2" />
-		<reward type="Item" id="medicalBandage" value="2" />
+		<reward type="LootItem" id="DFallsCivilianQ3a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsCivilianQ3b" ischosen="false" isfixed="true" value="16" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingcivilian4" />
@@ -3069,7 +3071,7 @@
 		<objective type="BlockPlace" id="woodFrameBlock" value="100" phase="2" />
 		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" phase="2" />
 
-		<reward type="Item" id="meleeToolFlashlight02" value="1" />
+		<reward type="LootItem" id="DFallsCivilianQ4" ischosen="false" isfixed="true" value="16" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingcivilian5" />
@@ -3093,8 +3095,8 @@
 		<objective type="BlockPlace" id="secureDoorWooden" value="1" phase="2" />
 		<objective type="BlockPlace" id="cntSecureStorageChest" value="1" phase="2" />
 
-		<reward type="Item" id="drugPainkillers" value="2" />
-		<reward type="Item" id="medicalBandage" value="2" />
+		<reward type="LootItem" id="DFallsCivilianQ3a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsCivilianQ3b" ischosen="false" isfixed="true" value="16" />
 		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingcivilian6" />
@@ -3120,7 +3122,7 @@
 		<objective type="Craft" id="gunWoodenBow" value="1" phase="2" />
 		<objective type="Craft" id="ammoArrowStone" value="2" phase="2" />
 
-		<reward type="Item" id="vehicleBicyclePlaceable" value="1" />
+		<reward type="LootItem" id="DFallsCivilianQ6" ischosen="false" isfixed="true" value="16" />
 		<reward type="Exp" value="100" />
     </quest>
 	
@@ -3160,7 +3162,7 @@
 		<reward type="LootItem" id="DFallsFarmerQ1c" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsFarmerQ1d" ischosen="false" isfixed="true" value="16" />
 
-		<reward type="Skill" id="attClassFarmer" value="1" />
+		<reward type="Skill" id="attClassFarmer" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingfarmer2" />
     </quest>
@@ -3180,9 +3182,11 @@
 		<objective type="FetchKeep" id="resourceWood" value="10"/>
 		<objective type="FetchKeep" id="resourceLeather" value="5"/>
 
-		<reward type="Item" id="drinkCanBoiledWater" value="2" />
-		<reward type="Item" id="foodCanBeef" value="2" />
-		<reward type="Skill" id="perkLivingOffTheLand" value="1" />
+		<reward type="LootItem" id="DFallsFarmerQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ2b" ischosen="false" isfixed="true" value="16" />
+
+		<reward type="Skill" id="perkLivingOffTheLand" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingfarmer3" />
     </quest>
@@ -3203,8 +3207,8 @@
 		<objective type="BlockPlace" id="plantedGoldenrod1" value="2" phase="2"/>
 		<objective type="BlockPlace" id="plantedYucca1" value="2" phase="2"/>
 
-		<reward type="Item" id="medicalFirstAidBandage" value="2" />
-		<reward type="Skill" id="perkSousChef" value="1" />
+		<reward type="LootItem" id="DFallsFarmerQ3" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="perkSousChef" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingfarmer4" />
     </quest>
@@ -3248,9 +3252,9 @@
 		<objective type="BlockPlace" id="DFanimalSnare" value="1" phase="2"/>
 		<objective type="BlockPlace" id="DFchickenCoop" value="1" phase="2"/>
 
-		<reward type="Item" id="gunBlunderbuss" value="1" />
-		<reward type="Item" id="ammoBlunderbuss" value="50" />
-		<reward type="Skill" id="perkSousChef" value="1" />
+		<reward type="LootItem" id="DFallsFarmerQ5a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ5b" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="perkSousChef" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingfarmer6" />
     </quest>
@@ -3270,9 +3274,9 @@
 		<objective type="Craft" id="DFMandP" value="1" phase="1" />
 		<objective type="BlockPlace" id="DFMandP" value="1" phase="2"/>
 
-		<reward type="Recipe" id="meleeToolHoeIron"/>
+		<reward type="Recipe" id="meleeToolHoeIron" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
-		<reward type="Skill" id="attClassFarmer" value="1" />
+		<reward type="Skill" id="attClassFarmer" value="1" stage="aftercomplete"/>
     </quest>
 	
 <!-- Hunter Class Quest -->
@@ -3291,8 +3295,8 @@
 		<property name="shareable" value="false" />
 		<action type="TrackQuest" />
 
-		<objective type="FetchKeep" id="resourceScrapIron" value="100" phase="1" />
-		<objective type="FetchKeep" id="resourceWood" value="10" phase="1" />
+		<objective type="FetchKeep" id="resourceScrapIron" value="100" />
+		<objective type="FetchKeep" id="resourceWood" value="10" />
 
 		<objective type="Craft">
 			<property name="phase" value="2" />
@@ -3305,7 +3309,7 @@
 		<reward type="LootItem" id="DFallsHunterQ1c" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsHunterQ1d" ischosen="false" isfixed="true" value="16" />
 		
-		<reward type="Skill" id="attClassHunter" value="1" />
+		<reward type="Skill" id="attClassHunter" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininghunter2" />
     </quest>
@@ -3327,7 +3331,7 @@
 		<reward type="LootItem" id="DFallsHunterQ2a" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsHunterQ2a" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsHunterQ2b" ischosen="false" isfixed="true" value="16" />
-		<reward type="Skill" id="perkTheHuntsman" value="1" /> 
+		<reward type="Skill" id="perkTheHuntsman" value="1" stage="aftercomplete"/> 
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininghunter3" />
     </quest>
@@ -3369,8 +3373,8 @@
 		<objective type="FetchKeep" id="resourceYuccaFibers" value="50" />
 		<objective type="FetchKeep" id="resourceLeather" value="35" />
 
-		<reward type="Item" id="DFmeleeToolMacheteScrap" value="1" />
-		<reward type="Skill" id="perkTheHuntsman" value="1" />
+		<reward type="LootItem" id="DFallsHunterQ4" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="perkTheHuntsman" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininghunter5" />
     </quest>
@@ -3387,16 +3391,16 @@
 		<property name="offer_key" value="quest_classtraininghunter_offer" />
 		<property name="shareable" value="false" />
 
-		<objective type="Craft" id="armorLeatherBoots" value="1" phase="1" />
-		<objective type="Craft" id="armorLeatherGloves" value="1" phase="1" />
-		<objective type="Craft" id="armorLeatherHood" value="1" phase="1" />
-		<objective type="Craft" id="armorLeatherChest" value="1" phase="1" />
-		<objective type="Craft" id="armorLeatherPants" value="1" phase="1" />
+		<objective type="Craft" id="armorLeatherBoots" value="1" />
+		<objective type="Craft" id="armorLeatherGloves" value="1" />
+		<objective type="Craft" id="armorLeatherHood" value="1" />
+		<objective type="Craft" id="armorLeatherChest" value="1" />
+		<objective type="Craft" id="armorLeatherPants" value="1" />
 
-		<reward type="Item" id="DFgunPipeRifle" value="1" />
-		<reward type="Item" id="ammo762mmBulletFMJ" value="100" />
+		<reward type="LootItem" id="DFallsHunterQ5a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ5b" ischosen="false" isfixed="true" value="16" />
 		<reward type="Exp" value="100" />
-		<reward type="Skill" id="perkStealthAssassin" value="1" />
+		<reward type="Skill" id="perkStealthAssassin" value="1" stage="aftercomplete"/>
 		<reward type="Quest" id="quest_classtraininghunter6" />
     </quest>
 
@@ -3419,7 +3423,7 @@
 			<requirement type="Holding" id="DFgunPipeRifle" />
 
 		<reward type="Exp" value="100" />
-		<reward type="Skill" id="attClassHunter" value="1" />
+		<reward type="Skill" id="attClassHunter" value="1" stage="aftercomplete"/>
     </quest>
 	
 <!-- Laborer Class Quest -->
@@ -3447,7 +3451,7 @@
 		<reward type="LootItem" id="DFallsLaborerQ1c" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsLaborerQ1d" ischosen="false" isfixed="true" value="16" />
 		
-		<reward type="Skill" id="attClassLaborer" value="1" />
+		<reward type="Skill" id="attClassLaborer" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininglaborer2" />
     </quest>
@@ -3473,9 +3477,10 @@
 		<objective type="BlockPlace" id="woodFrameBlock" value="100" phase="2"/>
 		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" phase="2"/>
 		
-		<reward type="Item" id="drinkCanBoiledWater" value="2" />
-		<reward type="Item" id="foodCanBeef" value="2" />
-		<reward type="Skill" id="perkHammerForge" value="1" />
+		<reward type="LootItem" id="DFallsFarmerQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsFarmerQ2b" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="perkHammerForge" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininglaborer3" />
     </quest>
@@ -3501,7 +3506,7 @@
 		<objective type="Craft" id="DFmeleeToolFireaxeScrap" value="1" phase="2"/>
 		<objective type="Craft" id="DFmeleeToolPickaxeScrap" value="1" phase="2"/>
 		
-		<reward type="Item" id="medicalFirstAidBandage" value="2" />
+		<reward type="LootItem" id="DFallsFarmerQ3" ischosen="false" isfixed="true" value="16" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininglaborer4" />
     </quest>
@@ -3526,7 +3531,7 @@
 		<objective type="FetchKeep" id="resourceWood" value="6" />
 		<objective type="FetchKeep" id="resourceMetalPipe" value="2" />
 		
-		<reward type="Skill" id="perkHammerForge" value="1" />
+		<reward type="Skill" id="perkHammerForge" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininglaborer5" />
     </quest>
@@ -3545,11 +3550,11 @@
 		<property name="shareable" value="false" />
 		<action type="TrackQuest" />
 		
-		<objective type="Craft" id="toolBellows" value="1" phase="1"/>
-		<objective type="Craft" id="forge" value="1" phase="1"/>
-		<objective type="BlockPlace" id="forge" value="1" phase="2"/>
+		<objective type="Craft" id="toolBellows" value="1" />
+		<objective type="Craft" id="forge" value="1" />
+		<objective type="BlockPlace" id="forge" value="1" />
 		
-		<reward type="Skill" id="perkHammerForge" value="1" />
+		<reward type="Skill" id="perkHammerForge" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtraininglaborer6" />
     </quest>
@@ -3577,8 +3582,8 @@
 			<property name="count" value="1" />
 		</objective>
 		
-		<reward type="Item" id="gunToolNailgun" value="1" />
-		<reward type="Skill" id="attClassLaborer" value="1" />
+		<reward type="LootItem" id="DFallsLaborerQ6" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="attClassLaborer" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
     </quest>
 	
@@ -3613,7 +3618,7 @@
 		<reward type="LootItem" id="DFallsMechanicQ1c" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsMechanicQ1d" ischosen="false" isfixed="true" value="16" />
 
-		<reward type="Skill" id="attClassMechanic" value="1" />
+		<reward type="Skill" id="attClassMechanic" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingmechanic2" />
     </quest>
@@ -3635,8 +3640,8 @@
 		<objective type="FetchKeep" id="ammoGasCan" value="50"/>
 		<objective type="FetchKeep" id="resourceScrapIron" value="40"/>
 		
-		<reward type="Item" id="medicalFirstAidBandage" value="2" />
-		<reward type="Skill" id="perkSalvageOperations" value="1" />
+		<reward type="LootItem" id="DFallsFarmerQ3" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="perkSalvageOperations" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingmechanic3" />
     </quest>
@@ -3657,8 +3662,8 @@
 		
 		<objective type="FetchKeep" id="ammoGasCan" value="300"/>
 		
-		<reward type="Item" id="meleeToolWrench" value="1" />
-		<reward type="Skill" id="perkSalvageOperations" value="1" />
+		<reward type="LootItem" id="DFallsMechanicQ3" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="perkSalvageOperations" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingmechanic4" />
     </quest>
@@ -3680,8 +3685,8 @@
 		<objective type="FetchKeep" id="carBattery" value="1"/>
 		<objective type="FetchKeep" id="smallEngine" value="1"/>
 		
-		<reward type="Item" id="drinkCanBoiledWater" value="2" />
-		<reward type="Item" id="foodCanChicken" value="2" />
+		<reward type="LootItem" id="DFallsHunterQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ2b" ischosen="false" isfixed="true" value="16" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingmechanic5" />
     </quest>
@@ -3702,7 +3707,7 @@
 		
 		<objective type="Repair" id="meleeToolWrench" value="1" />
 		
-		<reward type="Skill" id="perkSalvageOperations" value="1" />
+		<reward type="Skill" id="perkSalvageOperations" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingmechanic6" />
     </quest>
@@ -3724,7 +3729,7 @@
 		<objective type="FetchKeep" id="resourceMechanicalParts" value="20"/>
 		<objective type="FetchKeep" id="resourceElectricParts" value="20"/>
 		
-		<reward type="Skill" id="attClassMechanic" value="1" />
+		<reward type="Skill" id="attClassMechanic" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
     </quest>
 	
@@ -3754,9 +3759,9 @@
 		<reward type="LootItem" id="DFallsScientistQ1c" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsScientistQ1d" ischosen="false" isfixed="true" value="16" />
 
-		<reward type="Skill" id="attClassScientist" value="1" />
+		<reward type="Skill" id="attClassScientist" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
-		<reward type="Quest" id="quest_classtrainingscientist2" />
+		<reward type="Quest" id="quest_classtrainingscientist2" stage="aftercomplete"/>
     </quest>
 	
 	<quest id="quest_classtrainingscientist2" >
@@ -3776,7 +3781,7 @@
 		<objective type="FetchKeep" id="resourceCropAloeLeaf" value="16"/>
 		<objective type="FetchKeep" id="resourceCropCottonPlant" value="16"/>
 	
-		<reward type="Skill" id="perkPhysician" value="1" />
+		<reward type="Skill" id="perkPhysician" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingscientist3" />
     </quest>
@@ -3798,9 +3803,9 @@
 		<objective type="Craft" id="resourceCloth" value="4" />
 		<objective type="Craft" id="medicalBandage" value="2" />
 	
-		<reward type="Item" id="drinkCanBoiledWater" value="2" />
-		<reward type="Item" id="foodCanChicken" value="2" />
-		<reward type="Skill" id="perkSelfMedicated" value="1" />
+		<reward type="LootItem" id="DFallsHunterQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ2b" ischosen="false" isfixed="true" value="16" />
+		<reward type="Skill" id="perkSelfMedicated" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingscientist4" />
     </quest>
@@ -3823,7 +3828,7 @@
 		<objective type="Craft" id="medicalAloeCream" value="2" phase="1"/>
 		<objective type="Craft" id="medicalFirstAidBandage" value="2" phase="2"/>
 	
-		<reward type="Item" id="DFmeleeToolMacheteScrap" value="1" />
+		<reward type="LootItem" id="DFallsHunterQ4" ischosen="false" isfixed="true" value="16" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingscientist5" />
     </quest>
@@ -3845,7 +3850,7 @@
 		<objective type="FetchKeep" id="drugPainkillers" value="2"/>
 		<objective type="FetchKeep" id="foodHoney" value="1"/>
 
-		<reward type="Skill" id="perkPhysician" value="1" />
+		<reward type="Skill" id="perkPhysician" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingscientist6" />
     </quest>
@@ -3864,11 +3869,11 @@
 		<property name="shareable" value="false" />
 		<action type="TrackQuest" />
 		
-		<objective type="Craft" id="DFMandP" value="1" phase="1" />
-		<objective type="BlockPlace" id="DFMandP" value="1" phase="2"/>
+		<objective type="Craft" id="DFMandP" value="1" />
+		<objective type="BlockPlace" id="DFMandP" value="1" />
 
 		<reward type="Exp" value="100" />
-		<reward type="Skill" id="attClassScientist" value="1" />
+		<reward type="Skill" id="attClassScientist" value="1" stage="aftercomplete"/>
     </quest>
 	
 <!-- Security Class Quest -->
@@ -3887,15 +3892,15 @@
 		<property name="shareable" value="false" />
 		<action type="TrackQuest" />
 		
-		<objective type="FetchKeep" id="resourceWood" value="6" phase="1" />
-		<objective type="Craft" id="meleeClubWood" value="1" phase="2" />
+		<objective type="FetchKeep" id="resourceWood" value="6" />
+		<objective type="Craft" id="meleeClubWood" value="1" />
 		
 		<reward type="LootItem" id="DFallsSecurityQ1a" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsSecurityQ1b" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsSecurityQ1c" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsSecurityQ1d" ischosen="false" isfixed="true" value="16" />
 
-		<reward type="Skill" id="attClassSecurity" value="1" />
+		<reward type="Skill" id="attClassSecurity" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsecurity2" />
     </quest>
@@ -3921,11 +3926,11 @@
 		<objective type="Craft" id="armorClothHat" value="1" phase="2" />
 		<objective type="Craft" id="armorClothJacket" value="1" phase="2" />
 		<objective type="Craft" id="armorClothPants" value="1" phase="2" />
-	
-		<reward type="Item" id="drinkCanBoiledWater" value="2" />
-		<reward type="Item" id="foodCanChicken" value="2" />
-		<reward type="Item" id="medicalFirstAidBandage" value="5" />
-		<reward type="Skill" id="perkPainTolerance" value="1" />
+
+		<reward type="LootItem" id="DFallsHunterQ2a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ2b" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsHunterQ3" ischosen="false" isfixed="true" value="16" />	
+		<reward type="Skill" id="perkPainTolerance" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsecurity3" />
     </quest>
@@ -3946,9 +3951,9 @@
 		
 		<objective type="ZombieKill" value="5" />
 			<requirement type="Holding" id="meleeClubWood" />
-	
-		<reward type="Item" id="DFgunPipePistol" value="1" />
-		<reward type="Item" id="ammo9mmBullet" value="100" />
+
+		<reward type="LootItem" id="DFallsSecurityQ3a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsSecurityQ3b" ischosen="false" isfixed="true" value="16" />		
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsecurity4" />
     </quest>
@@ -3970,7 +3975,7 @@
 		<objective type="ZombieKill" value="5" />
 			<requirement type="Holding" id="DFgunPipePistol" />
 	
-		<reward type="Skill" id="perkFlurryOfBlows" value="1" />
+		<reward type="Skill" id="perkFlurryOfBlows" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsecurity5" />
     </quest>
@@ -3998,7 +4003,7 @@
 			<property name="count" value="1" />
 		</objective>
 	
-		<reward type="Skill" id="perkPainTolerance" value="1" />
+		<reward type="Skill" id="perkPainTolerance" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsecurity6" />
     </quest>
@@ -4020,7 +4025,7 @@
 		<objective type="ZombieKill" value="5" />
 			<requirement type="Holding" id="meleeClubIron" />
 	
-		<reward type="Skill" id="attClassSecurity" value="1" />
+		<reward type="Skill" id="attClassSecurity" value="1" stage="aftercomplete"/>
 		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="100" />
     </quest>
@@ -4054,7 +4059,7 @@
 		<reward type="LootItem" id="DFallsSurvivalistQ1c" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsSurvivalistQ1d" ischosen="false" isfixed="true" value="16" />
 
-		<reward type="Skill" id="attClassSurvivalist" value="1" />
+		<reward type="Skill" id="attClassSurvivalist" value="1" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsurvivalist2" />
     </quest>
@@ -4078,11 +4083,11 @@
 		<reward type="LootItem" id="DFallsCivilianQ2a" ischosen="false" isfixed="true" value="16" />
 		<reward type="LootItem" id="DFallsFarmerQ2b" ischosen="false" isfixed="true" value="16" />
 
-		<reward type="Recipe" id="armorLeatherBoots"/>
-		<reward type="Recipe" id="armorLeatherGloves"/>
-		<reward type="Recipe" id="armorLeatherHood"/>
-		<reward type="Recipe" id="armorLeatherChest"/>
-		<reward type="Recipe" id="armorLeatherPants"/>
+		<reward type="Recipe" id="armorLeatherBoots" stage="aftercomplete"/>
+		<reward type="Recipe" id="armorLeatherGloves" stage="aftercomplete"/>
+		<reward type="Recipe" id="armorLeatherHood" stage="aftercomplete"/>
+		<reward type="Recipe" id="armorLeatherChest" stage="aftercomplete"/>
+		<reward type="Recipe" id="armorLeatherPants" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsurvivalist3" />
     </quest>
@@ -4099,11 +4104,11 @@
 		<property name="offer_key" value="quest_classtrainingsurvivalist_offer" />
 		<property name="shareable" value="false" />
 
-		<objective type="FetchKeep" id="drinkCanBoiledWater" value="2" phase="2" />
-		<objective type="FetchKeep" id="foodCharredMeat" value="2" phase="2" />
+		<objective type="FetchKeep" id="drinkCanBoiledWater" value="2" />
+		<objective type="FetchKeep" id="foodCharredMeat" value="2" />
 
-		<reward type="Item" id="drugPainkillers" value="2" />
-		<reward type="Item" id="medicalBandage" value="2" />
+		<reward type="LootItem" id="DFallsCivilianQ3a" ischosen="false" isfixed="true" value="16" />
+		<reward type="LootItem" id="DFallsCivilianQ3b" ischosen="false" isfixed="true" value="16" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsurvivalist4" />
@@ -4150,9 +4155,9 @@
 		<objective type="FetchKeep" id="resourceWood" value="20" />
 		<objective type="FetchKeep" id="resourceLeather" value="10" />
 	
-		<reward type="Recipe" id="DFmeleeToolFireaxeScrap" />
-		<reward type="Recipe" id="DFmeleeToolPickaxeScrap" />
-		<reward type="Recipe" id="DFmeleeToolShovelScrap" />
+		<reward type="Recipe" id="DFmeleeToolFireaxeScrap" stage="aftercomplete"/>
+		<reward type="Recipe" id="DFmeleeToolPickaxeScrap" stage="aftercomplete"/>
+		<reward type="Recipe" id="DFmeleeToolShovelScrap" stage="aftercomplete"/>
 		<reward type="Exp" value="100" />
 		<reward type="Quest" id="quest_classtrainingsurvivalist6" />
     </quest>
@@ -4174,7 +4179,7 @@
 		<objective type="Craft" id="DFmeleeToolFireaxeScrap" value="1" />
 		<objective type="Craft" id="DFmeleeToolPickaxeScrap" value="1" />
 	
-		<reward type="Skill" id="attClassSurvivalist" value="1" />
+		<reward type="Skill" id="attClassSurvivalist" value="1" stage="aftercomplete"/>
 		<reward type="Recipe" id="DFWatch" />
 		<reward type="Exp" value="100" />
     </quest>

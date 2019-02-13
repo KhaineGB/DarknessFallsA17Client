@@ -2229,7 +2229,7 @@ List of hacks to be removed:
 		<stack_type value="ignore"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffStatusHungry1">
-				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="GT" value="0.52"/>
+				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="GT" value="0.50"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" target="self" sound="PlayerMaleHungry" play_in_head="true">
 				<requirement name="IsMale"/>
@@ -2284,7 +2284,7 @@ List of hacks to be removed:
 		<stack_type value="ignore"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffStatusThirsty1">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.77"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.50"/>
 			</triggered_effect>
 		</effect_group>
 	</buff>
@@ -2299,7 +2299,7 @@ List of hacks to be removed:
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value=".1"/>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".5">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value=".26"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value=".15"/>
 			</triggered_effect>
 		</effect_group>
 
@@ -4592,39 +4592,13 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff> -->
 	
-	<!-- <buff name="buffAthleticsSkillTracking" hidden="true" remove_on_death="false">
-		<stack_type value="ignore"/>
-		<update_rate value="2"/>
-		<effect_group name="Athletics Action Skill">
-			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfRun" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfCrouchRun" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfCrouchWalk" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfSwimStart" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfSwimStop" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfSwimRun" action="ModifyCVar" cvar="$AS_Athletics_XP" operation="add" value="1"/>
-		</effect_group>
-	</buff> 
-	
-	<buff name="attribIncreaseTest" hidden="true" remove_on_death="false">
-		<stack_type value="ignore"/>
+	<buff name="DFSDXProjectileHack" name_key="DFSDXProjectileHackName" description_key="DFSDXProjectileHackDesc" icon="ui_game_symbol_archery">
+		<stack_type value="replace"/>
+		<duration value="5"/>
 		<effect_group>
-			<passive_effect name="PerkLevel" operation="base_add" value="1" tags="attTest"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" />	
 		</effect_group>
 	</buff>
-	
-	<buff name="attribIncreaseCivilian" hidden="true" remove_on_death="false">
-		<stack_type value="ignore"/>
-		<effect_group>
-			<passive_effect name="PerkLevel" operation="base_add" value="1" tags="attClassCivilian"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-		</effect_group>
-	</buff> -->
-	
 
 
 </buffs>
