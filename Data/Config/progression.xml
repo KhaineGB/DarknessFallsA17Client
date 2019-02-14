@@ -334,6 +334,11 @@
 			<effect_description level="10" desc_key="attPerceptionRank10Desc"/>
 		</effect_group>
 		
+		<effect_group>
+			<passive_effect name="TreasureRadius" operation="base_subtract" value="1,7" level="2,8"/>
+			<passive_effect name="TreasureRadius" operation="base_subtract" value="7" level="9,10"/>
+		</effect_group>
+		
 	</perk>
 
 	<perk name="perkStrength" name_key="perkStrengthName" parent="skillAttributes" desc_key="perkStrengthDesc" min_level="1" max_level="10" icon="ui_game_symbol_muscle">
@@ -1433,8 +1438,6 @@
 	
 	<perk name="perkASScavenging" parent="skillASTools" max_level="100" base_skill_point_cost="1" name_key="Scavenging" desc_key="perkASScavengingDesc" icon="ui_game_symbol_loot_sack">
 		<effect_group>			
-			<passive_effect name="TreasureRadius" operation="base_set" value="9"/>
-			<passive_effect name="TreasureRadius" operation="base_subtract" value="2,6" level="1,100"/>
 
 			<passive_effect name="LootGamestage" operation="base_add" value="3,300" level="1,100"/>
 

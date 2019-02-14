@@ -183,8 +183,7 @@
 			<display_entry name="PerkLevel" tags="perkAgility" title_key="statShowAgility"/>
 		</item_display_info>
 		<item_display_info display_type="clothingNerdGlasses" display_group="groupAttire" >
-			<display_entry name="dCraftingTier" title_key="statCraftingTier"/>
-			<display_entry name="dCraftingTime" title_key="statCraftingTime" display_type="Percent" negative_preferred="true"/>
+			<display_entry name="PerkLevel" tags="perkIntellect" title_key="statShowIntellect"/>
 			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent"/>
 		</item_display_info>
 		<item_display_info display_type="clothingBarter" display_group="groupAttire" >
