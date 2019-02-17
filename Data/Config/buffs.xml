@@ -218,15 +218,15 @@ List of hacks to be removed:
 				<requirement name="NotHasBuff" buff="buffStatusHungry2"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusHungry2">
-				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="LTE" value="0.3"/>
+				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="LTE" value="0.1"/>
 			</triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusThirsty1">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.75"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.5"/>
 				<requirement name="NotHasBuff" buff="buffStatusThirsty2"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusThirsty2">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.3"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.1"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusWounded">
 				<requirement name="StatComparePercModMaxToMax" stat="Health" operation="LTE" value="0.5"/>
@@ -2251,7 +2251,7 @@ List of hacks to be removed:
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="0.05"/>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".3">
-					<requirement name="StatComparePercModMaxToMax" stat="stamina" operation="LT" value=".26"/>
+					<requirement name="StatComparePercModMaxToMax" stat="stamina" operation="LT" value=".1"/>
 			</triggered_effect>
 		</effect_group>
 
@@ -2299,7 +2299,7 @@ List of hacks to be removed:
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value=".1"/>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".5">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value=".15"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value=".1"/>
 			</triggered_effect>
 		</effect_group>
 

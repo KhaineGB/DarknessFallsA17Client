@@ -272,7 +272,9 @@
 			<passive_effect name="CraftingTime" operation="perc_subtract" level="7,10" value=".5,.65"/>
 			<passive_effect name="CraftingTime" operation="perc_subtract" level="11,20" value=".65"/>
 			
-			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="2,4,6,8" value="1,2,3,3"/>
+			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="2,3" value="1"/>
+			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="4,5" value="2"/>
+			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="6,10" value="3"/>
 			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="8,10" value="0.25,0.25"/>
 			<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="10" value="1"/>
 

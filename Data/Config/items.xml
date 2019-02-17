@@ -13681,6 +13681,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Extends" value="ammoArrowIron"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
 	<property name="StickyMeshFile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
+	<property name="IsSticky" value="false"/>
 	<property name="EconomicValue" value="57"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -13692,9 +13693,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-			<requirement name="EntityTagCompare" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -13703,7 +13701,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CustomIcon" value="titaniumCrossbowBolt" />
 	<property name="DescriptionKey" value="titaniumCrossbowBoltDesc"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
-	<property name="IsSticky" value="true"/>
+	<property name="IsSticky" value="false"/>
 	<property name="StickyOffset" value="0.05"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
@@ -13721,8 +13719,6 @@ So no clothing dyes until that can be resolved. -->
 		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="sdxentity"/>
-		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="behemoth"/>
 	</effect_group>
 </item>
 
@@ -17337,6 +17333,27 @@ So no clothing dyes until that can be resolved. -->
 	<effect_group>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
 	</effect_group>
+</item>
+
+<item name="DFskillGenericBook">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="21"/>
+	<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="DFclassPaper"/>
+	<property name="CustomIcon" value="skillGeneric" />
+	<property name="DescriptionKey" value="skillGenericDesc" />
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_genericskillpoints"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
 </item>
 
 <!-- DF Gun Parts -->
