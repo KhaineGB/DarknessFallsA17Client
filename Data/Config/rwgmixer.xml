@@ -495,10 +495,6 @@
 			<prefab name="xcostum_WulftownCD(by_WereWulfen)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_TheVillage(by_Stallionsden)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_ResidentEvilMansion(by_magoli)" prob="0.4" max_count="1" />
-			<prefab name="xcostum_ThePyramid_1(by_Andyjoki)" prob="0.05" max_count="1" />			
-			<prefab name="xcostum_TheSphinx3(by_Andyjoki)" prob="0.2" max_count="1" />	
-			<prefab name="xcostum_StallsCasino(by_Stallionsden)" prob="0.1" max_count="1" />
-			<prefab name="xcostum_ThemePark(by_stallionsden)" prob="0.2" max_count="1" />
 		</prefab_rule>		
 		
 		
@@ -807,7 +803,7 @@
 			<prefab name="settlement_trader_03" min_count="1" max_count="4"/>
 			<prefab name="settlement_trader_04" min_count="1" max_count="4"/>
 			<prefab name="settlement_trader_05" min_count="1" max_count="4"/>
-			<prefab name="DFalls_settlement_trader" max_count="1" prob="0.75"/>
+			<prefab name="DFalls_settlement_trader" min_count="1" max_count="2"/>
 			<prefab name="DFalls_DestroyedTrader_01" max_count="1" prob="0.05"/>
 			<prefab name="DFalls_DestroyedTrader_02" max_count="1" prob="0.05"/>
 			<prefab name="DFalls_DestroyedTrader_03" max_count="1" prob="0.05"/>
